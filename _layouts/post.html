@@ -74,7 +74,7 @@ layout: compress
         </div>
       </article>
     
-      {% if page.comments %}
+      {% if page.comments != false %}
         {% include comments.html %}
       {% endif %}
 
