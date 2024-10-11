@@ -92,10 +92,20 @@ plugins:
   - jekyll-postfiles
   
 comments:
-  active: 'giscus'
+  # Global switch for the post comment system. Keeping it empty means disabled.
+  provider: giscus # [disqus | utterances | giscus]
+  # The provider options are as follows:
+  # Giscus options › https://giscus.app
   giscus:
-    repo: TaewonyNet/taewonynet.github.io
-    repo_id: MDEwOlJlcG9zaXRvcnkzMDk3MTgyOTU=
-    category: Comments
-    category_id: DIC_kwDOEnXtF84CjQ08
+    repo: "TaewonyNet/taewonynet.github.io"
+    repo_id: "MDEwOlJlcG9zaXRvcnkzMDk3MTgyOTU="
+    category: "Comments"
+    category_id: "DIC_kwDOEnXtF84CjQ08"
+    mapping: # optional, default to 'pathname'
+    strict: # optional, default to '0'
+    input_position: # optional, default to 'bottom'
+    lang: # optional, default to the value of `site.lang`
+    reactions_enabled: "0" # optional, default to the value of `1`
+    
+    
     
