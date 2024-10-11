@@ -90,3 +90,12 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-postfiles
+  
+comments:
+  active: 'giscus'
+  giscus:
+    repo: TaewonyNet/taewonynet.github.io
+    repo_id: MDEwOlJlcG9zaXRvcnkzMDk3MTgyOTU=
+    category: Comments
+    category_id: DIC_kwDOEnXtF84CjQ08
+    
