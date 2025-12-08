@@ -5,9 +5,9 @@ author:
 date: 2020-02-14 00:00:00+00:00
 categories: ['Movie']
 tags: ['Movie', '2018']
-pin: true
-math: true
-mermaid: true
+pin: false
+math: false
+mermaid: false
 ---
 #### 영화 개요
 

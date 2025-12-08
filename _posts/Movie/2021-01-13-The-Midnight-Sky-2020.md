@@ -5,9 +5,9 @@ author:
 date: 2021-01-13 00:00:00+00:00
 categories: ['Movie']
 tags: ['Movie', '2020']
-pin: true
-math: true
-mermaid: true
+pin: false
+math: false
+mermaid: false
 ---
 안녕하세요, 요청하신 《더 미드나잇 스카이(The Midnight Sky)》 영화(2020)의 상세 줄거리 분석 보고서를 아래와 같이 작성해 드리겠습니다.  
 각 항목에 맞춘 체계적인 구조로, 참고하신 형식과 문어체(존댓말)에 맞추어 작성하였습니다.

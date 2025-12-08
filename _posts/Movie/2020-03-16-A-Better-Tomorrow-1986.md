@@ -5,9 +5,9 @@ author:
 date: 2020-03-16 00:00:00+00:00
 categories: ['Movie']
 tags: ['Movie', '1986']
-pin: true
-math: true
-mermaid: true
+pin: false
+math: false
+mermaid: false
 ---
 #### 영화 개요
 

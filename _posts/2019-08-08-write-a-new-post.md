@@ -342,7 +342,7 @@ You can pin one or more posts to the top of the home page, and the fixed posts a
 
 ```yaml
 ---
-pin: true
+pin: false
 ---
 ```
 

@@ -5,9 +5,9 @@ author:
 date: 2016-12-16 00:00:00+00:00
 categories: ['Movie']
 tags: ['Movie', '2015']
-pin: true
-math: true
-mermaid: true
+pin: false
+math: false
+mermaid: false
 ---
 알려주신 정보와 지침에 따라, 「American Ultra (2015)」 영화의 상세 줄거리 분석 보고서를 아래와 같이 정리해드립니다. 다만, 안내해주신 사이트(cine21.com, mydramalist.com, koreanfilm.or.kr, watcha.com, imdb.com, letterboxd.com, rogerebert.com, wikipedia.org)에서 영화 제목 및 개봉 연도와 정확히 일치하는 자료만 참고하여 작성하였습니다. 해당 영화는 2015년 8월 21일 미국에서 개봉하였고, 주요 정보는 영문 위키피디아, IMDb 등에서 확인하였습니다[1][2].  
 아래는 요청하신 형식에 맞춘 보고서입니다.

@@ -5,9 +5,9 @@ author:
 date: 2021-01-01 00:00:00+00:00
 categories: ['Movie']
 tags: ['Movie', '2021']
-pin: true
-math: true
-mermaid: true
+pin: false
+math: false
+mermaid: false
 ---
 아래는 영화 「리코리쉬 피자(Licorice Pizza)」(2021)에 대한 상세 줄거리 분석 보고서입니다.  
 요청하신 형식에 맞추어 작성하였으며, 제공하신 출처 정보를 바탕으로 객관적이고 정확하게 정리하였습니다.
