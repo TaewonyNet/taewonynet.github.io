@@ -4,8 +4,10 @@ vendor
 
 
 # Jekyll cache
-.jekyll-cache
+.jekyll-cache/
+Jekyll/
 .jekyll-metadata
+.ipynb_checkpoints/
 _site
 
 # RubyGems
