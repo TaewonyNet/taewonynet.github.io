@@ -25,4 +25,4 @@ node_modules
 !.vscode/tasks.json
 
 # Misc
-
+.config.yaml
