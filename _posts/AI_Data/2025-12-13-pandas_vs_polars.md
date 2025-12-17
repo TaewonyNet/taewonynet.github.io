@@ -51,6 +51,7 @@ Python_pandas    1.5.2
 Python_polars   1.27.0
 ```
 === Comparative Benchmark Summary ===
+
 | Test                          |   Time(s) |   Memory(bytes) | Error   |
 |:------------------------------|----------:|----------------:|:--------|
 | Pandas GroupBy (1000000)      |  0.1593   |          502613 |         |
