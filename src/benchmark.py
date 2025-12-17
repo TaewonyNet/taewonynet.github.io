@@ -70,8 +70,52 @@ class Benchmark:
         return versions
 
     def run_test(self, label, func, *args, **kwargs):
-        times, mems = [], []
-        errors = []
+        # Polars 함수들은 multiprocessing 없이 직접 실행 (안전성 문제 해결)
+        func_name = getattr(func, '__name__', str(func))
+        if 'polars' in func_name.lower():
+            return self._run_test_direct(label, func, *args, **kwargs)
+        else:
+            return self._run_test_multiprocess(label, func, *args, **kwargs)
+
+    def _run_test_direct(self, label, func, *args, **kwargs):
+        """Polars 함수들을 직접 실행 (multiprocessing bypass)"""
+        times, mems, errors = [], [], []
+
+        for _ in range(self.repeat):
+            start = time.perf_counter()
+            try:
+                result = func(*args, **kwargs)
+                elapsed = time.perf_counter() - start
+
+                try:
+                    peak_mem = resource.getrusage(resource.RUSAGE_SELF).ru_maxrss
+                except Exception:
+                    peak_mem = psutil.Process().memory_info().rss
+
+                times.append(elapsed)
+                mems.append(peak_mem)
+
+            except Exception as e:
+                errors.append(str(e))
+
+        if errors:
+            self.results.append({
+                "Test": label,
+                "Time(s)": None,
+                "Memory(bytes)": None,
+                "Error": errors[0],
+            })
+        else:
+            self.results.append({
+                "Test": label,
+                "Time(s)": round(sum(times) / len(times), 6),
+                "Memory(bytes)": int(sum(mems) / len(mems)),
+                "Error": None,
+            })
+
+    def _run_test_multiprocess(self, label, func, *args, **kwargs):
+        """pandas 함수들은 multiprocessing으로 실행"""
+        times, mems, errors = [], [], []
 
         manager = mp.Manager()
         warm = manager.dict()
@@ -174,8 +218,12 @@ if __name__ == "__main__":
     )
     print(pd.DataFrame([bench.info()]).T)
 
-    bench.run_test("Compute Sum (5M)", compute_sum, 5_000_000)
-    bench.run_test("Build List (3M)", build_list, n=3_000_000)
+    bench.run_test("Compute Sum (5M)_1", compute_sum, 5_000_000)
+    bench.run_test("Build List (3M)_1", build_list, n=3_000_000)
+    bench.run_test("Compute Sum (5M)_2", compute_sum, 5_000_000)
+    bench.run_test("Build List (3M)_2", build_list, n=3_000_000)
+    bench.run_test("Compute Sum (5M)_3", compute_sum, 5_000_000)
+    bench.run_test("Build List (3M)_3", build_list, n=3_000_000)
 
     print(bench.info())
     print(pd.DataFrame(bench.summary()))
