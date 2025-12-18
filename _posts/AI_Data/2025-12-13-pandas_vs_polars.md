@@ -91,7 +91,7 @@ Python_polars   1.27.0
     - 파이프라인에서 pandas를 polars를 전환했으나 속도가 개선되지 않는 결과를 확인했는데 lazy모드를 사용하지 않은 것으로 학인하였다.
     - 실제로 실무에서 사용하고 있는 pandas를 polars lazy로 전환한다.
 - **한 줄 결론 (Key Takeaway):**
-    - 알려진 사실이 실제와 다를 수 있다. 객관적 성능 비교는 늘 필요하다. [샘플 코드](https://github.com/TaewonyNet/taewonynet.github.io/blob/master/src/pandas_vs_polars.py)
+    - 알려진 사실이 실제와 다를 수 있다. 객관적 성능 비교는 늘 필요하다. [샘플 코드](https://github.com/TaewonyNet/taewonynet.github.io/blob/master/src/pandas_vs_polars.py){: target="_blank"}
     - 이제 데이터 처리는 polars lazy는 필수로 사용해야한다.
 - **다음 스텝 (Next Step):**
     - 실무 데이터 셋을 polars lazy로 전환한다. 추가로 spark도 검증해본다.

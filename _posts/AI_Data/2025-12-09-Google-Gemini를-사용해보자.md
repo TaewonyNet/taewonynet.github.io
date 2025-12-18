@@ -60,8 +60,8 @@ AI 중 가장 만만한 api인 Gemini를 사용해보자.
 - **인사이트 (Insight):**
     - 현 시점기준으로 Google Gemini API가 다른 AI에 비해 무료 시작도 가능하며 및 저렴한 비용으로 부담없이 사용 가능하다.
 - **실행 방안 (Action Plan):**
-    - [Google AI Studio](https://aistudio.google.com/api-keys)에서 키를 발급받고 프롬프트 샘플을 작성한다. 
+    - [Google AI Studio](https://aistudio.google.com/api-keys){: target="_blank"}에서 키를 발급받고 프롬프트 샘플을 작성한다. 
 - **한 줄 결론 (Key Takeaway):**
-    - Gemini API를 활용하여 개인 AI 프로젝트에 사용한다. [샘플 코드](https://github.com/TaewonyNet/taewonynet.github.io/blob/master/src/gemini.py)
+    - Gemini API를 활용하여 개인 AI 프로젝트에 사용한다. [샘플 코드](https://github.com/TaewonyNet/taewonynet.github.io/blob/master/src/gemini.py){: target="_blank"}
 - **다음 스텝 (Next Step):**
     - 프롬프트 엔지니어링을 적용한 간단한 프로젝트를 만들어보자.

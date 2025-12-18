@@ -65,7 +65,7 @@ mermaid: false
 
 ## **참고**
 
-- 파티셔닝 및 버킷팅 [분할 및 버킷팅 사용 - Amazon Athena](https://docs.aws.amazon.com/ko_kr/athena/latest/ug/ctas-partitioning-and-bucketing.html)
-- 성능 튜닝 [Athena 성능 최적화 - Amazon Athena](https://docs.aws.amazon.com/ko_kr/athena/latest/ug/performance-tuning.html)
-- Amazon Athena를 위한 10가지 성능 조정 팁 [Top 10 Performance Tuning Tips for Amazon Athena](https://aws.amazon.com/ko/blogs/big-data/top-10-performance-tuning-tips-for-amazon-athena/)
+- 파티셔닝 및 버킷팅 [분할 및 버킷팅 사용 - Amazon Athena](https://docs.aws.amazon.com/ko_kr/athena/latest/ug/ctas-partitioning-and-bucketing.html){: target="_blank"}
+- 성능 튜닝 [Athena 성능 최적화 - Amazon Athena](https://docs.aws.amazon.com/ko_kr/athena/latest/ug/performance-tuning.html){: target="_blank"}
+- Amazon Athena를 위한 10가지 성능 조정 팁 [Top 10 Performance Tuning Tips for Amazon Athena](https://aws.amazon.com/ko/blogs/big-data/top-10-performance-tuning-tips-for-amazon-athena/){: target="_blank"}
     
