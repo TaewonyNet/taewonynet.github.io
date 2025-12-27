@@ -1,17 +1,17 @@
----
-title: Google Gemini를 사용해보자.
-description: AI 중 가장 만만한 api인 Gemini를 사용해보자.
+neering]
+pin: fa---
+title: Google Gemini를 사용해 보자.
+description: AI 중 가장 만만한 api인 Gemini를 사용해 보자.
 author: taewony
 date: 2025-12-09 22:35:30 +0900
 categories: [Development, AI/Data]
-tags: [Gemini api,google ai,free tier,ai development,prompt engineering]
-pin: false
+tags: [Gemini api,google ai,free tier,ai development,prompt engilse
 math: false
 mermaid: false
 ---
 
-## Google Gemini를 사용해보자.
-AI 중 가장 만만한 api인 Gemini를 사용해보자.
+## Google Gemini를 사용해 보자.
+AI 중 가장 만만한 api인 Gemini를 사용해 보자.
 
 ### 1. 서론 (Introduction)
 - **문제/상황 (Problem):**
@@ -49,7 +49,7 @@ AI 중 가장 만만한 api인 Gemini를 사용해보자.
     - **주요 단계:** 
 		1. 무료 AI API 비교 조사한다.
 		2. Google Gemini API의 비용 확인 및 활용 결정한다.
-		3. 코드 작성를 작성한다.
+		3. 코드를 작성한다.
     - **결과 도출 및 검증:** 저렴한 기준으로 Gemini API가 제일 우선순위에 있음을 확인하였으며 실제로 할용하기로 한다.
 
 ### 3. 결과 (Results)

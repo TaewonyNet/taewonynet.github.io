@@ -1,0 +1,218 @@
+{
+  "complete": [
+    "../_posts/AI_Data/2025-12-13-pandas_vs_polars.md"
+  ],
+  "term": {
+    "pandas": {
+      "term": "pandas",
+      "korean_full": "판다스",
+      "english_full": "pandas",
+      "definition": "Python 프로그래밍 언어를 위한 데이터 조작 및 분석 라이브러리입니다. 표 형태의 데이터를 다루는 데 특화되어 있으며, DataFrame이라는 강력한 데이터 구조를 제공합니다.",
+      "easy_meaning": "엑셀 표처럼 생긴 데이터를 컴퓨터로 쉽게 다룰 수 있게 도와주는 도구야.",
+      "analogy": "반찬을 담는 여러 칸으로 나뉜 접시.",
+      "difficulty": "★★☆☆☆",
+      "related_keywords": [
+        "Python",
+        "DataFrame",
+        "데이터 분석"
+      ]
+    },
+    "polars": {
+      "term": "polars",
+      "korean_full": "폴라스",
+      "english_full": "polars",
+      "definition": "Rust로 작성된 고성능 DataFrame 라이브러리로, Apache Arrow 형식과 호환되며 병렬 처리를 통해 빠른 데이터 분석을 지원합니다.",
+      "easy_meaning": "엑셀 표 같은 데이터를 아주 빠르게 처리할 수 있게 만든 또 다른 도구인데, 특히 많은 양의 데이터를 다룰 때 성능이 좋아.",
+      "analogy": "로켓 엔진을 단 고속 열차.",
+      "difficulty": "★★☆☆☆",
+      "related_keywords": [
+        "Rust",
+        "DataFrame",
+        "고성능",
+        "병렬 처리"
+      ]
+    },
+    "벤치마크": {
+      "term": "벤치마크",
+      "korean_full": "벤치마크",
+      "english_full": "benchmark",
+      "definition": "컴퓨터 시스템, 소프트웨어 또는 하드웨어의 성능을 측정하고 비교하는 표준화된 테스트 프로세스입니다.",
+      "easy_meaning": "성능이 얼마나 좋은지 직접 숫자로 재보는 테스트야.",
+      "analogy": "자동차 경주 대회에서 누가 더 빨리 달리는지 기록 재는 것.",
+      "difficulty": "★☆☆☆☆",
+      "related_keywords": [
+        "성능 측정",
+        "비교",
+        "테스트"
+      ]
+    },
+    "정량적": {
+      "term": "정량적",
+      "korean_full": "정량적",
+      "english_full": "quantitative",
+      "definition": "수량으로 표현되는 측정이나 분석을 의미하며, 수치화된 데이터를 통해 객관적인 평가를 내리는 방식입니다.",
+      "easy_meaning": "숫자로 딱 떨어지게, 정확하게 파악하는 방식이야.",
+      "analogy": "키가 170cm인지, 180cm인지 정확한 숫자로 말하는 것.",
+      "difficulty": "★☆☆☆☆",
+      "related_keywords": [
+        "수치",
+        "측정",
+        "객관적"
+      ]
+    },
+    "성능": {
+      "term": "성능",
+      "korean_full": "성능",
+      "english_full": "performance",
+      "definition": "시스템이 작업을 얼마나 효율적으로, 빠르게, 또는 정확하게 수행하는지를 나타내는 척도입니다.",
+      "easy_meaning": "일 처리를 얼마나 잘하고 빨리 하는지를 말해.",
+      "analogy": "운동선수의 달리기 속도나 점프 높이.",
+      "difficulty": "★☆☆☆☆",
+      "related_keywords": [
+        "속도",
+        "효율",
+        "처리량"
+      ]
+    },
+    "spark": {
+      "term": "spark",
+      "korean_full": "스파크",
+      "english_full": "Apache Spark",
+      "definition": "대규모 데이터 처리를 위한 오픈 소스 통합 분석 엔진으로, Hadoop MapReduce보다 훨씬 빠르고 다양한 기능을 제공합니다.",
+      "easy_meaning": "아주 많은 양의 데이터를 한 번에 빠르게 처리할 수 있는 엄청난 도구야.",
+      "analogy": "데이터를 처리하는 거대한 공장.",
+      "difficulty": "★★★☆☆",
+      "related_keywords": [
+        "빅데이터",
+        "분산 처리",
+        "데이터 엔지니어링"
+      ]
+    },
+    "rust": {
+      "term": "rust",
+      "korean_full": "러스트",
+      "english_full": "Rust",
+      "definition": "메모리 안전성과 성능을 동시에 만족시키는 시스템 프로그래밍 언어로, 동시성 및 고성능 애플리케이션 개발에 사용됩니다.",
+      "easy_meaning": "컴퓨터가 빠르고 안전하게 돌아가도록 도와주는 튼튼한 언어야.",
+      "analogy": "견고하고 안전하게 지어진 건물.",
+      "difficulty": "★★★★☆",
+      "related_keywords": [
+        "프로그래밍 언어",
+        "메모리 안전",
+        "시스템 프로그래밍"
+      ]
+    },
+    "lazy": {
+      "term": "lazy",
+      "korean_full": "지연 실행",
+      "english_full": "lazy evaluation",
+      "definition": "계산이 실제로 필요해지기 전까지는 실행되지 않도록 미루는 방식입니다. 이는 불필요한 계산을 줄여 성능을 향상시킬 수 있습니다.",
+      "easy_meaning": "필요할 때까지 일을 미루다가 딱 필요할 때만 하는 방식이야.",
+      "analogy": "숙제를 시험 전날까지 미루다가 몰아서 하는 것.",
+      "difficulty": "★★☆☆☆",
+      "related_keywords": [
+        "지연 실행",
+        "효율",
+        "계산"
+      ]
+    },
+    "eager": {
+      "term": "eager",
+      "korean_full": "즉시 실행",
+      "english_full": "eager evaluation",
+      "definition": "명령이 내려지는 즉시 계산을 실행하는 방식입니다. 결과가 바로 필요할 때 사용하며, lazy 평가와 대비됩니다.",
+      "easy_meaning": "명령을 받자마자 바로바로 일을 처리하는 방식이야.",
+      "analogy": "시키면 바로바로 숙제를 하는 것.",
+      "difficulty": "★★☆☆☆",
+      "related_keywords": [
+        "즉시 실행",
+        "성능",
+        "평가"
+      ]
+    },
+    "프로세스": {
+      "term": "프로세스",
+      "korean_full": "프로세스",
+      "english_full": "process",
+      "definition": "컴퓨터에서 실행 중인 프로그램의 인스턴스로, 자신만의 독립적인 메모리 공간과 시스템 자원을 가집니다.",
+      "easy_meaning": "컴퓨터에서 돌아가는 하나의 작업 단위야.",
+      "analogy": "각자 자기 방에서 독립적으로 일하는 사람들.",
+      "difficulty": "★☆☆☆☆",
+      "related_keywords": [
+        "실행",
+        "작업",
+        "메모리"
+      ]
+    },
+    "Python": {
+      "term": "Python",
+      "korean_full": "파이썬",
+      "english_full": "Python",
+      "definition": "가독성이 높고 배우기 쉬운 고급 프로그래밍 언어로, 웹 개발, 데이터 과학, 인공지능 등 다양한 분야에서 널리 사용됩니다.",
+      "easy_meaning": "컴퓨터에게 일을 시키기 위해 사용하는 아주 인기 있는 말이야.",
+      "analogy": "컴퓨터와 대화하는 쉬운 언어.",
+      "difficulty": "★☆☆☆☆",
+      "related_keywords": [
+        "프로그래밍 언어",
+        "데이터 과학",
+        "개발"
+      ]
+    },
+    "Parquet": {
+      "term": "Parquet",
+      "korean_full": "파케이",
+      "english_full": "Apache Parquet",
+      "definition": "대규모 데이터 세트를 저장하고 분석하기 위한 컬럼 기반 파일 형식으로, 압축 효율성과 쿼리 성능이 뛰어납니다.",
+      "easy_meaning": "아주 많은 데이터를 효율적으로 저장하고 빠르게 불러올 수 있는 파일 형식이야.",
+      "analogy": "정리 정돈이 잘 된 서랍장.",
+      "difficulty": "★★☆☆☆",
+      "related_keywords": [
+        "파일 형식",
+        "빅데이터",
+        "저장"
+      ]
+    },
+    "Multiprocessing": {
+      "term": "Multiprocessing",
+      "korean_full": "멀티프로세싱",
+      "english_full": "multiprocessing",
+      "definition": "여러 개의 독립적인 프로세스를 동시에 실행하여 병렬 처리를 수행하는 기술로, CPU를 효율적으로 사용합니다.",
+      "easy_meaning": "여러 개의 일을 동시에 맡겨서 컴퓨터를 더 빠르게 쓰게 하는 거야.",
+      "analogy": "혼자 일하는 것보다 여러 사람이 함께 일하는 것.",
+      "difficulty": "★★☆☆☆",
+      "related_keywords": [
+        "병렬 처리",
+        "동시성",
+        "CPU"
+      ]
+    },
+    "threads": {
+      "term": "threads",
+      "korean_full": "스레드",
+      "english_full": "thread",
+      "definition": "하나의 프로세스 내에서 실행되는 작은 실행 단위로, 여러 스레드가 협력하여 작업을 수행하며 프로세스보다 가볍습니다.",
+      "easy_meaning": "하나의 작업 안에서 여러 일을 동시에 할 수 있게 해주는 작은 일꾼들이야.",
+      "analogy": "하나의 회사 안에서 여러 부서가 각자 일을 하는 것.",
+      "difficulty": "★★☆☆☆",
+      "related_keywords": [
+        "프로세스",
+        "병렬 처리",
+        "동시성"
+      ]
+    },
+    "pipeline": {
+      "term": "pipeline",
+      "korean_full": "파이프라인",
+      "english_full": "pipeline",
+      "definition": "데이터 처리 또는 소프트웨어 개발에서 일련의 연속적인 단계를 의미하며, 각 단계의 출력이 다음 단계의 입력이 됩니다.",
+      "easy_meaning": "데이터가 여러 단계를 거쳐 차례대로 처리되는 과정이야.",
+      "analogy": "공장에서 제품이 생산되는 조립 라인.",
+      "difficulty": "★☆☆☆☆",
+      "related_keywords": [
+        "데이터 처리",
+        "워크플로우",
+        "자동화"
+      ]
+    }
+  }
+}

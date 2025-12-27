@@ -30,6 +30,9 @@ class Gemini:
         "gemma-3n": "무료 입력/출력/캐싱 | 유료: 없음"
     }
     def __init__(self, api_key=API_KEY):
+        if not api_key:
+            raise ValueError("OpenRouter API 키가 설정되지 않았습니다. .config.yaml 또는 환경변수 OPENROUTER_API_KEY에 설정하세요.")
+        self.key = api_key
         self.key = api_key
 
 
