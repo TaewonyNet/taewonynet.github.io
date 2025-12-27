@@ -1,11 +1,11 @@
-neering]
-pin: fa---
+---
 title: Google Gemini를 사용해 보자.
 description: AI 중 가장 만만한 api인 Gemini를 사용해 보자.
 author: taewony
 date: 2025-12-09 22:35:30 +0900
 categories: [Development, AI/Data]
-tags: [Gemini api,google ai,free tier,ai development,prompt engilse
+tags: [Gemini api,google ai,free tier,ai development,prompt engineering]
+pin: false
 math: false
 mermaid: false
 ---
