@@ -125,6 +125,6 @@ pandas를 polars로 변환하는 치트시트를 만들고 해당 내용 검증�
 - **실행 방안 (Action Plan):**
     - 테스트 코드와 동일 코드를 쓰는 pandas부분을 polars를 사용하는 것으로 바꾼다. 바꾸기전과 후를 비교하여 실제 동일 값인지 재 검증한다.
 - **한 줄 결론 (Key Takeaway):**
-    - 치트시트로 pandas를 polars로 변경하는 표준을 만들어 활용한다.
+    - 치트시트로 pandas를 polars로 변경하는 표준을 만들어 활용한다. [샘플 코드](https://github.com/TaewonyNet/taewonynet.github.io/blob/master/src/pandas_to_polars.py){: target="_blank"}
 - **다음 스텝 (Next Step):**
     - 실제 업무 데이터를 해당 치트시트를 이용해 실행한다.

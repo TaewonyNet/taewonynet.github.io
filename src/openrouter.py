@@ -4,6 +4,7 @@ import yaml
 import base64
 import requests
 from pathlib import Path
+from src.chat import BaseChatAPI
 
 # 설정 로드
 with open(Path(__file__).parent.parent / ".config.yaml") as f:
@@ -12,11 +13,8 @@ with open(Path(__file__).parent.parent / ".config.yaml") as f:
 API_KEY = config["api"]["openrouter"]["key"]
 BASE = "https://openrouter.ai/api/v1"
 
-class OpenRouter:
-    # OpenRouter에서 자주 사용되는 모델 및 인기 있는 무료 모델 (2025년 12월 기준, https://openrouter.ai/models 참조)
-    # 가격 및 무료 여부는 변동될 수 있으니 실제 사이트에서 최신 확인 필수
-    # 무료 모델은 대부분 :free 접미사 붙음, rate limit 또는 로깅 있을 수 있음
-    MODEL_PRICES = {
+class OpenRouter(BaseChatAPI):
+    _MODEL_PRICES = {
         # 무료 티어 모델 (2025년 12월 기준 실제 무료 모델)
         "allenai/olmo-3.1-32b-think:free": "무료 ($0/M tokens), 깊은 추론 특화, 컨텍스트 66K",
         "xiaomi/mimo-v2-flash:free": "무료 ($0/M tokens), MoE 309B (15B active), 코딩/추론 강점, 컨텍스트 262K",
@@ -38,13 +36,17 @@ class OpenRouter:
 
     def __init__(self, api_key=API_KEY):
         if not api_key:
-            raise ValueError("OpenRouter API 키가 설정되지 않았습니다. .config.yaml 또는 환경변수 OPENROUTER_API_KEY에 설정하세요.")
+            raise ValueError("OpenRouter API 키가 설정되지 않았습니다. .config.yaml에 설정하세요.")
         self.key = api_key
         self.headers = {
             "Authorization": f"Bearer {self.key}",
-            "HTTP-Referer": "https://your-site.com",  # optional, but recommended
-            "X-Title": "Your App Name",               # optional
+            # "HTTP-Referer": "https://your-site.com",
+            # "X-Title": "Your App Name",
         }
+
+    @property
+    def MODEL_PRICES(self) -> dict:
+        return self._MODEL_PRICES
 
     # 사용 가능한 모든 모델 목록 가져오기 (OpenRouter 전용 엔드포인트)
     def models(self):
@@ -52,14 +54,9 @@ class OpenRouter:
         r = requests.get(url, headers=self.headers).json()
         return [m["id"] for m in r.get("data", [])]
 
-    def model_price(self, model: str):
-        return self.MODEL_PRICES.get(model, "모델 가격 정보가 없습니다. https://openrouter.ai/models 확인")
-
-    def model_price_all(self):
-        return self.MODEL_PRICES
-
-    # 텍스트 채팅
-    def chat(self, model: str, messages: list | str, temperature=0.7):
+    # 표준 형식의 메시지로 채팅 수행 (OpenAI 호환)
+    def chat(self, model: str, messages: list | str, temperature: float = 0.7):
+        """표준 OpenAI 호환 형식의 메시지로 채팅 수행"""
         url = f"{BASE}/chat/completions"
         if isinstance(messages, str):
             messages = [{"role": "user", "content": messages}]
@@ -72,32 +69,9 @@ class OpenRouter:
         r = requests.post(url, json=payload, headers=self.headers).json()
         try:
             return r["choices"][0]["message"]["content"]
-        except:
+        except Exception as e:
             return str(r)
 
-    # 이미지 + 텍스트 채팅
-    def vision(self, model: str, prompt: str, images: list):
-        def to_b64(path_or_bytes):
-            if isinstance(path_or_bytes, (str, Path)):
-                with open(path_or_bytes, "rb") as f:
-                    data = f.read()
-            else:
-                data = path_or_bytes
-            return base64.b64encode(data).decode()
-
-        content = [{"type": "text", "text": prompt}]
-        for img in images:
-            b64 = to_b64(img)
-            content.append({
-                "type": "image_url",
-                "image_url": {
-                    "url": f"data:image/jpeg;base64,{b64}"
-                }
-            })
-
-        messages = [{"role": "user", "content": content}]
-
-        return self.chat(model, messages)
 
 # ============ 사용 예시 ============
 if __name__ == "__main__":
@@ -105,19 +79,18 @@ if __name__ == "__main__":
 
     print("사용 가능 모델 예시:", router.models()[:20])  # 너무 많아서 20개만 표시
 
-    # 텍스트만
+    # 텍스트만 (표준 형식)
     resp = router.chat(
-        model="xiaomi/mimo-v2-flash:free",  # 2025년 인기 무료 모델
+        model="xiaomi/mimo-v2-flash:free",
         messages=[
             {"role": "user", "content": "안녕! 오늘 기분 어때?"}
         ]
     )
     print("→", resp)
 
-    # 이미지 + 텍스트 (주석 해제 후 사용)
-    # resp2 = router.vision(
-    #     model="google/gemini-3-flash-preview",  # 멀티모달 지원
-    #     prompt="이 사진에 뭐가 있나요?",
-    #     images=["./cat.jpg"]
-    # )
-    # print("→", resp2)
+    # 또는 문자열로 직접 전달
+    resp2 = router.chat(
+        model="xiaomi/mimo-v2-flash:free",
+        messages="안녕! 오늘 기분 어때?"
+    )
+    print("→", resp2)

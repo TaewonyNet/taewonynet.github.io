@@ -1,35 +1,47 @@
 {
   "complete": [
-    "../_posts/AI_Data/2025-12-13-pandas_vs_polars.md"
+    "../_posts/AI_Data/2025-12-13-pandas_vs_polars.md",
+    "../_posts\\AI_Data\\2025-12-13-pandas_vs_polars.md",
+    "../_posts\\AI_Data\\2025-12-18-Atlassian을-MCP로-사용해보자.md",
+    "../_posts\\AI_Data\\2025-12-23-폴더를-기준으로-용어사전을-만들자.md",
+    "../_posts\\AI_Data\\2025-12-11-성능-비교를-위한-벤치마크-코드를-작성해보자.md",
+    "../_posts\\AI_Data\\2025-12-20-OpenRouter를 사용해보자.md",
+    "../_posts\\AI_Data\\2025-12-09-Google-Gemini를-사용해보자.md",
+    "../_posts\\AI_Data\\2025-12-15-용어사전을-만들자.md",
+    "../_posts\\AI_Data\\.ipynb_checkpoints\\2025-12-13-pandas_vs_polars-checkpoint.md",
+    "../_posts\\AI_Data\\.ipynb_checkpoints\\2025-12-09-Google-Gemini를-사용해보자-checkpoint.md",
+    "../_posts\\AI_Data\\.ipynb_checkpoints\\2025-12-13-pandas_vs_polars-checkpoint.py",
+    "../_posts\\Diary\\.ipynb_checkpoints\\Untitled-checkpoint.ipynb",
+    "../_posts\\Diary\\.ipynb_checkpoints\\2025-12-06-글을-써-보자-checkpoint.md",
+    "../_posts\\Movie\\.ipynb_checkpoints\\2012-01-01-2-Taken-2-2012-checkpoint.md"
   ],
   "term": {
     "pandas": {
       "term": "pandas",
       "korean_full": "판다스",
       "english_full": "pandas",
-      "definition": "Python 프로그래밍 언어를 위한 데이터 조작 및 분석 라이브러리입니다. 표 형태의 데이터를 다루는 데 특화되어 있으며, DataFrame이라는 강력한 데이터 구조를 제공합니다.",
-      "easy_meaning": "엑셀 표처럼 생긴 데이터를 컴퓨터로 쉽게 다룰 수 있게 도와주는 도구야.",
-      "analogy": "반찬을 담는 여러 칸으로 나뉜 접시.",
+      "definition": "Python 프로그래밍 언어를 위한 라이브러리로, 데이터 조작 및 분석에 사용됩니다. 특히 테이블 형태의 데이터를 다루는 데 강력한 기능을 제공합니다.",
+      "easy_meaning": "파이썬으로 데이터를 표처럼 만들어서 쉽게 다루고 분석할 수 있게 도와주는 도구야.",
+      "analogy": "엑셀 시트와 비슷해서, 데이터를 보고, 고치고, 정리하기 쉬워.",
       "difficulty": "★★☆☆☆",
       "related_keywords": [
         "Python",
-        "DataFrame",
-        "데이터 분석"
+        "데이터 분석",
+        "라이브러리"
       ]
     },
     "polars": {
       "term": "polars",
-      "korean_full": "폴라스",
+      "korean_full": "폴라리스",
       "english_full": "polars",
-      "definition": "Rust로 작성된 고성능 DataFrame 라이브러리로, Apache Arrow 형식과 호환되며 병렬 처리를 통해 빠른 데이터 분석을 지원합니다.",
-      "easy_meaning": "엑셀 표 같은 데이터를 아주 빠르게 처리할 수 있게 만든 또 다른 도구인데, 특히 많은 양의 데이터를 다룰 때 성능이 좋아.",
-      "analogy": "로켓 엔진을 단 고속 열차.",
-      "difficulty": "★★☆☆☆",
+      "definition": "Rust로 작성된 고성능 데이터 프레임 라이브러리로, 병렬 처리를 통해 pandas보다 빠른 성능을 제공하는 것을 목표로 합니다.",
+      "easy_meaning": "판다스보다 훨씬 빠르게 데이터를 처리할 수 있도록 만들어진 새로운 도구야.",
+      "analogy": "경주용 자동차처럼, 아주 빠른 속도로 데이터를 처리해줘.",
+      "difficulty": "★★★☆☆",
       "related_keywords": [
         "Rust",
-        "DataFrame",
-        "고성능",
-        "병렬 처리"
+        "데이터 프레임",
+        "성능"
       ]
     },
     "벤치마크": {
@@ -77,57 +89,57 @@
     "spark": {
       "term": "spark",
       "korean_full": "스파크",
-      "english_full": "Apache Spark",
-      "definition": "대규모 데이터 처리를 위한 오픈 소스 통합 분석 엔진으로, Hadoop MapReduce보다 훨씬 빠르고 다양한 기능을 제공합니다.",
-      "easy_meaning": "아주 많은 양의 데이터를 한 번에 빠르게 처리할 수 있는 엄청난 도구야.",
-      "analogy": "데이터를 처리하는 거대한 공장.",
+      "english_full": "spark",
+      "definition": "대규모 데이터 처리를 위한 오픈 소스 통합 분석 엔진으로, 빠른 속도와 다양한 기능을 제공합니다.",
+      "easy_meaning": "아주아주 많은 양의 데이터를 빠르게 처리해주는 아주 강력한 엔진이야.",
+      "analogy": "엄청나게 많은 양의 우편물을 한 번에 빠르게 분류하고 배달해주는 거대한 우체국 시스템.",
       "difficulty": "★★★☆☆",
       "related_keywords": [
         "빅데이터",
         "분산 처리",
-        "데이터 엔지니어링"
+        "분석 엔진"
       ]
     },
     "rust": {
       "term": "rust",
       "korean_full": "러스트",
-      "english_full": "Rust",
-      "definition": "메모리 안전성과 성능을 동시에 만족시키는 시스템 프로그래밍 언어로, 동시성 및 고성능 애플리케이션 개발에 사용됩니다.",
-      "easy_meaning": "컴퓨터가 빠르고 안전하게 돌아가도록 도와주는 튼튼한 언어야.",
-      "analogy": "견고하고 안전하게 지어진 건물.",
-      "difficulty": "★★★★☆",
+      "english_full": "rust",
+      "definition": "안정성과 성능을 강조하는 시스템 프로그래밍 언어로, 메모리 안전성을 보장하면서도 높은 실행 속도를 제공합니다.",
+      "easy_meaning": "매우 빠르고 안전하게 프로그램을 만들 수 있는 언어야. 폴라리스가 이걸로 만들어졌어.",
+      "analogy": "매우 튼튼하고 빠른 슈퍼카를 만드는 데 사용되는 특별한 재료 같은 거야.",
+      "difficulty": "★★★☆☆",
       "related_keywords": [
-        "프로그래밍 언어",
+        "시스템 프로그래밍",
         "메모리 안전",
-        "시스템 프로그래밍"
+        "성능"
       ]
     },
     "lazy": {
       "term": "lazy",
       "korean_full": "지연 실행",
-      "english_full": "lazy evaluation",
-      "definition": "계산이 실제로 필요해지기 전까지는 실행되지 않도록 미루는 방식입니다. 이는 불필요한 계산을 줄여 성능을 향상시킬 수 있습니다.",
-      "easy_meaning": "필요할 때까지 일을 미루다가 딱 필요할 때만 하는 방식이야.",
-      "analogy": "숙제를 시험 전날까지 미루다가 몰아서 하는 것.",
+      "english_full": "lazy",
+      "definition": "계산이 실제로 필요할 때까지 지연시켜, 불필요한 연산을 줄이고 성능을 최적화하는 실행 방식입니다.",
+      "easy_meaning": "바로바로 계산하지 않고, 꼭 필요할 때만 계산해서 일을 더 빠르게 만드는 방식이야.",
+      "analogy": "마트에서 물건을 계산대에 올릴 때 바로 계산하는 게 아니라, 모든 물건을 다 올리고 마지막에 한 번에 계산하는 것과 같아.",
       "difficulty": "★★☆☆☆",
       "related_keywords": [
-        "지연 실행",
-        "효율",
-        "계산"
+        "지연 평가",
+        "최적화",
+        "실행 방식"
       ]
     },
     "eager": {
       "term": "eager",
       "korean_full": "즉시 실행",
-      "english_full": "eager evaluation",
-      "definition": "명령이 내려지는 즉시 계산을 실행하는 방식입니다. 결과가 바로 필요할 때 사용하며, lazy 평가와 대비됩니다.",
-      "easy_meaning": "명령을 받자마자 바로바로 일을 처리하는 방식이야.",
-      "analogy": "시키면 바로바로 숙제를 하는 것.",
+      "english_full": "eager",
+      "definition": "명령이 주어지는 즉시 해당 연산을 수행하는 방식으로, 결과가 바로 나타납니다.",
+      "easy_meaning": "명령을 받으면 바로바로 즉시 실행해서 결과를 보여주는 방식이야.",
+      "analogy": "주문을 받으면 바로바로 음식을 만들어서 손님에게 내주는 식당처럼, 시키는 대로 즉시 처리하는 거야.",
       "difficulty": "★★☆☆☆",
       "related_keywords": [
         "즉시 실행",
-        "성능",
-        "평가"
+        "반응성",
+        "실행 방식"
       ]
     },
     "프로세스": {
@@ -204,14 +216,2757 @@
       "term": "pipeline",
       "korean_full": "파이프라인",
       "english_full": "pipeline",
-      "definition": "데이터 처리 또는 소프트웨어 개발에서 일련의 연속적인 단계를 의미하며, 각 단계의 출력이 다음 단계의 입력이 됩니다.",
-      "easy_meaning": "데이터가 여러 단계를 거쳐 차례대로 처리되는 과정이야.",
-      "analogy": "공장에서 제품이 생산되는 조립 라인.",
+      "definition": "데이터 처리나 소프트웨어 개발 과정에서 여러 단계를 순차적으로 연결하여 자동화된 흐름을 만드는 것을 의미합니다.",
+      "easy_meaning": "데이터 처리 과정을 여러 단계를 거쳐서 자동으로 쭉 이어지게 만드는 거야.",
+      "analogy": "공장에서 원료가 여러 공정을 거쳐 완제품이 되는 것처럼, 데이터가 여러 단계를 거쳐 분석되는 과정이야.",
+      "difficulty": "★★☆☆☆",
+      "related_keywords": [
+        "자동화",
+        "데이터 처리",
+        "워크플로우"
+      ]
+    },
+    "introduction": {
+      "term": "introduction",
+      "korean_full": "서론",
+      "english_full": "introduction",
+      "definition": "글이나 발표의 시작 부분으로, 주제를 소개하고 배경, 목적, 내용을 간략하게 설명하는 부분입니다.",
+      "easy_meaning": "이제부터 무엇에 대해 이야기할 건지, 왜 이야기하는지, 어떤 내용을 다룰 건지를 미리 알려주는 부분이야.",
+      "analogy": "이야기를 시작하기 전에, 오늘 무슨 동화책을 읽을 건지, 왜 그 책이 재미있는지 간략하게 설명해주는 것과 같아.",
       "difficulty": "★☆☆☆☆",
       "related_keywords": [
+        "배경",
+        "목적",
+        "개요"
+      ]
+    },
+    "problem": {
+      "term": "problem",
+      "korean_full": "문제",
+      "english_full": "problem",
+      "definition": "해결이 필요하거나 개선이 요구되는 상황 또는 이슈를 의미합니다.",
+      "easy_meaning": "지금 우리가 겪고 있거나 앞으로 겪을 수도 있는 어려움이나 해결해야 할 과제 같은 거야.",
+      "analogy": "길을 가는데 갑자기 길이 막혀서 어떻게 갈지 고민해야 하는 상황.",
+      "difficulty": "★☆☆☆☆",
+      "related_keywords": [
+        "이슈",
+        "과제",
+        "어려움"
+      ]
+    },
+    "purpose": {
+      "term": "purpose",
+      "korean_full": "목적",
+      "english_full": "purpose",
+      "definition": "어떤 행동이나 활동을 통해 달성하고자 하는 목표나 의도를 의미합니다.",
+      "easy_meaning": "우리가 이걸 하려는 이유, 즉 최종적으로 이루고 싶은 결과야.",
+      "analogy": "목적지에 도착하기 위해 여행을 떠나는 것처럼, 무언가를 이루기 위한 최종 목표.",
+      "difficulty": "★☆☆☆☆",
+      "related_keywords": [
+        "목표",
+        "의도",
+        "방향"
+      ]
+    },
+    "targetAudience": {
+      "term": "targetAudience",
+      "korean_full": "대상",
+      "english_full": "targetAudience",
+      "definition": "특정 콘텐츠, 제품, 서비스 등이 주로 전달되거나 활용될 대상 집단을 의미합니다. 누구를 위해 만들어졌는지를 명확히 합니다.",
+      "easy_meaning": "이 내용은 누구를 위한 건지, 누가 이걸 보면 제일 도움이 되는지 알려주는 거야.",
+      "analogy": "어린이 그림책은 '어린이'가 대상이고, 전문 서적은 '전문가'가 대상인 것처럼 말이야.",
+      "difficulty": "★☆☆☆☆",
+      "related_keywords": [
+        "주요 사용자",
+        "독자층",
+        "수혜자"
+      ]
+    },
+    "methodsAndProcess": {
+      "term": "methodsAndProcess",
+      "korean_full": "방법 및 과정",
+      "english_full": "methodsAndProcess",
+      "definition": "문제 해결이나 목표 달성을 위해 사용된 구체적인 접근 방식, 절차, 방법론 등을 설명하는 부분입니다. 어떻게 연구를 진행했는지 상세히 기술합니다.",
+      "easy_meaning": "문제를 해결하기 위해 어떤 방법들을 사용했고, 어떤 순서로 일을 진행했는지 자세히 설명하는 부분이야.",
+      "analogy": "요리 레시피처럼, 어떤 재료를 쓰고 어떤 순서로 조리해야 하는지 알려주는 거지.",
+      "difficulty": "★☆☆☆☆",
+      "related_keywords": [
+        "접근 방식",
+        "절차",
+        "연구 방법"
+      ]
+    },
+    "backgroundResearchAndDataCollection": {
+      "term": "backgroundResearchAndDataCollection",
+      "korean_full": "배경 조사 및 데이터 수집",
+      "english_full": "backgroundResearchAndDataCollection",
+      "definition": "연구 대상에 대한 사전 조사와 분석에 필요한 데이터를 수집하는 단계를 의미합니다. 문제의 이해도를 높이고 분석의 기반을 마련합니다.",
+      "easy_meaning": "문제를 더 잘 이해하기 위해 미리 알아보고, 분석에 필요한 자료들을 모으는 과정이야.",
+      "analogy": "새로운 요리를 만들기 전에, 어떤 재료가 필요한지 알아보고 마트에서 사 오는 것과 같아.",
+      "difficulty": "★★☆☆☆",
+      "related_keywords": [
+        "사전 조사",
+        "데이터 수집",
+        "정보 수집"
+      ]
+    },
+    "python": {
+      "term": "python",
+      "korean_full": "파이썬",
+      "english_full": "python",
+      "definition": "가독성이 높고 배우기 쉬운 범용 프로그래밍 언어로, 웹 개발, 데이터 과학, 인공지능 등 다양한 분야에서 활용됩니다.",
+      "easy_meaning": "컴퓨터한테 일을 시킬 때 사용하는 언어인데, 아주 배우기 쉽고 여러 가지 일을 할 수 있어.",
+      "analogy": "외국어를 배우는 것처럼, 컴퓨터와 대화하기 위한 특별한 언어라고 생각하면 돼.",
+      "difficulty": "★★☆☆☆",
+      "related_keywords": [
+        "프로그래밍 언어",
+        "개발",
+        "범용"
+      ]
+    },
+    "approachMethods": {
+      "term": "approachMethods",
+      "korean_full": "접근 방법",
+      "english_full": "approachMethods",
+      "definition": "문제 해결을 위해 취하는 전략이나 기법들을 총칭합니다. 연구의 특성에 따라 다양한 방법을 적용할 수 있습니다.",
+      "easy_meaning": "어떤 문제를 풀기 위해 사용하는 다양한 전략이나 기술들을 말해.",
+      "analogy": "퍼즐을 맞출 때, 테두리부터 맞추는 방법, 비슷한 색깔끼리 모으는 방법 등 여러 가지 접근 방식이 있는 것처럼 말이야.",
+      "difficulty": "★★☆☆☆",
+      "related_keywords": [
+        "전략",
+        "방법론",
+        "기법"
+      ]
+    },
+    "process": {
+      "term": "process",
+      "korean_full": "프로세스",
+      "english_full": "process",
+      "definition": "컴퓨터 운영체제에서 실행 중인 프로그램의 인스턴스를 나타내며, 독립적인 실행 환경을 가집니다.",
+      "easy_meaning": "컴퓨터에서 돌아가는 하나의 독립적인 작업 단위 같은 거야. 다른 작업에 영향을 주지 않아.",
+      "analogy": "각각의 요리사가 자기만의 독립된 주방에서 요리를 하는 것처럼, 컴퓨터에서도 여러 작업들이 따로따로 돌아가는 거지.",
+      "difficulty": "★★☆☆☆",
+      "related_keywords": [
+        "실행",
+        "작업",
+        "환경"
+      ]
+    },
+    "thread": {
+      "term": "thread",
+      "korean_full": "스레드",
+      "english_full": "thread",
+      "definition": "프로세스 내에서 실행되는 가장 작은 작업 단위로, 여러 스레드가 하나의 프로세스 내에서 동시에 실행될 수 있습니다.",
+      "easy_meaning": "하나의 프로그램 안에서 여러 가지 일을 동시에 할 수 있게 해주는 쪼개진 작업 단위야.",
+      "analogy": "하나의 식당(프로세스) 안에서 여러 명의 서버(스레드)가 동시에 손님들의 주문을 받고 음식을 나르는 것과 같아.",
+      "difficulty": "★★★☆☆",
+      "related_keywords": [
+        "병렬 처리",
+        "동시성",
+        "프로세스"
+      ]
+    },
+    "analysisFlow": {
+      "term": "analysisFlow",
+      "korean_full": "분석 및 해결 프로세스",
+      "english_full": "analysisFlow",
+      "definition": "문제 분석부터 해결까지 이어지는 일련의 단계와 흐름을 설명합니다. 각 단계별로 수행되는 작업과 그 순서를 명확히 합니다.",
+      "easy_meaning": "문제를 파악하고, 해결책을 찾고, 실행에 옮기는 과정의 순서와 방법을 보여주는 거야.",
+      "analogy": "길을 잃었을 때, 현재 위치를 파악하고, 지도를 보고 목적지를 정한 후, 길을 따라가는 일련의 흐름과 같아.",
+      "difficulty": "★★☆☆☆",
+      "related_keywords": [
+        "분석 절차",
+        "문제 해결 과정",
+        "흐름도"
+      ]
+    },
+    "parquet": {
+      "term": "parquet",
+      "korean_full": "파케이",
+      "english_full": "parquet",
+      "definition": "컬럼 기반의 데이터 저장 형식으로, 대규모 데이터셋의 효율적인 압축 및 빠른 읽기 성능을 제공합니다.",
+      "easy_meaning": "데이터를 저장하는 방식인데, 데이터를 찾고 읽는 속도를 훨씬 빠르게 해주는 방식이야.",
+      "analogy": "책을 글자별로 낱장으로 저장하는 게 아니라, 단어 단위로 묶어서 저장해서 필요한 단어를 더 빨리 찾을 수 있게 하는 방식.",
+      "difficulty": "★★☆☆☆",
+      "related_keywords": [
+        "데이터 저장",
+        "컬럼 기반",
+        "압축"
+      ]
+    },
+    "multiprocessing": {
+      "term": "multiprocessing",
+      "korean_full": "멀티프로세싱",
+      "english_full": "multiprocessing",
+      "definition": "여러 개의 프로세스를 동시에 실행하여 병렬 처리를 수행하는 기술로, CPU 활용도를 높이고 처리 속도를 향상시킵니다.",
+      "easy_meaning": "여러 개의 컴퓨터 프로그램을 동시에 실행해서 일을 더 빨리 끝내는 기술이야.",
+      "analogy": "혼자서 집안일을 하는 것보다, 가족 구성원 각자가 다른 집안일을 동시에 해서 집안일을 더 빨리 끝내는 것과 같아.",
+      "difficulty": "★★★☆☆",
+      "related_keywords": [
+        "병렬 처리",
+        "프로세스",
+        "동시성"
+      ]
+    },
+    "dataGeneration": {
+      "term": "dataGeneration",
+      "korean_full": "데이터 생성",
+      "english_full": "dataGeneration",
+      "definition": "분석이나 테스트를 위해 필요한 데이터를 인위적으로 만들어내는 과정을 의미합니다. 실제 데이터를 사용하기 어렵거나, 특정 조건의 데이터를 만들어야 할 때 사용됩니다.",
+      "easy_meaning": "분석이나 실험을 할 때 필요한 데이터를 직접 만들어내는 것을 말해.",
+      "analogy": "실험을 위해 가짜로 식물을 키우거나, 시뮬레이션을 위해 가상의 환경을 만드는 것과 같아.",
+      "difficulty": "★★☆☆☆",
+      "related_keywords": [
+        "데이터 생성",
+        "테스트 데이터",
+        "시뮬레이션"
+      ]
+    },
+    "operationExecution": {
+      "term": "operationExecution",
+      "korean_full": "연산 실행",
+      "english_full": "operationExecution",
+      "definition": "프로그래밍에서 데이터에 대해 특정 작업을 수행하는 명령을 실행하는 과정을 의미합니다. 예를 들어, 덧셈, 뺄셈, 데이터 필터링 등이 포함됩니다.",
+      "easy_meaning": "데이터에 대해서 특정 계산이나 작업을 실제로 수행하는 것을 말해.",
+      "analogy": "계산기에서 1 더하기 2를 눌러서 3이 나오는 것처럼, 어떤 명령을 실행해서 결과를 얻는 거야.",
+      "difficulty": "★☆☆☆☆",
+      "related_keywords": [
+        "계산",
+        "처리",
+        "실행"
+      ]
+    },
+    "timeAndMemoryMeasurement": {
+      "term": "timeAndMemoryMeasurement",
+      "korean_full": "시간·메모리 측정",
+      "english_full": "timeAndMemoryMeasurement",
+      "definition": "프로그램이 특정 작업을 수행하는 데 걸리는 시간과 사용하는 메모리 양을 측정하는 과정입니다. 성능 평가의 핵심 지표로 활용됩니다.",
+      "easy_meaning": "프로그램이 일을 하는 데 얼마나 시간이 걸리고, 얼마나 많은 메모리를 사용하는지 재는 거야. 성능을 알아볼 때 중요해.",
+      "analogy": "자동차 경주에서 누가 더 빨리 결승선에 도착하는지, 그리고 얼마나 많은 연료를 썼는지 재는 것과 비슷해.",
+      "difficulty": "★★☆☆☆",
+      "related_keywords": [
+        "성능 측정",
+        "효율성",
+        "벤치마크"
+      ]
+    },
+    "repeatedExecutionAveraging": {
+      "term": "repeatedExecutionAveraging",
+      "korean_full": "반복 실행 평균화",
+      "english_full": "repeatedExecutionAveraging",
+      "definition": "동일한 작업을 여러 번 실행하여 그 결과를 평균내는 방식입니다. 측정 오차를 줄이고 결과의 신뢰도를 높이기 위해 사용됩니다.",
+      "easy_meaning": "똑같은 작업을 여러 번 해보고, 그 결과들의 평균을 내는 거야. 이렇게 하면 좀 더 정확한 결과를 얻을 수 있어.",
+      "analogy": "여러 번 동전을 던져서 앞면이 나올 확률을 구하는 것처럼, 여러 번 시도해서 평균값을 내는 거지.",
+      "difficulty": "★★☆☆☆",
+      "related_keywords": [
+        "정확도",
+        "신뢰도",
+        "통계"
+      ]
+    },
+    "results": {
+      "term": "results",
+      "korean_full": "결과",
+      "english_full": "results",
+      "definition": "실험, 분석 또는 조사 후에 얻어진 데이터, 요약 및 결론을 포함하는 부분입니다.",
+      "easy_meaning": "우리가 테스트하거나 분석한 것을 바탕으로 얻어진 최종적인 내용들이야.",
+      "analogy": "과학 실험을 하고 나서, 실험을 통해 얻어진 측정값과 결론을 정리해서 발표하는 것과 같아.",
+      "difficulty": "★☆☆☆☆",
+      "related_keywords": [
+        "요약",
+        "결론",
+        "데이터"
+      ]
+    },
+    "summaryOfAnalysisResults": {
+      "term": "summaryOfAnalysisResults",
+      "korean_full": "분석 결과 요약",
+      "english_full": "summaryOfAnalysisResults",
+      "definition": "수행된 분석의 주요 결과들을 간략하게 정리하여 제시합니다. 핵심적인 발견 사항들을 빠르게 파악할 수 있도록 돕습니다.",
+      "easy_meaning": "분석을 통해서 알아낸 가장 중요한 내용들을 짧게 모아서 보여주는 거야.",
+      "analogy": "긴 보고서의 맨 앞에 있는 'Executive Summary'처럼, 중요한 내용을 먼저 빠르게 볼 수 있게 해줘.",
+      "difficulty": "★☆☆☆☆",
+      "related_keywords": [
+        "핵심 요약",
+        "주요 발견",
+        "결론"
+      ]
+    },
+    "memoryUsage": {
+      "term": "memory usage",
+      "korean_full": "메모리 사용량",
+      "english_full": "memoryUsage",
+      "definition": "The amount of main memory (RAM) that is currently being used by a running program or the system. It is a key metric for assessing resource consumption and potential performance bottlenecks.",
+      "easy_meaning": "프로그램이나 컴퓨터가 현재 사용하고 있는 RAM(메모리)의 양을 의미합니다.",
+      "analogy": "책상 위에 펼쳐놓은 책의 수와 같습니다. 책상 공간을 많이 차지할수록 더 많은 책(정보)을 한 번에 보고 있지만, 책상이 좁다면 불편할 수 있습니다.",
+      "difficulty": "★★☆☆☆",
+      "related_keywords": [
+        "RAM",
+        "resource management",
+        "performance"
+      ]
+    },
+    "speed": {
+      "term": "speed",
+      "korean_full": "속도",
+      "english_full": "speed",
+      "definition": "어떤 작업이 얼마나 빠르게 완료되는지를 나타내는 지표입니다. 데이터 처리 분야에서는 연산 속도가 중요하게 평가됩니다.",
+      "easy_meaning": "어떤 일이 얼마나 빨리 끝나는지를 나타내는 거야. 데이터를 처리할 때는 이 속도가 정말 중요해.",
+      "analogy": "자동차 경주에서 누가 결승선을 더 빨리 통과하는지, 속도가 빠를수록 좋은 거잖아.",
+      "difficulty": "★☆☆☆☆",
+      "related_keywords": [
+        "성능",
+        "처리 속도",
+        "응답 시간"
+      ]
+    },
+    "threadsConstraint": {
+      "term": "threadsConstraint",
+      "korean_full": "threads 제약",
+      "english_full": "threadsConstraint",
+      "definition": "프로그램이 동시에 사용할 수 있는 스레드의 수를 제한하는 것을 의미합니다. 성능 비교를 위해 의도적으로 제약할 수 있습니다.",
+      "easy_meaning": "프로그램이 동시에 쓸 수 있는 일꾼(스레드)의 수를 일부러 줄여놓는 것을 말해. 공정하게 비교하려고 할 때 이렇게 해.",
+      "analogy": "한 명의 요리사만 쓸 수 있게 제한해 놓으면, 여러 명의 요리사를 쓸 때보다 시간이 더 걸리겠지?",
+      "difficulty": "★★★☆☆",
+      "related_keywords": [
+        "스레드 제한",
+        "병렬성",
+        "성능 비교"
+      ]
+    },
+    "insightsAndAction": {
+      "term": "insightsAndAction",
+      "korean_full": "인사이트 및 액션",
+      "english_full": "insightsAndAction",
+      "definition": "분석 결과를 통해 얻은 중요한 통찰력과 이를 바탕으로 실행할 구체적인 계획을 제시하는 부분입니다. 이론적인 결과에 대한 실제 적용 방안을 담습니다.",
+      "easy_meaning": "분석해서 알게 된 중요한 점(인사이트)과, 그걸 바탕으로 앞으로 뭘 할 건지(액션) 알려주는 부분이야.",
+      "analogy": "건강 검진 결과에서 '당 수치가 높다'는 인사이트를 얻고, '앞으로 설탕 섭취를 줄이겠다'는 액션을 취하는 것과 같아.",
+      "difficulty": "★☆☆☆☆",
+      "related_keywords": [
+        "통찰",
+        "실행 계획",
+        "전략"
+      ]
+    },
+    "insight": {
+      "term": "insight",
+      "korean_full": "인사이트",
+      "english_full": "insight",
+      "definition": "상황이나 데이터를 깊이 이해함으로써 얻어지는 통찰력 또는 새로운 발견을 의미합니다.",
+      "easy_meaning": "데이터를 보고 나서 새롭게 알게 된 중요한 사실이나 깨달음 같은 거야.",
+      "analogy": "퍼즐 조각들을 다 맞추고 나서 비로소 그림 전체의 의미를 파악하게 되는 것처럼, 데이터 속에서 숨겨진 의미를 발견하는 것.",
+      "difficulty": "★★☆☆☆",
+      "related_keywords": [
+        "통찰",
+        "발견",
+        "이해"
+      ]
+    },
+    "actionPlan": {
+      "term": "actionPlan",
+      "korean_full": "실행 방안",
+      "english_full": "actionPlan",
+      "definition": "목표 달성이나 문제 해결을 위해 구체적으로 취해야 할 행동들의 계획입니다. 누가, 무엇을, 언제, 어떻게 할 것인지를 명확히 합니다.",
+      "easy_meaning": "우리가 알아낸 것을 바탕으로, 앞으로 실제로 무엇을 할 것인지 구체적으로 정해놓은 계획이야.",
+      "analogy": "목표를 정했다면, 그 목표를 이루기 위해 '내일 아침 6시에 일어나서 운동하기'와 같이 세우는 구체적인 계획을 말해.",
+      "difficulty": "★☆☆☆☆",
+      "related_keywords": [
+        "계획",
+        "실행 계획",
+        "행동 지침"
+      ]
+    },
+    "keyTakeaway": {
+      "term": "keyTakeaway",
+      "korean_full": "한 줄 결론",
+      "english_full": "keyTakeaway",
+      "definition": "가장 중요하게 기억해야 할 핵심 메시지나 요점을 한 문장으로 정리한 것입니다. 글의 전체 내용을 함축적으로 담습니다.",
+      "easy_meaning": "이 글에서 가장 중요하게 기억해야 할 한 가지 핵심 내용이야.",
+      "analogy": "강연을 다 듣고 나서, '오늘 배운 가장 중요한 것은 이것이다!'라고 요약하는 내용과 같아.",
+      "difficulty": "★☆☆☆☆",
+      "related_keywords": [
+        "핵심 메시지",
+        "요점",
+        "결론"
+      ]
+    },
+    "nextStep": {
+      "term": "nextStep",
+      "korean_full": "다음 스텝",
+      "english_full": "nextStep",
+      "definition": "현재 단계 이후에 취할 예정인 다음 행동이나 연구 계획을 의미합니다. 지속적인 발전과 탐구를 위한 방향을 제시합니다.",
+      "easy_meaning": "지금까지 이야기한 것 다음으로, 앞으로 할 계획들이나 다음에 시도할 것들을 말해.",
+      "analogy": "하나의 과제를 마친 후, '다음에는 어떤 과제를 할까?' 하고 정하는 것과 같아.",
+      "difficulty": "★☆☆☆☆",
+      "related_keywords": [
+        "향후 계획",
+        "진행 계획",
+        "후속 조치"
+      ]
+    },
+    "atlassian": {
+      "term": "Atlassian",
+      "korean_full": "아틀라시안",
+      "english_full": "atlassian",
+      "definition": "A company that provides software development and collaboration tools for teams.",
+      "easy_meaning": "팀이 함께 소프트웨어를 개발하고 협업하는 데 필요한 도구를 만드는 회사 이름이야.",
+      "analogy": "학교에서 팀별 프로젝트를 할 때, 모두가 함께 정보를 공유하고 각자의 역할을 관리할 수 있도록 도와주는 공유 폴더나 프로젝트 관리 앱과 같아.",
+      "difficulty": "★☆☆☆☆",
+      "related_keywords": [
+        "confluence",
+        "jira",
+        "collaboration",
+        "software development"
+      ]
+    },
+    "mcp": {
+      "term": "MCP",
+      "korean_full": "마스터 컨트롤 프로그램",
+      "english_full": "masterControlProgram",
+      "definition": "A system or program designed to manage and control multiple processes or components.",
+      "easy_meaning": "여러 가지 기능이나 프로그램을 하나로 묶어서 똑똑하게 관리해주는 시스템이야.",
+      "analogy": "항공기 조종석에 있는 종합 제어판처럼, 비행기의 여러 기능(엔진, 항법, 통신 등)을 조종사가 한 곳에서 파악하고 제어할 수 있게 해주는 것과 비슷해.",
+      "difficulty": "★★★☆☆",
+      "related_keywords": [
+        "integration",
+        "management",
+        "automation",
+        "orchestration"
+      ]
+    },
+    "confluence": {
+      "term": "Confluence",
+      "korean_full": "컨플루언스",
+      "english_full": "confluence",
+      "definition": "A team collaboration software used for creating, sharing, and discussing information and documents.",
+      "easy_meaning": "팀원들이 함께 문서를 만들고, 정보를 공유하며, 토론할 수 있게 도와주는 도구야.",
+      "analogy": "회사나 학교에서 팀 프로젝트를 할 때, 아이디어를 정리하고, 조사한 내용을 올리고, 서로 피드백을 주고받는 온라인 게시판이자 문서 창고 같은 거야.",
+      "difficulty": "★☆☆☆☆",
+      "related_keywords": [
+        "documentation",
+        "collaboration",
+        "knowledge management",
+        "atlassian"
+      ]
+    },
+    "jira": {
+      "term": "Jira",
+      "korean_full": "지라",
+      "english_full": "jira",
+      "definition": "A software application used for issue tracking and project management, particularly for software development teams.",
+      "easy_meaning": "프로젝트에서 해야 할 일(이슈)을 관리하고, 누가 무엇을 언제까지 해야 하는지 계획하는 데 쓰이는 도구야.",
+      "analogy": "코딩 프로젝트를 할 때, '버그 수정', '새로운 기능 추가' 같은 할 일 목록을 만들고, 누가 맡아서 하고 있는지, 지금 어디까지 진행되었는지 기록하는 스프레드시트나 관리표와 같아.",
+      "difficulty": "★☆☆☆☆",
+      "related_keywords": [
+        "project management",
+        "issue tracking",
+        "agile development",
+        "atlassian"
+      ]
+    },
+    "tutorial": {
+      "term": "tutorial",
+      "korean_full": "튜토리얼",
+      "english_full": "tutorial",
+      "definition": "A guided step-by-step instruction or demonstration on how to use a particular software, tool, or process.",
+      "easy_meaning": "어떤 것을 사용하는 방법을 배우기 위해 따라 할 수 있도록 단계별로 자세하게 설명해 놓은 안내서나 영상이야.",
+      "analogy": "새로운 게임을 처음 할 때, 게임 속에서 '이렇게 움직이세요', '저걸 누르세요' 하고 알려주는 첫 번째 학습 과정과 같아.",
+      "difficulty": "★☆☆☆☆",
+      "related_keywords": [
+        "guide",
+        "instruction",
+        "how-to",
+        "learning"
+      ]
+    },
+    "llm": {
+      "term": "LLM",
+      "korean_full": "거대 언어 모델",
+      "english_full": "largeLanguageModel",
+      "definition": "A type of artificial intelligence model that can understand, generate, and process human language.",
+      "easy_meaning": "사람처럼 글을 읽고 쓰고 이해하는 능력을 가진 아주 큰 인공지능 모델이야.",
+      "analogy": "책을 아주 많이 읽어서 어떤 질문에도 사람이 대답하듯이 답을 할 수 있는 똑똑한 챗봇이라고 생각하면 돼.",
+      "difficulty": "★★★★☆",
+      "related_keywords": [
+        "artificial intelligence",
+        "natural language processing",
+        "generative AI",
+        "ai"
+      ]
+    },
+    "gpt": {
+      "term": "GPT",
+      "korean_full": "생성형 사전 학습 모델",
+      "english_full": "generativePretrainedTransformer",
+      "definition": "A type of large language model developed by OpenAI, known for its ability to generate human-like text and perform various language tasks.",
+      "easy_meaning": "글을 잘 만들고 다양한 언어 관련 작업을 할 수 있는 인공지능 모델 이름이야.",
+      "analogy": "매우 똑똑한 작가나 글쓰기 도우미인데, 마치 수많은 책을 읽고 나서 어떤 주제로든 글을 써낼 수 있는 것과 같아.",
+      "difficulty": "★★★★☆",
+      "related_keywords": [
+        "llm",
+        "openai",
+        "natural language processing",
+        "text generation"
+      ]
+    },
+    "gemini": {
+      "term": "Gemini",
+      "korean_full": "제미나이",
+      "english_full": "gemini",
+      "definition": "Google에서 개발한 멀티모달(텍스트, 이미지, 오디오, 비디오 등 다양한 정보 처리) 인공지능 모델입니다.",
+      "easy_meaning": "글뿐만 아니라 그림이나 소리까지 이해하고 다룰 수 있는 더 똑똑한 인공지능이에요.",
+      "analogy": "단순히 글만 읽는 친구가 아니라, 그림책을 보고 내용을 설명해주거나 노래를 듣고 감상을 말해주는 친구 같아요.",
+      "difficulty": "★★★★☆",
+      "related_keywords": [
+        "인공지능",
+        "멀티모달 AI",
+        "Google AI"
+      ]
+    },
+    "de": {
+      "term": "DE",
+      "korean_full": "데이터 엔지니어",
+      "english_full": "dataEngineer",
+      "definition": "A professional who designs, builds, and maintains the systems and infrastructure for data collection, storage, and processing.",
+      "easy_meaning": "데이터를 모으고, 저장하고, 사람들이 잘 쓸 수 있도록 관리하는 일을 하는 사람이야.",
+      "analogy": "도시의 수도 시스템을 설계하고 관리하는 사람처럼, 데이터를 효율적으로 공급하고 관리해서 필요한 곳에서 쓸 수 있도록 만드는 전문가야.",
+      "difficulty": "★★★☆☆",
+      "related_keywords": [
+        "data",
+        "big data",
+        "etl",
+        "data pipeline"
+      ]
+    },
+    "github": {
+      "term": "Github",
+      "korean_full": "깃허브",
+      "english_full": "github",
+      "definition": "소프트웨어 개발 프로젝트의 소스 코드를 관리하고 공유하는 데 사용되는 웹 기반 플랫폼입니다.",
+      "easy_meaning": "개발자들이 만든 프로그램 코드를 모아두고 함께 작업할 수 있는 온라인 저장소예요.",
+      "analogy": "많은 사람들이 함께 그림을 그리거나 글을 쓸 때, 각자의 작품을 안전하게 보관하고 서로의 작품을 참고할 수 있는 큰 공용 작업실 같아요.",
+      "difficulty": "★★☆☆☆",
+      "related_keywords": [
+        "버전 관리",
+        "협업 도구",
+        "소스 코드"
+      ]
+    },
+    "api": {
+      "term": "API",
+      "korean_full": "애플리케이션 프로그래밍 인터페이스",
+      "english_full": "api",
+      "definition": "Application Programming Interface의 약자로, 소프트웨어 프로그램이 서로 상호작용할 수 있도록 하는 규칙과 사양의 집합입니다. 이를 통해 다른 서비스나 프로그램의 기능을 자신의 프로그램에서 사용할 수 있게 됩니다.",
+      "easy_meaning": "서로 다른 프로그램들이 대화하고 정보를 주고받을 수 있도록 약속해놓은 창구예요.",
+      "analogy": "식당에서 메뉴판을 보고 음식을 주문하는 것처럼, API는 어떤 기능을 제공하는 서비스에 요청하고 결과를 받는 방법을 알려주는 메뉴판과 같아요.",
+      "difficulty": "★☆☆☆☆",
+      "related_keywords": [
+        "Interface",
+        "Software",
+        "Integration",
+        "Protocol"
+      ]
+    },
+    "token": {
+      "term": "Token",
+      "korean_full": "토큰",
+      "english_full": "token",
+      "definition": "A piece of data that represents an authorization to access a resource or perform an action, often used for authentication and security.",
+      "easy_meaning": "특정 서비스에 접근하거나 특정 행동을 할 수 있다는 것을 증명하는 일종의 '열쇠' 같은 거야.",
+      "analogy": "호텔 방에 들어가기 위해 프런트에서 받는 카드 키와 같아. 이 카드 키가 있어야만 내 방에 들어갈 수 있는 것처럼, API 토큰이 있어야만 특정 시스템에 접근할 수 있어.",
+      "difficulty": "★★☆☆☆",
+      "related_keywords": [
+        "authentication",
+        "security",
+        "api key",
+        "authorization"
+      ]
+    },
+    "docker": {
+      "term": "Docker",
+      "korean_full": "도커",
+      "english_full": "docker",
+      "definition": "A platform that uses operating-system-level virtualization to deliver software in packages called containers.",
+      "easy_meaning": "프로그램을 실행하는 데 필요한 모든 것을 하나의 '컨테이너'라는 상자에 담아서, 어떤 컴퓨터에서든 똑같이 실행되도록 도와주는 기술이야.",
+      "analogy": "이사를 갈 때, 필요한 물건을 모두 상자에 담아 옮기면 어느 곳에서도 동일한 상태로 짐을 풀고 사용할 수 있는 것처럼, 도커는 프로그램과 그 환경을 상자에 담아 어디서든 똑같이 실행하게 해줘.",
+      "difficulty": "★★☆☆☆",
+      "related_keywords": [
+        "containerization",
+        "virtualization",
+        "deployment",
+        "devops"
+      ]
+    },
+    "image": {
+      "term": "Image",
+      "korean_full": "이미지",
+      "english_full": "image",
+      "definition": "A read-only template that contains a set of instructions for creating a container.",
+      "easy_meaning": "도커 컨테이너를 만들기 위한 '설계도' 또는 '틀' 같은 거야. 이 안에 프로그램이 실행되기 위한 모든 내용이 담겨 있어.",
+      "analogy": "사진을 찍어 놓은 원본 파일과 같아. 이 원본 파일(이미지)을 가지고 똑같은 사진(컨테이너)을 여러 장 만들 수 있는 것처럼, 도커 이미지를 이용해 똑같은 환경의 컨테이너를 만들 수 있어.",
+      "difficulty": "★★☆☆☆",
+      "related_keywords": [
+        "docker",
+        "container",
+        "template",
+        "build"
+      ]
+    },
+    "server": {
+      "term": "Server",
+      "korean_full": "서버",
+      "english_full": "server",
+      "definition": "A computer or system that provides resources, data, services, or programs to other computers, known as clients, over a network.",
+      "easy_meaning": "다른 컴퓨터(클라이언트)에게 필요한 정보나 서비스를 제공해주는 컴퓨터야.",
+      "analogy": "카페에서 주문을 받아서 음식을 만들어주는 바리스타와 같아. 손님(클라이언트)이 주문하면(요청하면) 바리스타(서버)가 음식을 만들어서(서비스를 제공해서) 준단다.",
+      "difficulty": "★☆☆☆☆",
+      "related_keywords": [
+        "client",
+        "network",
+        "service",
+        "computing"
+      ]
+    },
+    "env": {
+      "term": "Env",
+      "korean_full": "환경 변수",
+      "english_full": "environmentVariable",
+      "definition": "A variable whose value is set outside the program, typically through the operating system environment, and is used to configure program behavior.",
+      "easy_meaning": "프로그램이 실행될 때 필요한 설정값들을 저장해 두는 변수인데, 프로그램 밖에 있어.",
+      "analogy": "컴퓨터 바탕화면에 '배경화면'을 설정하는 것처럼, 프로그램 실행 전에 미리 '이런 설정으로 실행해 줘'라고 알려주는 값이야. 예를 들어, 로그인할 때 필요한 아이디나 비밀번호 같은 것을 숨겨서 저장해둘 수 있어.",
+      "difficulty": "★★☆☆☆",
+      "related_keywords": [
+        "configuration",
+        "variable",
+        "settings",
+        "runtime"
+      ]
+    },
+    "ide": {
+      "term": "IDE",
+      "korean_full": "통합 개발 환경",
+      "english_full": "integratedDevelopmentEnvironment",
+      "definition": "A software application that provides comprehensive facilities to computer programmers for software development.",
+      "easy_meaning": "프로그램을 만드는 데 필요한 여러 가지 도구(코드 작성, 수정, 실행, 오류 찾기 등)가 한 곳에 모여 있는 프로그램이야.",
+      "analogy": "글을 쓰기 위해 워드프로세서, 그림을 그리기 위해 그래픽 편집기, 음악을 만들기 위해 작곡 프로그램을 따로 쓰는 대신, 이 모든 기능이 하나의 프로그램에 다 들어있는 만능 창작 도구와 같아.",
+      "difficulty": "★★☆☆☆",
+      "related_keywords": [
+        "programming",
+        "software development",
+        "editor",
+        "debugger"
+      ]
+    },
+    "cursor": {
+      "term": "Cursor",
+      "korean_full": "커서",
+      "english_full": "cursor",
+      "definition": "An AI-powered code editor that integrates advanced features for code completion, generation, and debugging.",
+      "easy_meaning": "인공지능 기능이 강화되어 코드를 더 똑똑하게 작성하고, 오류를 찾아주며, 자동으로 코드를 만들어주는 개발 도구야.",
+      "analogy": "일반적인 글쓰기 도구(워드프로세서)에 글쓰기 조언을 해주고, 초안을 대신 써주는 AI 비서가 붙어 있는 것과 같아. 개발자들이 코딩을 더 빠르고 효율적으로 할 수 있게 도와줘.",
+      "difficulty": "★★☆☆☆",
+      "related_keywords": [
+        "ide",
+        "ai",
+        "code editor",
+        "developer tools"
+      ]
+    },
+    "prompt": {
+      "term": "Prompt",
+      "korean_full": "프롬프트",
+      "english_full": "prompt",
+      "definition": "An input given to an AI model to elicit a specific response or output.",
+      "easy_meaning": "인공지능에게 무엇을 해달라고 요청하는 말이나 질문이야.",
+      "analogy": "챗봇에게 '오늘 날씨 알려줘'라고 말하는 것처럼, AI에게 특정 작업을 시키기 위해 주는 지시사항이나 질문이라고 생각하면 돼.",
+      "difficulty": "★☆☆☆☆",
+      "related_keywords": [
+        "llm",
+        "ai",
+        "input",
+        "instruction"
+      ]
+    },
+    "repo": {
+      "term": "Repo",
+      "korean_full": "저장소",
+      "english_full": "repository",
+      "definition": "A storage location where files and their revision history are kept, often used in version control systems like Git.",
+      "easy_meaning": "파일들과 그 파일들의 변경 이력을 모두 저장해 놓는 장소야. 코드 관리에서 아주 중요해.",
+      "analogy": "책을 보관하는 도서관 서가와 같아. 책(파일)들이 종류별로 잘 정리되어 있고, 누가 어떤 책을 언제 빌려가고 반납했는지 기록(변경 이력)도 남길 수 있어.",
+      "difficulty": "★★☆☆☆",
+      "related_keywords": [
+        "git",
+        "github",
+        "version control",
+        "storage"
+      ]
+    },
+    "rag": {
+      "term": "RAG",
+      "korean_full": "검색 증강 생성",
+      "english_full": "rag",
+      "definition": "Large Language Models (LLMs) can access external knowledge bases to provide more accurate and contextually relevant responses. RAG enhances LLMs by retrieving relevant documents from a corpus and incorporating them into the prompt before generation.",
+      "easy_meaning": "인공지능이 답변할 때, 외부에 있는 여러 정보를 찾아보고 그걸 참고해서 더 정확한 답을 만드는 기술이야.",
+      "analogy": "시험 볼 때, 교과서 내용을 다 외우지 않고 필요한 부분만 책을 찾아보고 답을 쓰는 것과 비슷해.",
+      "difficulty": "★★☆☆☆",
+      "related_keywords": [
+        "LLM",
+        "AI",
+        "정보 검색"
+      ]
+    },
+    "geminiApi": {
+      "term": "Gemini API",
+      "korean_full": "Gemini API",
+      "english_full": "geminiApi",
+      "definition": "Google에서 개발한 최신 멀티모달 AI 모델인 Gemini에 접근할 수 있도록 제공되는 인터페이스입니다. 이를 통해 개발자는 이미지, 텍스트, 음성 등 다양한 형태의 데이터를 이해하고 생성하는 AI 기능을 자신의 애플리케이션에 통합할 수 있습니다.",
+      "easy_meaning": "구글이 만든 똑똑한 AI를 내 컴퓨터 프로그램에서 쉽게 불러다 쓸 수 있게 해주는 문이에요.",
+      "analogy": "스마트폰에서 사진을 찍거나 글자를 입력하면 AI가 알아서 처리해주는 것처럼, Gemini API는 이런 AI 기능을 프로그램 안에 넣는 도구와 같아요.",
+      "difficulty": "★★☆☆☆",
+      "related_keywords": [
+        "Google",
+        "AI",
+        "API",
+        "Multimodal"
+      ]
+    },
+    "json": {
+      "term": "JSON",
+      "korean_full": "JavaScript Object Notation",
+      "english_full": "json",
+      "definition": "A lightweight data-interchange format that is easy for humans to read and write and easy for machines to parse and generate. It is based on a subset of the JavaScript Programming Language, Standard ECMA-262 3rd Edition - December 1999.",
+      "easy_meaning": "데이터를 컴퓨터끼리 주고받기 쉬운 형식으로, 사람이 읽고 쓰기도 편한 약속이야.",
+      "analogy": "메시지를 보낼 때, 받는 사람이 이해할 수 있도록 정해진 규칙대로 내용을 쓰는 것과 같아. 예를 들어 '이름:홍길동, 나이:20' 이렇게 쓰는 방식이지.",
+      "difficulty": "★☆☆☆☆",
+      "related_keywords": [
+        "데이터",
+        "포맷",
+        "개발"
+      ]
+    },
+    "directory": {
+      "term": "directory",
+      "korean_full": "디렉토리",
+      "english_full": "directory",
+      "definition": "A file system location that contains other files and directories. It is used to organize files in a hierarchical structure.",
+      "easy_meaning": "컴퓨터 안에서 파일들을 모아두는 '폴더'라고 생각하면 돼.",
+      "analogy": "책상 위에 있는 서랍이나 파일 캐비닛처럼, 비슷한 종류의 문서나 자료들을 종류별로 정리해두는 공간이야.",
+      "difficulty": "★☆☆☆☆",
+      "related_keywords": [
+        "폴더",
+        "파일 시스템",
+        "운영체제"
+      ]
+    },
+    "osModule": {
+      "term": "os module",
+      "korean_full": "os 모듈",
+      "english_full": "osModule",
+      "definition": "A built-in Python module that provides a way of using operating system dependent functionality such as reading or writing to the file system, interacting with environment variables, and managing processes.",
+      "easy_meaning": "파이썬에서 컴퓨터의 운영체제(윈도우, 맥 등)와 관련된 다양한 기능들을 사용할 수 있게 도와주는 도구 모음이야.",
+      "analogy": "운전자가 자동차의 핸들, 페달, 기어 등을 조작해서 차를 움직이는 것처럼, os 모듈은 파이썬 프로그램이 컴퓨터 운영체제의 기능을 사용하게 해줘.",
+      "difficulty": "★★☆☆☆",
+      "related_keywords": [
+        "Python",
+        "운영체제",
+        "파일 관리"
+      ]
+    },
+    "markdown": {
+      "term": "Markdown",
+      "korean_full": "마크다운",
+      "english_full": "markdown",
+      "definition": "쉬운 문법을 사용하여 텍스트를 구조화하고 서식을 지정하는 경량 마크업 언어입니다.",
+      "easy_meaning": "글에 제목, 목록, 굵은 글씨 같은 꾸미는 표시를 쉽게 할 수 있는 약속된 글쓰기 방식이에요.",
+      "analogy": "단순한 글씨에 볼드체나 기울임꼴을 넣는 것처럼, 글의 중요도나 순서를 표시하는 간단한 기호들이에요.",
+      "difficulty": "★☆☆☆☆",
+      "related_keywords": [
+        "마크업 언어",
+        "텍스트 서식",
+        "개발 문서"
+      ]
+    },
+    "automation": {
+      "term": "Automation",
+      "korean_full": "자동화",
+      "english_full": "automation",
+      "definition": "사람의 개입 없이 기계나 소프트웨어가 작업을 수행하도록 만드는 것.",
+      "easy_meaning": "사람이 직접 하지 않고 컴퓨터나 기계가 알아서 일을 처리하게 만드는 거야.",
+      "analogy": "빨래를 자동으로 해주는 세탁기.",
+      "difficulty": "★★☆☆☆",
+      "related_keywords": [
+        "로봇",
+        "시스템",
+        "효율"
+      ]
+    },
+    "itTerms": {
+      "term": "IT terms",
+      "korean_full": "IT 용어",
+      "english_full": "itTerms",
+      "definition": "Specialized vocabulary used in the field of Information Technology, encompassing hardware, software, networking, and digital concepts.",
+      "easy_meaning": "컴퓨터, 인터넷, 소프트웨어 등 IT 분야에서 사용하는 전문적인 단어들을 말해.",
+      "analogy": "의사가 환자에게 병을 설명할 때 전문적인 의학 용어를 사용하는 것처럼, IT 전문가들은 IT 분야의 개념을 설명할 때 IT 용어를 사용해.",
+      "difficulty": "★☆☆☆☆",
+      "related_keywords": [
+        "IT",
+        "용어",
+        "기술"
+      ]
+    },
+    "pythonOsModule": {
+      "term": "Python os module",
+      "korean_full": "파이썬 os 모듈",
+      "english_full": "pythonOsModule",
+      "definition": "A module in Python that provides functions for interacting with the operating system, such as file system operations and process management.",
+      "easy_meaning": "파이썬으로 컴퓨터의 파일이나 폴더를 다루거나, 다른 프로그램을 실행하는 등 컴퓨터의 기본적인 기능을 사용하기 위한 도구야.",
+      "analogy": "파이썬 프로그램이 컴퓨터와 소통할 수 있도록 도와주는 '통역사'나 '관리자' 역할을 해준다고 생각하면 돼.",
+      "difficulty": "★★☆☆☆",
+      "related_keywords": [
+        "Python",
+        "os module",
+        "파일 시스템"
+      ]
+    },
+    "benchmarkCode": {
+      "term": "benchmark code",
+      "korean_full": "벤치마크 코드",
+      "english_full": "benchmarkCode",
+      "definition": "A program or set of tests designed to measure the performance of a specific piece of hardware or software. It involves running standardized tasks and recording metrics like speed, memory usage, or power consumption.",
+      "easy_meaning": "컴퓨터 프로그램이나 장치가 얼마나 빠르고 효율적인지 알아보기 위해 특정 작업을 반복해서 실행하고 결과를 측정하는 코드입니다.",
+      "analogy": "시험을 보기 전에 모의고사를 보는 것과 같습니다. 모의고사를 통해 실제 시험에서 어떤 문제가 나올지, 얼마나 잘 준비되었는지 미리 파악할 수 있습니다.",
+      "difficulty": "★★☆☆☆",
+      "related_keywords": [
+        "performance",
+        "testing",
+        "measurement"
+      ]
+    },
+    "testing": {
+      "term": "testing",
+      "korean_full": "테스팅",
+      "english_full": "testing",
+      "definition": "The process of evaluating a system or its component(s) with the intent to find whether it satisfies the specified requirements or not. It can also be to determine that it does not satisfy one or more requirements.",
+      "easy_meaning": "만든 프로그램이나 기능이 원래 의도대로 잘 작동하는지, 오류는 없는지 확인하는 과정입니다.",
+      "analogy": "새로운 자동차가 안전 기준을 모두 통과했는지, 제대로 움직이는지 점검하는 자동차 검사 과정과 같습니다.",
+      "difficulty": "★☆☆☆☆",
+      "related_keywords": [
+        "quality assurance",
+        "verification",
+        "validation"
+      ]
+    },
+    "psutil": {
+      "term": "psutil",
+      "korean_full": "psutil",
+      "english_full": "psutil",
+      "definition": "A cross-platform library for retrieving information on running processes and system utilization (CPU, memory, disks, network, sensors) in Python. It simplifies the process of accessing underlying system information.",
+      "easy_meaning": "컴퓨터가 현재 얼마나 많은 일을 하고 있는지(CPU 사용량, 메모리 사용량 등)를 파이썬 코드로 쉽게 알아볼 수 있게 도와주는 도구입니다.",
+      "analogy": "컴퓨터의 건강 상태를 체크하는 의료 기기(혈압계, 체온계 등)와 같습니다. 컴퓨터의 전반적인 상태 정보를 알려줍니다.",
+      "difficulty": "★★★☆☆",
+      "related_keywords": [
+        "system monitoring",
+        "process information",
+        "performance metrics"
+      ]
+    },
+    "performanceComparison": {
+      "term": "performance comparison",
+      "korean_full": "성능 비교",
+      "english_full": "performanceComparison",
+      "definition": "The process of evaluating and contrasting the speed, efficiency, and resource utilization of different systems, algorithms, or code implementations under similar conditions.",
+      "easy_meaning": "여러 프로그램이나 코드 중 어떤 것이 더 빠르고 효율적으로 작동하는지 알아보는 과정입니다.",
+      "analogy": "서로 다른 두 자동차의 최고 속도, 연비, 가속력 등을 측정하여 어떤 차가 더 좋은 성능을 내는지 비교하는 것과 같습니다.",
+      "difficulty": "★★☆☆☆",
+      "related_keywords": [
+        "benchmark",
+        "efficiency",
+        "optimization"
+      ]
+    },
+    "openRouterApi": {
+      "term": "OpenRouter API",
+      "korean_full": "OpenRouter API",
+      "english_full": "openRouterApi",
+      "definition": "Multiple AI models can be accessed through a single API, offering a unified interface for various generative AI services.",
+      "easy_meaning": "여러 인공지능 모델을 하나의 창구로 사용할 수 있게 해주는 서비스예요.",
+      "analogy": "다양한 브랜드의 음료를 한 가게에서 살 수 있는 종합 음료 백화점과 같아요.",
+      "difficulty": "★★☆☆☆",
+      "related_keywords": [
+        "AI 모델",
+        "API",
+        "통합",
+        "프롬프트"
+      ]
+    },
+    "generativeAi": {
+      "term": "생성형 AI",
+      "korean_full": "생성형 인공지능",
+      "english_full": "generativeAi",
+      "definition": "기존 데이터를 학습하여 새롭고 독창적인 콘텐츠(텍스트, 이미지, 음악 등)를 만들어내는 인공지능의 한 종류입니다.",
+      "easy_meaning": "새로운 글이나 그림, 음악 등을 '만들어내는' 인공지능이야.",
+      "analogy": "화가가 상상해서 그림을 그리는 것처럼, AI가 새로운 것을 창조하는 거지.",
+      "difficulty": "★★★☆☆",
+      "related_keywords": [
+        "AI",
+        "콘텐츠 생성",
+        "딥러닝"
+      ]
+    },
+    "developer": {
+      "term": "Developer",
+      "korean_full": "개발자",
+      "english_full": "developer",
+      "definition": "A person who creates computer software, or applications. They write, test, and maintain the code that makes software work.",
+      "easy_meaning": "컴퓨터 프로그램이나 앱을 만드는 사람이에요.",
+      "analogy": "집을 짓는 건축가처럼, 프로그램을 설계하고 만들어내요.",
+      "difficulty": "★☆☆☆☆",
+      "related_keywords": [
+        "프로그래머",
+        "소프트웨어",
+        "코딩",
+        "IT"
+      ]
+    },
+    "rateLimit": {
+      "term": "Rate Limit",
+      "korean_full": "속도 제한",
+      "english_full": "rateLimit",
+      "definition": "A mechanism that controls the number of requests a user or application can make to a service within a certain time period.",
+      "easy_meaning": "특정 시간 동안 서비스에 보낼 수 있는 요청 횟수를 제한하는 규칙이에요.",
+      "analogy": "한 번에 너무 많은 사람이 몰리는 것을 막기 위해 입장 인원을 제한하는 것과 같아요.",
+      "difficulty": "★★★☆☆",
+      "related_keywords": [
+        "API",
+        "트래픽",
+        "보안",
+        "사용량"
+      ]
+    },
+    "multimodal": {
+      "term": "멀티모달",
+      "korean_full": "다중 양식",
+      "english_full": "multimodal",
+      "definition": "텍스트, 이미지, 오디오, 비디오 등 여러 종류의 데이터나 입력 형식을 동시에 처리하고 이해하는 능력을 의미합니다.",
+      "easy_meaning": "글자, 그림, 소리 등 여러 가지 정보를 한꺼번에 이해하고 처리할 수 있는 거야.",
+      "analogy": "사람이 눈으로 보고, 귀로 듣고, 코로 냄새를 맡는 것처럼 여러 감각을 동시에 활용하는 것과 비슷해.",
+      "difficulty": "★★★★☆",
+      "related_keywords": [
+        "AI",
+        "데이터",
+        "인공지능"
+      ]
+    },
+    "prototype": {
+      "term": "프로토타입",
+      "korean_full": "원형",
+      "english_full": "prototype",
+      "definition": "개발 초기 단계에서 제품이나 서비스의 기본적인 기능과 형식을 시각적으로 보여주기 위해 만드는 시제품입니다.",
+      "easy_meaning": "만들고 싶은 제품이나 서비스를 실제로 작동하는 모형으로 미리 만들어보는 거야.",
+      "analogy": "건축가가 건물을 짓기 전에 모형을 만드는 것처럼, 실제 개발 전에 시험 삼아 만들어보는 거지.",
+      "difficulty": "★★★☆☆",
+      "related_keywords": [
+        "개발",
+        "디자인",
+        "시제품"
+      ]
+    },
+    "fallback": {
+      "term": "Fallback",
+      "korean_full": "폴백",
+      "english_full": "fallback",
+      "definition": "A feature or mechanism that provides a backup or alternative in case the primary system or service fails.",
+      "easy_meaning": "주요 기능이 작동하지 않을 때 대신 사용할 수 있는 비상 계획이나 대체 기능이에요.",
+      "analogy": "자동차 고장 시 예비 타이어를 사용하는 것처럼, 비상시에 대비하는 거예요.",
+      "difficulty": "★★★☆☆",
+      "related_keywords": [
+        "시스템",
+        "안정성",
+        "백업",
+        "오류 처리"
+      ]
+    },
+    "openSource": {
+      "term": "오픈소스",
+      "korean_full": "공개 소프트웨어",
+      "english_full": "openSource",
+      "definition": "소스 코드가 공개되어 누구나 자유롭게 사용, 수정, 배포할 수 있는 소프트웨어입니다.",
+      "easy_meaning": "만든 사람이 코드를 공개해서 누구나 공짜로 가져다 쓰고, 고쳐 쓰고, 나눠 쓸 수 있는 프로그램이야.",
+      "analogy": "요리 레시피를 모두에게 공개해서 누구나 똑같이 만들어 먹을 수 있게 하는 것과 비슷해.",
+      "difficulty": "★★☆☆☆",
+      "related_keywords": [
+        "소프트웨어",
+        "개발",
+        "무료"
+      ]
+    },
+    "customization": {
+      "term": "커스터마이징",
+      "korean_full": "맞춤 설정",
+      "english_full": "customization",
+      "definition": "사용자의 요구사항이나 선호도에 맞게 제품이나 서비스를 변경하고 조정하는 과정입니다.",
+      "easy_meaning": "내가 원하는 대로 이것저것 바꿔서 나에게 딱 맞게 만드는 거야.",
+      "analogy": "옷을 맞춤 제작하는 것처럼, 기본 디자인을 내 취향에 맞게 바꾸는 거지.",
+      "difficulty": "★★☆☆☆",
+      "related_keywords": [
+        "개인화",
+        "설정",
+        "맞춤"
+      ]
+    },
+    "huggingFace": {
+      "term": "Hugging Face",
+      "korean_full": "허깅 페이스",
+      "english_full": "huggingFace",
+      "definition": "A company and platform that provides tools and a large repository of pre-trained machine learning models, especially for natural language processing.",
+      "easy_meaning": "인공지능 모델, 특히 언어를 이해하는 모델들을 많이 모아놓고 공유하는 회사이자 플랫폼이에요.",
+      "analogy": "다양한 AI 모델을 체험하고 공유할 수 있는 AI 모델 도서관과 같아요.",
+      "difficulty": "★★★☆☆",
+      "related_keywords": [
+        "AI",
+        "머신러닝",
+        "NLP",
+        "모델 허브"
+      ]
+    },
+    "migration": {
+      "term": "Migration",
+      "korean_full": "마이그레이션",
+      "english_full": "migration",
+      "definition": "The process of transferring data, applications, or other elements from one system to another, often to upgrade or replace existing infrastructure.",
+      "easy_meaning": "기존에 사용하던 것을 새로운 시스템으로 옮기는 것을 말해요.",
+      "analogy": "오래된 집에서 새 아파트로 이사하면서 짐을 옮기는 것과 같아요.",
+      "difficulty": "★★★☆☆",
+      "related_keywords": [
+        "시스템",
+        "데이터 이전",
+        "업그레이드",
+        "전환"
+      ]
+    },
+    "promptEngineering": {
+      "term": "프롬프트 엔지니어링",
+      "korean_full": "프롬프트 엔지니어링",
+      "english_full": "promptEngineering",
+      "definition": "AI 모델이 원하는 답변이나 결과물을 생성하도록 효과적인 지시문(프롬프트)을 설계하고 최적화하는 기술입니다.",
+      "easy_meaning": "AI에게 우리가 원하는 것을 제대로 얻어내기 위해 질문을 잘 만드는 방법을 연구하는 거야.",
+      "analogy": "사진작가에게 원하는 사진을 찍기 위해 구체적으로 설명을 잘 해줘야 하는 것처럼, AI에게도 질문을 잘 해야 좋은 결과가 나와.",
+      "difficulty": "★★★★☆",
+      "related_keywords": [
+        "AI",
+        "지시문",
+        "최적화"
+      ]
+    },
+    "orchestrator": {
+      "term": "Orchestrator",
+      "korean_full": "오케스트레이터",
+      "english_full": "orchestrator",
+      "definition": "A tool or system that automates and manages the deployment, scaling, and networking of containerized applications.",
+      "easy_meaning": "여러 프로그램이나 서비스를 조화롭게 관리하고 실행되도록 도와주는 도구예요.",
+      "analogy": "오케스트라 지휘자처럼, 여러 악기(프로그램)들이 조화롭게 연주되도록 이끄는 역할을 해요.",
+      "difficulty": "★★★★☆",
+      "related_keywords": [
+        "시스템",
+        "자동화",
+        "관리",
+        "배포"
+      ]
+    },
+    "freeTier": {
+      "term": "무료 티어",
+      "korean_full": "무료 등급/구간",
+      "english_full": "freeTier",
+      "definition": "서비스 제공업체가 사용자에게 일정량의 기능이나 사용량을 무료로 제공하는 서비스 수준입니다.",
+      "easy_meaning": "처음 써보는 사람들을 위해 일정 부분은 공짜로 쓸 수 있게 해주는 서비스 단계야.",
+      "analogy": "놀이공원에서 첫 번째 놀이기구는 무료로 타볼 수 있게 해주는 것과 같아.",
+      "difficulty": "★☆☆☆☆",
+      "related_keywords": [
+        "서비스",
+        "요금제",
+        "무료"
+      ]
+    },
+    "huggingFaceApi": {
+      "term": "Hugging Face API",
+      "korean_full": "허깅페이스 API",
+      "english_full": "huggingFaceApi",
+      "definition": "다양한 오픈소스 AI 모델을 활용하고 공유할 수 있는 플랫폼을 제공하며, 이를 위한 API를 지원합니다.",
+      "easy_meaning": "여러 AI 모델들을 서로 공유하고 쓸 수 있는 곳인데, 그 모델들을 프로그램에서 사용할 수 있도록 API를 제공해줘.",
+      "analogy": "AI 모델들의 '도서관' 같은 곳으로, 원하는 책(모델)을 골라 쓸 수 있는 거야.",
+      "difficulty": "★★★☆☆",
+      "related_keywords": [
+        "AI",
+        "오픈소스",
+        "플랫폼"
+      ]
+    },
+    "clarifaiApi": {
+      "term": "Clarifai API",
+      "korean_full": "클라리파이 API",
+      "english_full": "clarifaiApi",
+      "definition": "이미지 및 비디오 분석에 특화된 AI API를 제공하며, 객체 인식, 얼굴 감지, 텍스트 인식 등 다양한 기능을 지원합니다.",
+      "easy_meaning": "사진이나 동영상을 보고 무엇이 있는지, 누가 있는지 등을 분석해주는 AI API를 제공하는 회사야.",
+      "analogy": "사진 속 물건들을 자동으로 분류해서 이름표를 붙여주는 AI 서비스라고 생각하면 돼.",
+      "difficulty": "★★★☆☆",
+      "related_keywords": [
+        "API",
+        "이미지 분석",
+        "AI"
+      ]
+    },
+    "deeplApi": {
+      "term": "DeepL API",
+      "korean_full": "딥엘 API",
+      "english_full": "deeplApi",
+      "definition": "높은 번역 품질로 알려진 DeepL 서비스의 기능을 프로그램에서 사용할 수 있도록 제공하는 API입니다.",
+      "easy_meaning": "글자를 다른 나라 말로 아주 자연스럽게 바꿔주는 딥엘 서비스의 기능을 프로그램에서 쓸 수 있게 해주는 거야.",
+      "analogy": "세계적으로 유명한 통역사의 능력을 프로그램으로 빌려 쓰는 것과 비슷해.",
+      "difficulty": "★★☆☆☆",
+      "related_keywords": [
+        "번역",
+        "API",
+        "언어"
+      ]
+    },
+    "cloudmersiveApi": {
+      "term": "Cloudmersive API",
+      "korean_full": "클라우드머시브 API",
+      "english_full": "cloudmersiveApi",
+      "definition": "텍스트, 이미지, 데이터 처리 등 다양한 기능을 제공하는 API 모음으로, 기업의 IT 인프라 지원에 활용됩니다.",
+      "easy_meaning": "글자, 그림, 데이터 등을 다루는 여러 가지 AI 기능을 제공하는 API들을 모아놓은 서비스야.",
+      "analogy": "다용도 작업실에 다양한 공구들이 준비되어 있어 여러 작업을 할 수 있는 것과 비슷하지.",
+      "difficulty": "★★★☆☆",
+      "related_keywords": [
+        "API",
         "데이터 처리",
-        "워크플로우",
-        "자동화"
+        "텍스트"
+      ]
+    },
+    "openaiApi": {
+      "term": "OpenAI API",
+      "korean_full": "오픈AI API",
+      "english_full": "openaiApi",
+      "definition": "OpenAI에서 개발한 GPT 모델 등 다양한 AI 기능을 활용할 수 있는 API 서비스입니다.",
+      "easy_meaning": "ChatGPT 같은 유명한 AI 모델들을 프로그램에서 쓸 수 있게 해주는 API야.",
+      "analogy": "최고급 레스토랑의 요리사(AI 모델)가 만든 음식을 집에서 주문해서 먹는 것처럼, API로 AI 기능을 이용하는 거지.",
+      "difficulty": "★★★★☆",
+      "related_keywords": [
+        "OpenAI",
+        "API",
+        "GPT"
+      ]
+    },
+    "claudeApi": {
+      "term": "Claude API",
+      "korean_full": "클로드 API",
+      "english_full": "claudeApi",
+      "definition": "Anthropic에서 개발한 AI 모델 Claude를 활용할 수 있는 API로, 긴 텍스트 처리에 강점이 있습니다.",
+      "easy_meaning": "글이 아주 긴 내용을 잘 이해하고 처리하는 데 강점이 있는 '클로드'라는 AI를 프로그램에서 쓸 수 있게 해주는 API야.",
+      "analogy": "매우 두꺼운 책을 한 번에 다 읽고 내용을 기억하는 똑똑한 친구에게 질문하는 것과 같아.",
+      "difficulty": "★★★☆☆",
+      "related_keywords": [
+        "AI",
+        "API",
+        "텍스트 처리"
+      ]
+    },
+    "stabilityAi": {
+      "term": "Stability AI",
+      "korean_full": "스태빌리티 AI",
+      "english_full": "stabilityAi",
+      "definition": "Stable Diffusion과 같은 이미지 생성 AI 모델로 유명한 회사로, 오픈소스 기반의 AI 기술 개발에 주력합니다.",
+      "easy_meaning": "글자 설명만으로 그림을 멋지게 만들어주는 '스테이블 디퓨전' 같은 AI 기술을 만드는 회사야.",
+      "analogy": "상상하는 그림을 대신 그려주는 특별한 화가가 AI 기술로 만들어진 거지.",
+      "difficulty": "★★★☆☆",
+      "related_keywords": [
+        "AI",
+        "이미지 생성",
+        "오픈소스"
+      ]
+    },
+    "googleCloudVisionApi": {
+      "term": "Google Cloud Vision API",
+      "korean_full": "구글 클라우드 비전 API",
+      "english_full": "googleCloudVisionApi",
+      "definition": "Google Cloud에서 제공하는 API로, 이미지를 분석하여 객체, 텍스트, 얼굴 등을 인식하는 기능을 제공합니다.",
+      "easy_meaning": "구글이 제공하는 API로, 사진 속 물건이나 글자, 사람 얼굴 등을 컴퓨터가 알아볼 수 있게 해주는 기능이야.",
+      "analogy": "사진관에서 사진을 분석해서 어떤 물건이 있는지, 글자가 써있는지 등을 알려주는 서비스를 API 형태로 제공하는 거지.",
+      "difficulty": "★★★☆☆",
+      "related_keywords": [
+        "Google Cloud",
+        "API",
+        "이미지 분석"
+      ]
+    },
+    "assemblyAi": {
+      "term": "AssemblyAI",
+      "korean_full": "AssemblyAI",
+      "english_full": "assemblyAi",
+      "definition": "음성을 텍스트로 변환(STT)하고, 음성 데이터를 분석하는 데 특화된 AI API를 제공하는 회사입니다. 실시간 음성 처리, 회의록 작성, 오디오 내용 분석 등에 활용될 수 있습니다.",
+      "easy_meaning": "사람이 말하는 소리를 글자로 바꿔주거나, 그 내용을 분석해주는 AI 기능을 쓸 수 있게 해주는 문이에요.",
+      "analogy": "회의 내용을 녹음해서 그대로 글자로 옮겨주는 똑똑한 비서와 같아요.",
+      "difficulty": "★★★☆☆",
+      "related_keywords": [
+        "Speech-to-Text",
+        "STT",
+        "Audio Analysis",
+        "Transcription"
+      ]
+    },
+    "azureCognitiveServices": {
+      "term": "Azure Cognitive Services",
+      "korean_full": "애저 코그니티브 서비스",
+      "english_full": "azureCognitiveServices",
+      "definition": "Microsoft Azure에서 제공하는 AI 기반 서비스 모음으로, 시각, 음성, 언어, 의사결정 등 다양한 기능을 제공합니다.",
+      "easy_meaning": "마이크로소프트가 제공하는 AI 서비스 모음인데, 보고 듣고 말하는 등 여러 똑똑한 기능들을 써볼 수 있어.",
+      "analogy": "하나의 큰 도서관에 다양한 분야의 책이 모여있는 것처럼, 여러 AI 기능들을 한 곳에서 제공하는 거지.",
+      "difficulty": "★★★☆☆",
+      "related_keywords": [
+        "AI",
+        "Microsoft",
+        "클라우드"
+      ]
+    },
+    "artificialintelligence": {
+      "term": "AI",
+      "korean_full": "인공지능",
+      "english_full": "artificialintelligence",
+      "definition": "인간의 학습 능력, 추론 능력, 지각 능력 등을 컴퓨터 프로그램으로 실현한 기술.",
+      "easy_meaning": "컴퓨터가 사람처럼 생각하고 배울 수 있게 만드는 기술이야.",
+      "analogy": "스스로 학습해서 똑똑해지는 로봇 청소기.",
+      "difficulty": "★★★☆☆",
+      "related_keywords": [
+        "머신러닝",
+        "딥러닝",
+        "데이터"
+      ]
+    },
+    "generativepretrainingtransformer": {
+      "term": "GPT",
+      "korean_full": "생성형 사전 학습 트랜스포머",
+      "english_full": "generativepretrainingtransformer",
+      "definition": "대규모 텍스트 데이터를 사전 학습하여 문맥을 이해하고 새로운 텍스트를 생성하는 딥러닝 모델 아키텍처.",
+      "easy_meaning": "엄청 많은 글을 미리 읽고 사람처럼 글을 써내는 똑똑한 컴퓨터 프로그램이야.",
+      "analogy": "책을 엄청 많이 읽어서 글쓰기 대회에 나가는 작가.",
+      "difficulty": "★★★★☆",
+      "related_keywords": [
+        "AI",
+        "모델",
+        "자연어 처리"
+      ]
+    },
+    "applicationsprogramminginterface": {
+      "term": "API",
+      "korean_full": "응용 프로그래밍 인터페이스",
+      "english_full": "applicationsprogramminginterface",
+      "definition": "소프트웨어 애플리케이션이 서로 통신할 수 있도록 하는 규칙과 프로토콜의 집합.",
+      "easy_meaning": "서로 다른 프로그램들이 대화하고 정보를 주고받을 수 있게 해주는 약속이야.",
+      "analogy": "식당의 메뉴판처럼, 손님이 원하는 것을 주문하고 직원이 주방에 전달하는 방식.",
+      "difficulty": "★★★☆☆",
+      "related_keywords": [
+        "소프트웨어",
+        "통신",
+        "개발"
+      ]
+    },
+    "javascriptobjectnotation": {
+      "term": "JSON",
+      "korean_full": "자바스크립트 객체 표기법",
+      "english_full": "javascriptobjectnotation",
+      "definition": "데이터를 주고받을 때 사람이 읽기 쉽고, 컴퓨터가 이해하기 쉬운 텍스트 형식.",
+      "easy_meaning": "컴퓨터끼리 데이터를 주고받을 때 쓰는, 글씨로 된 약속된 형식이야.",
+      "analogy": "명령어를 적어놓은 메모지, 컴퓨터가 쉽게 읽고 이해할 수 있지.",
+      "difficulty": "★★☆☆☆",
+      "related_keywords": [
+        "데이터",
+        "표기법",
+        "개발"
+      ]
+    },
+    "development": {
+      "term": "Development",
+      "korean_full": "개발",
+      "english_full": "development",
+      "definition": "새로운 소프트웨어나 시스템을 만들거나 개선하는 과정.",
+      "easy_meaning": "컴퓨터 프로그램이나 서비스를 새롭게 만들거나 더 좋게 만드는 일이야.",
+      "analogy": "새로운 게임을 만드는 과정.",
+      "difficulty": "★☆☆☆☆",
+      "related_keywords": [
+        "프로그래밍",
+        "소프트웨어",
+        "기술"
+      ]
+    },
+    "data": {
+      "term": "Data",
+      "korean_full": "데이터",
+      "english_full": "data",
+      "definition": "컴퓨터 시스템에서 처리될 수 있는 정보의 형태.",
+      "easy_meaning": "컴퓨터가 알아들을 수 있는 정보 조각들이야.",
+      "analogy": "숫자, 글자, 사진 등 컴퓨터가 다룰 수 있는 모든 정보.",
+      "difficulty": "★☆☆☆☆",
+      "related_keywords": [
+        "정보",
+        "처리",
+        "분석"
+      ]
+    },
+    "terms": {
+      "term": "Terms",
+      "korean_full": "용어",
+      "english_full": "terms",
+      "definition": "특정 분야에서 사용되는 고유한 단어나 구.",
+      "easy_meaning": "어떤 분야에서만 특별하게 쓰는 단어들이야.",
+      "analogy": "의학 용어, 법률 용어처럼 각 분야마다 다른 전문 단어들.",
+      "difficulty": "★☆☆☆☆",
+      "related_keywords": [
+        "전문 용어",
+        "사전",
+        "지식"
+      ]
+    },
+    "itterms": {
+      "term": "IT Terms",
+      "korean_full": "IT 용어",
+      "english_full": "itterms",
+      "definition": "정보 기술(Information Technology) 분야에서 사용되는 전문적인 단어나 개념.",
+      "easy_meaning": "컴퓨터, 인터넷, 소프트웨어 같은 IT 분야에서 쓰는 특별한 단어들이야.",
+      "analogy": "프로그래밍 언어, 네트워크 장비 이름 등 IT 분야에서 자주 쓰는 단어들.",
+      "difficulty": "★★☆☆☆",
+      "related_keywords": [
+        "IT",
+        "용어",
+        "기술"
+      ]
+    },
+    "jsonfile": {
+      "term": "JSON file",
+      "korean_full": "JSON 파일",
+      "english_full": "jsonfile",
+      "definition": "JSON 형식으로 작성된 컴퓨터 파일.",
+      "easy_meaning": "JSON이라는 형식으로 컴퓨터가 읽을 수 있게 저장해 놓은 문서야.",
+      "analogy": "이름, 주소, 연락처가 정리된 연락처 파일.",
+      "difficulty": "★☆☆☆☆",
+      "related_keywords": [
+        "JSON",
+        "파일",
+        "데이터"
+      ]
+    },
+    "promptengineering": {
+      "term": "Prompt Engineering",
+      "korean_full": "프롬프트 엔지니어링",
+      "english_full": "promptengineering",
+      "definition": "인공지능 모델에게 원하는 결과를 얻기 위해 입력하는 명령어나 질문을 효과적으로 설계하는 기술.",
+      "easy_meaning": "인공지능한테 우리가 원하는 답을 얻기 위해 어떻게 질문하거나 지시할지 잘 만드는 기술이야.",
+      "analogy": "요리사에게 원하는 요리를 정확히 설명하는 주문서.",
+      "difficulty": "★★★★☆",
+      "related_keywords": [
+        "AI",
+        "프롬프트",
+        "명령어"
+      ]
+    },
+    "benchmark": {
+      "term": "benchmark",
+      "korean_full": "벤치마크",
+      "english_full": "benchmark",
+      "definition": "시스템이나 소프트웨어의 성능을 측정하고 비교하기 위한 표준 테스트 또는 평가 과정을 의미합니다.",
+      "easy_meaning": "두 가지 도구를 가지고 똑같은 일을 시켜본 다음에, 누가 더 빠르고 효율적인지 점수를 매겨보는 거야.",
+      "analogy": "두 개의 다른 운동선수에게 똑같은 코스를 달리게 해서 기록을 재보는 것과 같아.",
+      "difficulty": "★★☆☆☆",
+      "related_keywords": [
+        "성능 측정",
+        "비교",
+        "테스트"
+      ]
+    },
+    "version up": {
+      "term": "version up",
+      "korean_full": "버전 업",
+      "english_full": "versionUp",
+      "definition": "기존 소프트웨어의 기능 개선, 오류 수정, 성능 향상 등을 통해 새로운 버전으로 업데이트하는 것을 의미합니다.",
+      "easy_meaning": "프로그램이나 앱이 더 좋아지도록 새롭게 업데이트하는 것을 말해.",
+      "analogy": "휴대폰 앱이 업데이트되는 것과 비슷해.",
+      "difficulty": "★☆☆☆☆",
+      "related_keywords": [
+        "업데이트",
+        "기능 개선",
+        "새로운 버전"
+      ]
+    },
+    "quantitative analysis": {
+      "term": "quantitative analysis",
+      "korean_full": "정량적 분석",
+      "english_full": "quantitativeAnalysis",
+      "definition": "수치와 통계를 사용하여 데이터를 분석하고 객관적인 결과와 패턴을 도출하는 방법론입니다.",
+      "easy_meaning": "숫자를 가지고 정확하게 계산하고 분석해서 사실을 파악하는 거야.",
+      "analogy": "시험 점수를 가지고 학생들의 실력을 비교하는 것과 같아.",
+      "difficulty": "★★☆☆☆",
+      "related_keywords": [
+        "수치 분석",
+        "통계",
+        "객관성"
+      ]
+    },
+    "performance": {
+      "term": "performance",
+      "korean_full": "성능",
+      "english_full": "performance",
+      "definition": "시스템이나 소프트웨어가 특정 작업을 얼마나 빠르고 효율적으로 수행하는지에 대한 측정치를 나타냅니다.",
+      "easy_meaning": "어떤 것을 얼마나 빠르고 정확하게 잘 처리하는지를 말해.",
+      "analogy": "자동차의 속도와 연비처럼, 얼마나 잘 달리느냐를 뜻해.",
+      "difficulty": "★☆☆☆☆",
+      "related_keywords": [
+        "속도",
+        "효율",
+        "처리량"
+      ]
+    },
+    "structural limitation": {
+      "term": "structural limitation",
+      "korean_full": "구조적 한계",
+      "english_full": "structuralLimitation",
+      "definition": "어떤 시스템이나 구조가 근본적으로 가지고 있어서 극복하기 어려운 제약 사항을 의미합니다.",
+      "easy_meaning": "그것 자체의 설계나 구조 때문에 생기는 어쩔 수 없는 단점이나 제약이야.",
+      "analogy": "종이컵으로는 뜨거운 물을 오래 담기 어려운 것 같은 구조적인 한계야.",
+      "difficulty": "★★☆☆☆",
+      "related_keywords": [
+        "제약",
+        "한계점",
+        "기반 설계"
+      ]
+    },
+    "memory": {
+      "term": "memory",
+      "korean_full": "메모리",
+      "english_full": "memory",
+      "definition": "컴퓨터 시스템에서 데이터를 저장하고 읽어오는 데 사용되는 하드웨어 또는 소프트웨어 공간을 의미합니다.",
+      "easy_meaning": "컴퓨터가 지금 당장 쓰고 있는 정보들을 잠시 저장해두는 공간이야.",
+      "analogy": "책상 위에 당장 필요한 서류들을 펼쳐놓는 것과 같아.",
+      "difficulty": "★☆☆☆☆",
+      "related_keywords": [
+        "저장 공간",
+        "RAM",
+        "데이터"
+      ]
+    },
+    "threads constraint": {
+      "term": "threads constraint",
+      "korean_full": "스레드 제약",
+      "english_full": "threadsConstraint",
+      "definition": "프로세스 내에서 사용할 수 있는 스레드의 개수를 제한하는 것을 의미합니다. 이는 자원 관리나 특정 성능 테스트를 위해 사용됩니다.",
+      "easy_meaning": "한 번에 사용할 수 있는 작업 단위(스레드)의 수를 정해놓는 거야.",
+      "analogy": "한 식당에서 동시에 받을 수 있는 손님 수를 제한하는 것과 같아.",
+      "difficulty": "★★☆☆☆",
+      "related_keywords": [
+        "스레드",
+        "자원 관리",
+        "성능 테스트"
+      ]
+    },
+    "absolute comparison": {
+      "term": "absolute comparison",
+      "korean_full": "절대 비교",
+      "english_full": "absoluteComparison",
+      "definition": "다른 외부 요인의 영향을 최소화하고, 대상 간의 순수한 차이를 직접적으로 비교하는 것을 의미합니다.",
+      "easy_meaning": "다른 변수들은 똑같이 맞춰놓고, 딱 두 가지만 직접 비교하는 거야.",
+      "analogy": "똑같은 조건에서 A와 B 두 자동차의 최고 속도를 직접 재보는 것과 같아.",
+      "difficulty": "★★☆☆☆",
+      "related_keywords": [
+        "순수 비교",
+        "동일 조건",
+        "객관적 비교"
+      ]
+    },
+    "eager mode": {
+      "term": "eager mode",
+      "korean_full": "이거 모드",
+      "english_full": "eagerMode",
+      "definition": "코드가 작성된 대로 즉시 실행되어 결과를 반환하는 모드를 의미하며, 'lazy mode'와 대비됩니다.",
+      "easy_meaning": "쓰여진 대로 바로바로 실행해서 결과를 보여주는 방식이야.",
+      "analogy": "시키자마자 바로 답을 말해주는 학생의 모드라고 생각하면 돼.",
+      "difficulty": "★★☆☆☆",
+      "related_keywords": [
+        "즉시 실행",
+        "바로 결과",
+        "기본 모드"
+      ]
+    },
+    "lazy mode": {
+      "term": "lazy mode",
+      "korean_full": "레이지 모드",
+      "english_full": "lazyMode",
+      "definition": "계산이나 작업이 실제로 필요하기 전까지는 실행을 미루는 모드로, 리소스 효율성을 높일 수 있습니다.",
+      "easy_meaning": "필요할 때까지 계산을 미루다가, 정말 필요할 때만 계산해서 효율적인 방식이야.",
+      "analogy": "필요한 물건만 마트에서 골라 계산하는 것처럼, 실제로 필요할 때만 행동하는 방식이야.",
+      "difficulty": "★★☆☆☆",
+      "related_keywords": [
+        "지연 실행",
+        "효율성",
+        "연기"
+      ]
+    },
+    "absolute value": {
+      "term": "absolute value",
+      "korean_full": "절대값",
+      "english_full": "absoluteValue",
+      "definition": "수학에서 어떤 수의 0으로부터의 거리를 나타내며, 음수를 양수로 바꿔서 표현합니다. 여기서는 '압도적인' 이라는 의미로 사용되었습니다.",
+      "easy_meaning": "수학에서는 '0으로부터 얼마나 떨어져 있는지'를 뜻하고, 여기서는 '매우 크거나 월등하다'는 뜻으로 쓰였어.",
+      "analogy": "숫자 -5의 절대값은 5이고, 0으로부터 5만큼 떨어져 있다는 뜻이야. 비유적으로는 '엄청나게'라는 의미로 쓰였어.",
+      "difficulty": "★☆☆☆☆",
+      "related_keywords": [
+        "수치",
+        "크기",
+        "압도적"
+      ]
+    },
+    "data set": {
+      "term": "data set",
+      "korean_full": "데이터 셋",
+      "english_full": "dataSet",
+      "definition": "분석이나 처리를 위해 수집된 관련 데이터의 집합을 의미합니다.",
+      "easy_meaning": "분석하거나 사용하기 위해 모아놓은 데이터들의 묶음이야.",
+      "analogy": "수학 숙제를 하기 위해 모아놓은 문제지와 답지 같은 데이터 묶음이야.",
+      "difficulty": "★☆☆☆☆",
+      "related_keywords": [
+        "데이터",
+        "집합",
+        "분석 자료"
+      ]
+    },
+    "googleGemini": {
+      "term": "Gemini",
+      "korean_full": "구글 제미나이",
+      "english_full": "googleGemini",
+      "definition": "Google에서 개발한 멀티모달 인공지능 모델로, 텍스트, 이미지, 오디오, 비디오 등 다양한 종류의 정보를 이해하고 처리할 수 있습니다.",
+      "easy_meaning": "구글이 만든 똑똑한 인공지능으로, 글자뿐만 아니라 그림이나 소리도 알아들을 수 있어.",
+      "analogy": "여러 감각을 동시에 사용할 수 있는 사람처럼, 컴퓨터도 글만 보는 게 아니라 그림도 보고 소리도 들을 수 있게 해주는 기술이야.",
+      "difficulty": "★★☆☆☆",
+      "related_keywords": [
+        "AI",
+        "멀티모달",
+        "Google"
+      ]
+    },
+    "artificialIntelligence": {
+      "term": "AI",
+      "korean_full": "인공지능",
+      "english_full": "artificialIntelligence",
+      "definition": "인간의 학습 능력, 추론 능력, 지각 능력 등을 컴퓨터 프로그램으로 실현한 기술입니다.",
+      "easy_meaning": "사람처럼 생각하고 배울 수 있는 컴퓨터 프로그램이에요.",
+      "analogy": "스마트폰의 음성 비서나 추천 알고리즘을 생각하면 쉬워요.",
+      "difficulty": "★★★☆☆",
+      "related_keywords": [
+        "머신러닝",
+        "딥러닝",
+        "자연어 처리"
+      ]
+    },
+    "applicationProgrammingInterface": {
+      "term": "API",
+      "korean_full": "응용 프로그래밍 인터페이스",
+      "english_full": "applicationProgrammingInterface",
+      "definition": "소프트웨어 애플리케이션 간에 서로 통신할 수 있게 하는 규칙과 프로토콜의 집합입니다.",
+      "easy_meaning": "프로그램들이 서로 대화할 수 있도록 약속된 창구 같은 거야.",
+      "analogy": "레스토랑에서 주문할 때 웨이터에게 메뉴를 보고 주문하는 것처럼, API는 프로그램 간의 주문 역할을 해줘.",
+      "difficulty": "★★☆☆☆",
+      "related_keywords": [
+        "인터페이스",
+        "통신",
+        "소프트웨어"
+      ]
+    },
+    "ocr": {
+      "term": "OCR",
+      "korean_full": "광학 문자 인식",
+      "english_full": "opticalCharacterRecognition",
+      "definition": "이미지 파일에 포함된 텍스트를 컴퓨터가 읽고 인식할 수 있는 텍스트 데이터로 변환하는 기술입니다.",
+      "easy_meaning": "사진이나 그림 속에 있는 글자를 컴퓨터가 읽을 수 있게 바꿔주는 기술이야.",
+      "analogy": "글씨가 쓰인 종이를 스캔해서 컴퓨터에서 바로 글자를 복사할 수 있게 하는 마법 같은 거지.",
+      "difficulty": "★★★☆☆",
+      "related_keywords": [
+        "이미지 처리",
+        "텍스트 변환",
+        "인식"
+      ]
+    },
+    "naturalLanguageProcessing": {
+      "term": "NLP",
+      "korean_full": "자연어 처리",
+      "english_full": "naturalLanguageProcessing",
+      "definition": "컴퓨터가 인간의 언어를 이해하고, 해석하고, 생성하는 기술 분야입니다.",
+      "easy_meaning": "컴퓨터가 우리가 쓰는 말을 알아듣고, 대답도 할 수 있게 만드는 기술이야.",
+      "analogy": "외국인과 대화할 때 통역기가 있으면 편한 것처럼, 컴퓨터가 우리의 말을 통역해주는 거지.",
+      "difficulty": "★★★★☆",
+      "related_keywords": [
+        "AI",
+        "언어",
+        "텍스트"
+      ]
+    },
+    "chatbot": {
+      "term": "챗봇",
+      "korean_full": "대화형 로봇",
+      "english_full": "chatbot",
+      "definition": "인공지능 기반으로 사용자와 텍스트나 음성으로 대화하는 컴퓨터 프로그램입니다.",
+      "easy_meaning": "사람과 컴퓨터가 말로 주고받으며 대화할 수 있게 만든 프로그램이야.",
+      "analogy": "고객센터 직원이 컴퓨터 프로그램으로 바뀌어서 질문에 답해주는 것과 같아.",
+      "difficulty": "★★☆☆☆",
+      "related_keywords": [
+        "AI",
+        "대화",
+        "자동응답"
+      ]
+    },
+    "textSummarization": {
+      "term": "텍스트 요약",
+      "korean_full": "텍스트 요약",
+      "english_full": "textSummarization",
+      "definition": "긴 텍스트의 핵심 내용을 간추려 짧게 만드는 과정입니다.",
+      "easy_meaning": "길고 복잡한 글을 짧고 쉽게 정리해서 핵심만 알려주는 거야.",
+      "analogy": "책 한 권을 읽고 가장 중요한 내용을 몇 문장으로 말해주는 것과 같아.",
+      "difficulty": "★★★☆☆",
+      "related_keywords": [
+        "NLP",
+        "텍스트 처리",
+        "AI"
+      ]
+    },
+    "codeGeneration": {
+      "term": "코드 생성",
+      "korean_full": "코드 생성",
+      "english_full": "codeGeneration",
+      "definition": "자연어 설명이나 특정 요구사항을 바탕으로 프로그래밍 코드를 자동으로 만들어내는 기술입니다.",
+      "easy_meaning": "우리가 원하는 대로 설명하면 컴퓨터가 알아서 코드를 짜주는 거야.",
+      "analogy": "건축가가 설계도를 주면, 인부들이 알아서 건물을 짓는 것처럼, AI가 코드를 만들어주는 거지.",
+      "difficulty": "★★★★☆",
+      "related_keywords": [
+        "AI",
+        "개발",
+        "프로그래밍"
+      ]
+    },
+    "customerSupport": {
+      "term": "고객지원",
+      "korean_full": "고객 지원",
+      "english_full": "customerSupport",
+      "definition": "제품이나 서비스에 대한 문의, 불만, 요청 등을 처리하여 고객 만족도를 높이는 활동입니다.",
+      "easy_meaning": "물건을 사고 나서 궁금한 점이 있거나 문제가 생겼을 때 도와주는 거야.",
+      "analogy": "가게에서 손님이 물건에 대해 질문하거나 불편한 점이 있을 때 직원이 도와주는 것과 똑같아.",
+      "difficulty": "★☆☆☆☆",
+      "related_keywords": [
+        "서비스",
+        "고객",
+        "문의"
+      ]
+    },
+    "longDocumentProcessing": {
+      "term": "장문 처리",
+      "korean_full": "긴 문서를 처리하는 것",
+      "english_full": "longDocumentProcessing",
+      "definition": "매우 긴 텍스트 데이터를 입력받아 이를 분석, 요약, 질의응답 등에 활용하는 기술입니다.",
+      "easy_meaning": "아주 긴 글이나 문서를 통째로 이해하고 처리하는 거야.",
+      "analogy": "두꺼운 책 한 권 전체를 읽고 내용을 기억하는 것처럼, AI가 긴 글을 다 이해하는 거지.",
+      "difficulty": "★★★★☆",
+      "related_keywords": [
+        "AI",
+        "텍스트",
+        "NLP"
+      ]
+    },
+    "research": {
+      "term": "리서치",
+      "korean_full": "연구",
+      "english_full": "research",
+      "definition": "새로운 지식이나 정보를 얻기 위해 체계적으로 조사하고 탐구하는 과정입니다.",
+      "easy_meaning": "궁금한 것을 알아내기 위해 꼼꼼하게 조사하고 공부하는 거야.",
+      "analogy": "탐정이 단서를 모아 사건의 진실을 밝혀내는 것처럼, 정보를 찾아내고 분석하는 거지.",
+      "difficulty": "★★☆☆☆",
+      "related_keywords": [
+        "조사",
+        "학습",
+        "탐구"
+      ]
+    },
+    "reportWriting": {
+      "term": "보고서 작성",
+      "korean_full": "보고서 작성",
+      "english_full": "reportWriting",
+      "definition": "조사, 분석, 실험 등의 결과를 정리하여 체계적으로 기록하는 과정입니다.",
+      "easy_meaning": "조사하거나 실험한 내용을 정리해서 문서로 만드는 거야.",
+      "analogy": "학생이 숙제로 조사한 내용을 선생님께 발표하기 위해 정리하는 것과 같아.",
+      "difficulty": "★★☆☆☆",
+      "related_keywords": [
+        "문서",
+        "분석",
+        "정리"
+      ]
+    },
+    "conversationalAgent": {
+      "term": "대화형 에이전트",
+      "korean_full": "대화형 상담원/도우미",
+      "english_full": "conversationalAgent",
+      "definition": "사용자와 자연스러운 언어로 상호작용하며 특정 작업을 수행하거나 정보를 제공하는 AI 시스템입니다.",
+      "easy_meaning": "우리가 말하는 대로 알아듣고, 대화하면서 도와주는 컴퓨터 프로그램이야.",
+      "analogy": "마치 사람처럼 질문에 답해주고 안내해주는 AI 비서 같은 거지.",
+      "difficulty": "★★★☆☆",
+      "related_keywords": [
+        "AI",
+        "챗봇",
+        "인터페이스"
+      ]
+    },
+    "imageSynthesis": {
+      "term": "이미지 생성",
+      "korean_full": "이미지 합성/생성",
+      "english_full": "imageSynthesis",
+      "definition": "텍스트 설명이나 다른 이미지를 바탕으로 새로운 이미지를 만들어내는 기술입니다.",
+      "easy_meaning": "글로 설명하면 컴퓨터가 그걸 보고 그림을 새로 그려주는 거야.",
+      "analogy": "상상한 것을 그림으로 표현해주는 화가가 AI로 구현된 것과 같아.",
+      "difficulty": "★★★★☆",
+      "related_keywords": [
+        "AI",
+        "디자인",
+        "생성형 AI"
+      ]
+    },
+    "design": {
+      "term": "디자인",
+      "korean_full": "디자인",
+      "english_full": "design",
+      "definition": "미적인 요소와 기능적인 요소를 고려하여 제품, 서비스, 경험 등을 계획하고 시각화하는 과정입니다.",
+      "easy_meaning": "예쁘고 사용하기 좋게 무언가를 만드는 계획을 세우고 모양을 만드는 거야.",
+      "analogy": "건물을 짓기 전에 설계도를 그리는 것처럼, 모든 것의 겉모습과 작동 방식을 결정하는 거지.",
+      "difficulty": "★★☆☆☆",
+      "related_keywords": [
+        "기획",
+        "시각화",
+        "창작"
+      ]
+    },
+    "artisticCreation": {
+      "term": "예술 창작",
+      "korean_full": "예술 창작",
+      "english_full": "artisticCreation",
+      "definition": "독창적인 아이디어나 감정을 표현하기 위해 미술, 음악, 문학 등 예술 분야의 작품을 만드는 활동입니다.",
+      "easy_meaning": "사람의 생각이나 느낌을 그림, 음악, 글 등으로 표현하는 창작 활동이야.",
+      "analogy": "화가가 그림을 그리거나 작곡가가 음악을 만드는 것처럼, 새로운 예술 작품을 만드는 거지.",
+      "difficulty": "★★☆☆☆",
+      "related_keywords": [
+        "예술",
+        "창작",
+        "표현"
+      ]
+    },
+    "objectRecognition": {
+      "term": "객체 인식",
+      "korean_full": "객체 인식",
+      "english_full": "objectRecognition",
+      "definition": "이미지나 영상 속에서 특정 사물, 사람, 장소 등을 구별하고 인식하는 기술입니다.",
+      "easy_meaning": "사진이나 영상에 뭐가 있는지 알아보고, 어떤 물건인지 구분하는 거야.",
+      "analogy": "사람이 사진을 보고 '저건 고양이네' 하고 알아보는 것처럼, 컴퓨터가 사물을 인식하는 거지.",
+      "difficulty": "★★★☆☆",
+      "related_keywords": [
+        "컴퓨터 비전",
+        "이미지 처리",
+        "AI"
+      ]
+    },
+    "documentScanning": {
+      "term": "문서 스캔",
+      "korean_full": "문서 스캔",
+      "english_full": "documentScanning",
+      "definition": "종이 문서의 내용을 디지털 이미지로 변환하는 과정입니다.",
+      "easy_meaning": "종이에 있는 글이나 그림을 컴퓨터 파일로 만드는 거야.",
+      "analogy": "복사기로 문서를 복사하는 것처럼, 종이 문서를 컴퓨터로 옮기는 거지.",
+      "difficulty": "★☆☆☆☆",
+      "related_keywords": [
+        "이미지",
+        "변환",
+        "디지털"
+      ]
+    },
+    "dataProcessing": {
+      "term": "데이터 처리",
+      "korean_full": "데이터 처리",
+      "english_full": "dataProcessing",
+      "definition": "수집된 데이터를 목적에 맞게 가공, 변환, 분석하는 일련의 과정입니다.",
+      "easy_meaning": "모아놓은 정보를 원하는 대로 바꾸고 분석해서 쓸모있게 만드는 거야.",
+      "analogy": "식재료를 다듬고 썰어서 요리에 쓸 수 있게 준비하는 것과 같아.",
+      "difficulty": "★★☆☆☆",
+      "related_keywords": [
+        "데이터",
+        "분석",
+        "가공"
+      ]
+    },
+    "speechRecognition": {
+      "term": "음성 인식",
+      "korean_full": "음성 인식",
+      "english_full": "speechRecognition",
+      "definition": "사람의 음성을 텍스트로 변환하는 기술로, 음성을 알아듣는 기능을 말합니다.",
+      "easy_meaning": "사람이 말하는 소리를 컴퓨터가 글자로 바꿔주는 기술이야.",
+      "analogy": "마이크에 대고 말하면 컴퓨터가 그걸 글자로 받아 적는 것과 같아.",
+      "difficulty": "★★★☆☆",
+      "related_keywords": [
+        "음성",
+        "텍스트",
+        "AI"
+      ]
+    },
+    "realtimeProcessing": {
+      "term": "실시간 처리",
+      "korean_full": "실시간 처리",
+      "english_full": "realtimeProcessing",
+      "definition": "데이터가 발생하는 즉시 지연 없이 처리하는 방식입니다.",
+      "easy_meaning": "데이터가 들어오는 대로 바로바로 처리하는 거야, 기다릴 필요 없이.",
+      "analogy": "전화를 받자마자 바로 대화하는 것처럼, 데이터가 생기면 바로 처리되는 거지.",
+      "difficulty": "★★★☆☆",
+      "related_keywords": [
+        "처리",
+        "데이터",
+        "즉시"
+      ]
+    },
+    "voiceToText": {
+      "term": "음성-텍스트 변환",
+      "korean_full": "음성-텍스트 변환",
+      "english_full": "voiceToText",
+      "definition": "사람의 음성을 텍스트 형태로 변환하는 기술을 통칭합니다.",
+      "easy_meaning": "말하는 것을 컴퓨터 글자로 바꿔주는 기술이야.",
+      "analogy": "녹음기에 대고 말한 내용을 나중에 글자로 볼 수 있게 되는 것과 비슷해.",
+      "difficulty": "★★★☆☆",
+      "related_keywords": [
+        "음성 인식",
+        "변환",
+        "텍스트"
+      ]
+    },
+    "podcastAnalysis": {
+      "term": "팟캐스트 분석",
+      "korean_full": "팟캐스트 분석",
+      "english_full": "podcastAnalysis",
+      "definition": "음성 파일 형태인 팟캐스트의 내용을 분석하여 정보를 추출하거나 요약하는 과정입니다.",
+      "easy_meaning": "들려주는 팟캐스트 내용을 알아듣고 분석해서 정보를 찾아내는 거야.",
+      "analogy": "오디오북을 듣고 내용을 정리해서 요약하는 것과 비슷해.",
+      "difficulty": "★★★☆☆",
+      "related_keywords": [
+        "음성",
+        "분석",
+        "콘텐츠"
+      ]
+    },
+    "visionModels": {
+      "term": "비전 모델",
+      "korean_full": "시각 모델",
+      "english_full": "visionModels",
+      "definition": "이미지나 비디오 데이터를 이해하고 분석하는 데 사용되는 인공지능 모델입니다.",
+      "easy_meaning": "컴퓨터가 눈으로 보는 것처럼, 그림이나 영상을 이해하도록 돕는 AI 모델이야.",
+      "analogy": "사람이 눈으로 사물을 보고 인지하는 능력을 컴퓨터에게 가르치는 거라고 생각하면 돼.",
+      "difficulty": "★★★★☆",
+      "related_keywords": [
+        "컴퓨터 비전",
+        "이미지",
+        "AI"
+      ]
+    },
+    "faceRecognition": {
+      "term": "얼굴 인식",
+      "korean_full": "얼굴 인식",
+      "english_full": "faceRecognition",
+      "definition": "이미지나 영상 속에서 사람의 얼굴을 식별하고 특정 인물을 알아보는 기술입니다.",
+      "easy_meaning": "사진 속에서 사람의 얼굴을 찾아내고, 누구인지 알아맞히는 기술이야.",
+      "analogy": "친한 친구의 얼굴을 사진만 보고도 바로 알아보는 것처럼, 컴퓨터도 사람 얼굴을 인식하는 거지.",
+      "difficulty": "★★★☆☆",
+      "related_keywords": [
+        "보안",
+        "인식",
+        "이미지"
+      ]
+    },
+    "visionAi": {
+      "term": "비전 AI",
+      "korean_full": "비전 인공지능",
+      "english_full": "visionAi",
+      "definition": "컴퓨터가 시각적 데이터를 이해하고 해석하도록 만드는 인공지능 분야입니다.",
+      "easy_meaning": "컴퓨터가 '보는' 능력을 갖게 해서, 영상이나 사진을 이해하게 만드는 AI야.",
+      "analogy": "사람이 눈으로 세상을 보는 것처럼, 컴퓨터도 시각 정보를 처리할 수 있게 되는 거야.",
+      "difficulty": "★★★★☆",
+      "related_keywords": [
+        "AI",
+        "이미지",
+        "컴퓨터 비전"
+      ]
+    },
+    "googleAiStudio": {
+      "term": "Google AI Studio",
+      "korean_full": "구글 AI 스튜디오",
+      "english_full": "googleAiStudio",
+      "definition": "Google의 AI 모델을 쉽게 탐색하고 프로토타입을 만들 수 있는 웹 기반 개발 환경입니다.",
+      "easy_meaning": "구글에서 만든 AI 모델들을 직접 만져보고 시험해볼 수 있는 온라인 도구야.",
+      "analogy": "요리를 배우기 위해 주방 도구와 재료들이 모여있는 곳처럼, AI를 써보기 위한 개발 환경이지.",
+      "difficulty": "★★☆☆☆",
+      "related_keywords": [
+        "Google",
+        "AI",
+        "개발 도구"
+      ]
+    },
+    "assemblyai": {
+      "term": "AssemblyAI",
+      "korean_full": "어셈블리AI",
+      "english_full": "assemblyai",
+      "definition": "음성 인식, 화자 분리, 내용 요약 등 오디오 데이터를 처리하는 데 특화된 AI API 제공 업체입니다.",
+      "easy_meaning": "소리 데이터를 글자로 바꿔주거나, 누가 말했는지 구분하는 등 오디오 관련 AI 기능을 제공하는 회사야.",
+      "analogy": "음악 방송에서 나오는 목소리를 글자로 받아 적어주는 기술을 서비스로 제공하는 곳이라고 할 수 있지.",
+      "difficulty": "★★★☆☆",
+      "related_keywords": [
+        "음성 인식",
+        "API",
+        "오디오"
+      ]
+    },
+    "microsoftCopilotApi": {
+      "term": "Microsoft Copilot API",
+      "korean_full": "마이크로소프트 코파일럿 API",
+      "english_full": "microsoftCopilotApi",
+      "definition": "Microsoft 365 등 Microsoft 제품과 연동되어 생산성을 높이는 AI 비서 기능입니다.",
+      "easy_meaning": "마이크로소프트의 여러 프로그램들과 함께 쓰면서 일을 더 잘 도와주는 AI 비서 기능이야.",
+      "analogy": "업무용 컴퓨터에 똑똑한 비서가 붙어서 자료를 찾아주고, 글을 써주는 것처럼 도와주는 거지.",
+      "difficulty": "★★★☆☆",
+      "related_keywords": [
+        "Microsoft",
+        "AI",
+        "생산성"
+      ]
+    },
+    "targetaudience": {
+      "term": "targetAudience",
+      "korean_full": "대상",
+      "english_full": "targetAudience",
+      "definition": "특정 메시지, 제품, 서비스 또는 콘텐츠가 전달되거나 제공되는 주요 집단을 의미합니다.",
+      "easy_meaning": "이 글이나 정보가 누구에게 가장 도움이 될 만한지를 정해놓은 사람들을 말해.",
+      "analogy": "어린이 만화 영화는 '아이들'이 대상이고, 성인 대상 드라마는 '성인'이 대상인 것처럼.",
+      "difficulty": "★☆☆☆☆",
+      "related_keywords": [
+        "주요 집단",
+        "수신자",
+        "고객"
+      ]
+    },
+    "methodsandprocess": {
+      "term": "methodsAndProcess",
+      "korean_full": "방법 및 과정",
+      "english_full": "methodsAndProcess",
+      "definition": "목표를 달성하기 위해 사용되는 구체적인 절차, 기법 및 단계를 설명하는 부분입니다.",
+      "easy_meaning": "어떤 일을 하기 위해서 우리가 어떤 방법들을 사용할 거고, 어떤 순서대로 진행할 건지에 대한 설명이야.",
+      "analogy": "요리를 하기 위해 어떤 재료를 쓰고, 어떤 순서로 볶고 끓일 건지에 대한 레시피와 같아.",
+      "difficulty": "★☆☆☆☆",
+      "related_keywords": [
+        "절차",
+        "기법",
+        "단계"
+      ]
+    },
+    "datacollection": {
+      "term": "dataCollection",
+      "korean_full": "데이터 수집",
+      "english_full": "dataCollection",
+      "definition": "분석, 연구 또는 의사 결정을 위해 필요한 정보를 수집하는 과정입니다.",
+      "easy_meaning": "필요한 정보들을 모으는 작업이야.",
+      "analogy": "요리를 하기 위해 시장에서 필요한 채소, 고기, 양념들을 사 오는 것과 같아.",
+      "difficulty": "★☆☆☆☆",
+      "related_keywords": [
+        "정보 수집",
+        "자료",
+        "분석"
+      ]
+    },
+    "approachmethods": {
+      "term": "approachMethods",
+      "korean_full": "접근 방법",
+      "english_full": "approachMethods",
+      "definition": "문제 해결이나 목표 달성을 위해 취하는 전략적이고 구체적인 방법론을 의미합니다.",
+      "easy_meaning": "어떤 문제를 해결하거나 목표를 이루기 위해 사용할 구체적인 방법들이야.",
+      "analogy": "어떤 산에 올라갈 건데, 등산로를 따라 걸어갈 건지, 헬리콥터를 탈 건지에 대한 여러 가지 계획 같은 거야.",
+      "difficulty": "★☆☆☆☆",
+      "related_keywords": [
+        "전략",
+        "방법론",
+        "기법"
+      ]
+    },
+    "analysisflow": {
+      "term": "analysisFlow",
+      "korean_full": "분석 및 해결 프로세스",
+      "english_full": "analysisFlow",
+      "definition": "데이터를 분석하고 문제를 해결하기 위한 단계별 진행 과정 또는 절차를 나타냅니다.",
+      "easy_meaning": "문제를 해결하거나 데이터를 분석하기 위해 거쳐야 하는 단계별 순서야.",
+      "analogy": "감기에 걸렸을 때, 병원에 가서 진찰받고, 약을 처방받고, 약을 먹는 일련의 과정과 같아.",
+      "difficulty": "★☆☆☆☆",
+      "related_keywords": [
+        "단계",
+        "절차",
+        "문제 해결"
+      ]
+    },
+    "actionplan": {
+      "term": "actionPlan",
+      "korean_full": "실행 방안",
+      "english_full": "actionPlan",
+      "definition": "문제 해결이나 목표 달성을 위해 구체적으로 취할 행동 계획을 명시한 것입니다.",
+      "easy_meaning": "우리가 알아낸 것을 바탕으로 실제로 앞으로 어떻게 행동할지에 대한 구체적인 계획이야.",
+      "analogy": "병을 치료하기 위해 의사가 '이 약을 먹고, 쉬세요'라고 처방하는 것처럼, 앞으로 무엇을 해야 하는지에 대한 지침.",
+      "difficulty": "★☆☆☆☆",
+      "related_keywords": [
+        "계획",
+        "실천",
+        "행동"
+      ]
+    },
+    "keytakeaway": {
+      "term": "keyTakeaway",
+      "korean_full": "한 줄 결론",
+      "english_full": "keyTakeaway",
+      "definition": "전체 내용에서 가장 중요하고 핵심적인 메시지나 요점을 간결하게 요약한 것입니다.",
+      "easy_meaning": "이 모든 내용을 딱 한 문장으로 줄여서 가장 중요하게 전달하고 싶은 핵심이야.",
+      "analogy": "긴 영화를 보고 나서, '결국 사랑이 중요했다'처럼 가장 기억에 남는 한 마디.",
+      "difficulty": "★☆☆☆☆",
+      "related_keywords": [
+        "핵심",
+        "요약",
+        "메시지"
+      ]
+    },
+    "nextstep": {
+      "term": "nextStep",
+      "korean_full": "다음 스텝",
+      "english_full": "nextStep",
+      "definition": "현재 단계 이후에 취하게 될 다음 행동이나 과제를 의미합니다.",
+      "easy_meaning": "지금 이 일을 끝내고 나서, 그다음에 무엇을 할 건지에 대한 다음 계획이야.",
+      "analogy": "하나의 게임 스테이지를 클리어하고 나서, 그다음 스테이지로 나아가는 것처럼.",
+      "difficulty": "★☆☆☆☆",
+      "related_keywords": [
+        "이후 계획",
+        "후속 조치",
+        "진행"
+      ]
+    },
+    "nbformat": {
+      "term": "nbformat",
+      "korean_full": "노트북 포맷 버전",
+      "english_full": "nbformat",
+      "definition": "A specification that defines the file format for saving Jupyter notebooks.",
+      "easy_meaning": "주피터 노트북 파일이 어떤 형식으로 저장될지를 정하는 규칙의 번호예요.",
+      "analogy": "책이 두꺼운 책, 얇은 책, 만화책 등 다양한 형태로 만들어지듯, 노트북 파일도 이런 약속된 형식으로 저장돼요.",
+      "difficulty": "★☆☆☆☆",
+      "related_keywords": [
+        "Jupyter Notebook",
+        "File Format",
+        "Specification"
+      ]
+    },
+    "nbformatMinor": {
+      "term": "nbformatMinor",
+      "korean_full": "노트북 포맷 마이너 버전",
+      "english_full": "nbformatMinor",
+      "definition": "A minor version number within the nbformat specification, indicating backward-compatible changes.",
+      "easy_meaning": "노트북 파일 형식 규칙에서 큰 변화는 아니지만, 조금씩 업데이트된 세부 버전을 나타내요.",
+      "analogy": "휴대폰 앱이 버그 수정이나 작은 기능 개선으로 업데이트될 때 '버전 1.0.1'처럼 '1' 뒤에 붙는 숫자를 생각하면 돼요.",
+      "difficulty": "★☆☆☆☆",
+      "related_keywords": [
+        "nbformat",
+        "Version",
+        "Backward Compatibility"
+      ]
+    },
+    "largeLanguageModel": {
+      "term": "LLM",
+      "korean_full": "거대 언어 모델",
+      "english_full": "largeLanguageModel",
+      "definition": "방대한 양의 텍스트 데이터를 학습하여 인간과 유사한 자연스러운 텍스트를 생성하고 이해하는 인공지능 모델입니다.",
+      "easy_meaning": "아주 많은 글을 읽고 배워서 사람처럼 글을 쓰고 질문에 답하는 똑똑한 컴퓨터 프로그램이에요.",
+      "analogy": "어떤 주제에 대해 물어보면 책을 수십 권 읽은 것처럼 자세하게 설명해주는 친구 같아요.",
+      "difficulty": "★★★★☆",
+      "related_keywords": [
+        "인공지능",
+        "자연어 처리",
+        "텍스트 생성"
+      ]
+    },
+    "googleSearch": {
+      "term": "Google Search",
+      "korean_full": "구글 검색",
+      "english_full": "googleSearch",
+      "definition": "인터넷 상의 정보를 사용자가 입력한 키워드를 바탕으로 찾아주는 웹 검색 엔진 서비스입니다.",
+      "easy_meaning": "궁금한 것을 인터넷에서 찾아주는 똑똑한 안내원이에요.",
+      "analogy": "도서관에서 원하는 책을 찾아주는 사서 선생님과 비슷해요.",
+      "difficulty": "★☆☆☆☆",
+      "related_keywords": [
+        "검색 엔진",
+        "정보 탐색",
+        "인터넷"
+      ]
+    },
+    "chatGpt": {
+      "term": "ChatGPT",
+      "korean_full": "챗지피티",
+      "english_full": "chatGpt",
+      "definition": "OpenAI에서 개발한 대화형 인공지능 챗봇으로, 자연스러운 언어 이해 및 생성 능력을 갖추고 있습니다.",
+      "easy_meaning": "사람과 대화하듯이 질문하고 답을 얻을 수 있는 인공지능 챗봇이에요.",
+      "analogy": "궁금한 것을 물어보면 마치 친구처럼 대답해주는 온라인 튜터 같아요.",
+      "difficulty": "★★★☆☆",
+      "related_keywords": [
+        "인공지능",
+        "챗봇",
+        "대화형 AI"
+      ]
+    },
+    "template": {
+      "term": "Template",
+      "korean_full": "템플릿",
+      "english_full": "template",
+      "definition": "미리 정해진 형식이나 틀로, 사용자가 내용을 채워 넣음으로써 일관성 있고 효율적인 결과물을 만들도록 돕는 것입니다.",
+      "easy_meaning": "글을 쓰거나 문서를 만들 때 미리 정해진 칸에 내용만 채워 넣으면 완성되는 틀이에요.",
+      "analogy": "이력서 양식에 이름, 연락처, 경력 등을 채워 넣는 것처럼, 미리 준비된 문서 틀에 맞춰 내용을 작성하는 거예요.",
+      "difficulty": "★☆☆☆☆",
+      "related_keywords": [
+        "서식",
+        "양식",
+        "미리보기"
+      ]
+    },
+    "notion": {
+      "term": "Notion",
+      "korean_full": "노션",
+      "english_full": "notion",
+      "definition": "정보를 정리하고 관리하는 데 사용되는 올인원 워크스페이스로, 노트, 데이터베이스, 칸반 보드 등 다양한 기능을 제공합니다.",
+      "easy_meaning": "메모, 할 일 목록, 프로젝트 관리 등 여러 가지 정보를 한곳에서 관리할 수 있는 똑똑한 앱이에요.",
+      "analogy": "다이어리, 캘린더, 메모장, 서랍이 하나로 합쳐져서 중요한 정보들을 체계적으로 정리하고 찾아볼 수 있는 도구 같아요.",
+      "difficulty": "★★☆☆☆",
+      "related_keywords": [
+        "업무 도구",
+        "정보 관리",
+        "생산성"
+      ]
+    },
+    "cia": {
+      "term": "CIA",
+      "korean_full": "미국 중앙정보국",
+      "english_full": "Central Intelligence Agency",
+      "definition": "The Central Intelligence Agency is a civilian foreign intelligence service of the federal government of the United States, officially tasked with gathering, processing, and analyzing national security information from around the world, primarily through the use of human intelligence.",
+      "easy_meaning": "미국의 국가 안보를 위해 전 세계 정보를 수집하고 분석하는 기관이야.",
+      "analogy": "나라의 안전을 위해 외국 정보를 탐정처럼 몰래 알아오는 팀이라고 생각하면 돼.",
+      "difficulty": "★★☆☆☆",
+      "related_keywords": [
+        "정보기관",
+        "첩보",
+        "국가 안보"
+      ]
+    },
+    "actor": {
+      "term": "Actor",
+      "korean_full": "배우",
+      "english_full": "Actor",
+      "definition": "An actor is a person who portrays a character in a performance. Actors and actresses perform roles in plays, movies, television shows, and other media.",
+      "easy_meaning": "영화나 연극 등에서 특정 역할을 맡아 연기하는 사람이야.",
+      "analogy": "TV 드라마에서 주인공이나 조연으로 나오는 사람들을 말해.",
+      "difficulty": "★☆☆☆☆",
+      "related_keywords": [
+        "연기자",
+        "탤런트",
+        "캐릭터"
+      ]
+    },
+    "genre": {
+      "term": "Genre",
+      "korean_full": "장르",
+      "english_full": "Genre",
+      "definition": "Genre refers to a category of artistic composition, characterized by similarities in form, style, or subject matter.",
+      "easy_meaning": "영화, 음악, 문학 등에서 비슷한 특징을 가진 작품들을 묶은 종류를 말해.",
+      "analogy": "액션 영화, 로맨스 영화, 코미디 영화처럼 영화의 종류를 나누는 기준이야.",
+      "difficulty": "★☆☆☆☆",
+      "related_keywords": [
+        "분류",
+        "스타일",
+        "주제"
+      ]
+    },
+    "plot": {
+      "term": "Plot",
+      "korean_full": "줄거리",
+      "english_full": "Plot",
+      "definition": "The plot of a narrative is the sequence of events that make up the story, including the exposition, rising action, climax, falling action, and resolution.",
+      "easy_meaning": "영화나 소설에서 일어나는 사건들이 시간 순서대로 연결된 내용을 말해.",
+      "analogy": "영화에서 주인공이 겪는 사건들이 시작부터 끝까지 어떻게 흘러가는지에 대한 이야기야.",
+      "difficulty": "★☆☆☆☆",
+      "related_keywords": [
+        "스토리",
+        "이야기",
+        "사건"
+      ]
+    },
+    "sequel": {
+      "term": "Sequel",
+      "korean_full": "속편",
+      "english_full": "Sequel",
+      "definition": "A sequel is a literary, dramatic, or cinematic work that continues the story of, or expands upon, any earlier work.",
+      "easy_meaning": "이전에 나온 영화나 책의 이야기를 이어서 만든 다음 작품이야.",
+      "analogy": "처음에 나왔던 영화가 인기가 많아서 그 다음 이야기를 담아 만든 두 번째 영화를 말해.",
+      "difficulty": "★★☆☆☆",
+      "related_keywords": [
+        "후속작",
+        "이어지는 이야기",
+        "차기작"
+      ]
+    },
+    "cinematography": {
+      "term": "Cinematography",
+      "korean_full": "영화 촬영 기법",
+      "english_full": "Cinematography",
+      "definition": "Cinematography is the art and science of motion-picture photography. It involves the manipulation of light and color while recording and transmitting the images.",
+      "easy_meaning": "영화를 찍을 때 빛, 색깔, 구도 등을 조절해서 시각적인 효과를 만드는 기술이야.",
+      "analogy": "카메라로 장면을 멋지게 보이게 하거나, 특정 분위기를 연출하기 위해 빛을 조절하고 카메라 각도를 바꾸는 기술을 말해.",
+      "difficulty": "★★★☆☆",
+      "related_keywords": [
+        "촬영",
+        "영상미",
+        "연출"
+      ]
+    },
+    "character": {
+      "term": "Character",
+      "korean_full": "캐릭터",
+      "english_full": "Character",
+      "definition": "A character is a person or other being in a narrative. The character may be realistic or fantastical.",
+      "easy_meaning": "영화, 소설, 게임 등에 등장하는 인물이나 존재를 말해.",
+      "analogy": "영화 주인공, 악당, 조연 등 이야기에 나오는 사람이나 생명체를 의미해.",
+      "difficulty": "★☆☆☆☆",
+      "related_keywords": [
+        "등장인물",
+        "인물",
+        "배역"
+      ]
+    },
+    "theme": {
+      "term": "Theme",
+      "korean_full": "테마",
+      "english_full": "Theme",
+      "definition": "A theme is the central idea or underlying message of a literary, artistic, or cinematic work.",
+      "easy_meaning": "작품에서 가장 중요하게 다루는 생각이나 메시지를 말해.",
+      "analogy": "영화에서 '가족애', '복수', '생존'처럼 영화가 전달하고자 하는 핵심적인 내용을 뜻해.",
+      "difficulty": "★★☆☆☆",
+      "related_keywords": [
+        "주제",
+        "중심 사상",
+        "메시지"
+      ]
+    },
+    "mafia": {
+      "term": "Mafia",
+      "korean_full": "마피아",
+      "english_full": "Mafia",
+      "definition": "The Mafia is a criminal organization, typically originating in Italy, characterized by a hierarchical structure, secret rituals, and a code of silence.",
+      "easy_meaning": "이탈리아 등에서 시작된 조직적인 범죄 집단을 말해. 주로 불법적인 일을 하고 조직원들끼리 비밀을 지켜.",
+      "analogy": "영화에서 나오는 것처럼, 비밀리에 활동하며 돈을 벌기 위해 범죄를 저지르는 조직적인 갱단을 생각하면 돼.",
+      "difficulty": "★★☆☆☆",
+      "related_keywords": [
+        "범죄 조직",
+        "갱단",
+        "불법"
+      ]
+    },
+    "revenge": {
+      "term": "Revenge",
+      "korean_full": "복수",
+      "english_full": "Revenge",
+      "definition": "Revenge is the action of inflicting hurt on someone for an injury or wrong suffered at their hands.",
+      "easy_meaning": "자신이나 소중한 사람이 입은 피해에 대해 상대방에게 똑같이 해를 입히는 행위를 말해.",
+      "analogy": "누군가가 나에게 나쁜 짓을 했을 때, 그 사람에게 똑같이 혼내주거나 해를 입히려고 하는 것을 의미해.",
+      "difficulty": "★☆☆☆☆",
+      "related_keywords": [
+        "앙갚음",
+        "보복",
+        "원수 갚음"
+      ]
+    },
+    "survival": {
+      "term": "Survival",
+      "korean_full": "생존",
+      "english_full": "Survival",
+      "definition": "Survival is the state or fact of continuing to live or exist, typically in spite of an accident, ordeal, or difficult circumstances.",
+      "easy_meaning": "위험하거나 어려운 상황에서도 살아남는 것을 말해.",
+      "analogy": "무인도에 떨어졌을 때, 먹을 것을 찾고 비바람을 피해 살아남기 위해 노력하는 거야.",
+      "difficulty": "★☆☆☆☆",
+      "related_keywords": [
+        "생존력",
+        "생명 유지",
+        "견딤"
+      ]
+    },
+    "espionage": {
+      "term": "Espionage",
+      "korean_full": "첩보 활동",
+      "english_full": "Espionage",
+      "definition": "Espionage is the practice of spying or using spies, typically by governments to obtain political and military information.",
+      "easy_meaning": "정부나 조직이 다른 나라나 단체의 비밀 정보를 알아내기 위해 몰래 정보를 캐내는 활동을 말해.",
+      "analogy": "나라의 비밀 정보를 알아내기 위해 다른 나라에 몰래 잠입해서 정보를 빼내는 첩보원의 임무 같은 거야.",
+      "difficulty": "★★☆☆☆",
+      "related_keywords": [
+        "스파이",
+        "정보 수집",
+        "비밀 활동"
+      ]
+    },
+    "action": {
+      "term": "Action",
+      "korean_full": "액션",
+      "english_full": "Action",
+      "definition": "Action is a genre of filmmaking that emphasizes exciting, physical events such as fighting and chasing.",
+      "easy_meaning": "싸움, 추격 등 몸을 많이 움직이는 역동적인 장면이 많이 나오는 영화의 한 종류야.",
+      "analogy": "영화에서 주인공이 악당들과 싸우거나, 차를 타고 빠르게 도망치는 장면들이 많은 장르를 말해.",
+      "difficulty": "★☆☆☆☆",
+      "related_keywords": [
+        "격투",
+        "추격",
+        "전투"
+      ]
+    },
+    "thriller": {
+      "term": "Thriller",
+      "korean_full": "스릴러",
+      "english_full": "Thriller",
+      "definition": "A thriller is a genre of fiction that is characterized by excitement and suspense.",
+      "easy_meaning": "긴장감과 흥미진진함이 가득해서 보는 사람을 조마조마하게 만드는 영화 장르야.",
+      "analogy": "다음 장면에서 무슨 일이 일어날지 몰라 손에 땀을 쥐게 하는 범죄나 미스터리 영화를 생각하면 돼.",
+      "difficulty": "★☆☆☆☆",
+      "related_keywords": [
+        "긴장감",
+        "서스펜스",
+        "흥미진진"
+      ]
+    },
+    "kidnapping": {
+      "term": "Kidnapping",
+      "korean_full": "납치",
+      "english_full": "Kidnapping",
+      "definition": "Kidnapping is the unlawful taking away of a person against their will.",
+      "easy_meaning": "사람의 의사에 반해서 불법적으로 데려가는 것을 말해.",
+      "analogy": "누군가를 강제로 끌고 가서 안전하지 않은 곳에 가두는 범죄 행위를 뜻해.",
+      "difficulty": "★☆☆☆☆",
+      "related_keywords": [
+        "유괴",
+        "인질",
+        "감금"
+      ]
+    },
+    "intelligence": {
+      "term": "Intelligence",
+      "korean_full": "정보",
+      "english_full": "Intelligence",
+      "definition": "Intelligence refers to information gathered and analyzed concerning national security, foreign governments, and other matters of interest to the government.",
+      "easy_meaning": "국가의 안보나 특정 분야에 대한 중요한 정보들을 모으고 분석한 것을 말해.",
+      "analogy": "정부 기관에서 적의 움직임이나 다른 나라의 계획을 알아내기 위해 수집하는 정보를 의미해.",
+      "difficulty": "★★☆☆☆",
+      "related_keywords": [
+        "정보력",
+        "분석",
+        "첩보"
+      ]
+    },
+    "communication": {
+      "term": "Communication",
+      "korean_full": "통신",
+      "english_full": "Communication",
+      "definition": "Communication is the imparting or exchanging of information by speaking, writing, or using some other medium.",
+      "easy_meaning": "서로의 생각을 말이나 글, 또는 다른 수단을 통해 주고받는 것을 말해.",
+      "analogy": "전화나 문자를 통해 상대방과 이야기를 나누거나 정보를 전달하는 행위를 의미해.",
+      "difficulty": "★☆☆☆☆",
+      "related_keywords": [
+        "전달",
+        "정보 교환",
+        "의사소통"
+      ]
+    },
+    "mission": {
+      "term": "Mission",
+      "korean_full": "임무",
+      "english_full": "Mission",
+      "definition": "A mission is an important task or duty, often one that is undertaken for a specific purpose or cause.",
+      "easy_meaning": "어떤 특별한 목적을 달성하기 위해 맡겨진 중요하거나 어려운 과업을 말해.",
+      "analogy": "군인이 나라를 지키기 위해 해야 하는 특별한 작전이나, 소방관이 불을 끄러 가는 것을 임무라고 해.",
+      "difficulty": "★☆☆☆☆",
+      "related_keywords": [
+        "과업",
+        "임무 수행",
+        "목표"
+      ]
+    },
+    "hostage": {
+      "term": "Hostage",
+      "korean_full": "인질",
+      "english_full": "Hostage",
+      "definition": "A hostage is a person who is seized to compel a government or organization to accede to demands.",
+      "easy_meaning": "요구나 목적을 달성하기 위해 다른 사람이나 단체를 위협하려고 붙잡아 둔 사람을 말해.",
+      "analogy": "범죄자가 사람들을 잡아서 경찰에게 요구사항을 들어달라고 협박할 때 잡힌 사람을 인질이라고 해.",
+      "difficulty": "★☆☆☆☆",
+      "related_keywords": [
+        "납치",
+        "협박",
+        "붙잡힌 사람"
+      ]
+    },
+    "equipment": {
+      "term": "Equipment",
+      "korean_full": "장비",
+      "english_full": "Equipment",
+      "definition": "Equipment is the set of tools, clothing, and other items used for a particular purpose.",
+      "easy_meaning": "어떤 일을 하거나 활동을 할 때 필요한 도구나 물건들의 모음을 말해.",
+      "analogy": "운동할 때 필요한 운동복, 운동화, 그리고 헬스장에서 사용하는 기구들을 통틀어 장비라고 해.",
+      "difficulty": "★☆☆☆☆",
+      "related_keywords": [
+        "도구",
+        "기구",
+        "물품"
+      ]
+    },
+    "weapon": {
+      "term": "Weapon",
+      "korean_full": "무기",
+      "english_full": "Weapon",
+      "definition": "A weapon is an item used to inflict damage or harm.",
+      "easy_meaning": "상대방에게 피해를 주거나 공격하는 데 사용되는 도구를 말해.",
+      "analogy": "총, 칼, 또는 폭탄처럼 사람을 다치게 하거나 해를 입히는 데 쓰이는 모든 것을 의미해.",
+      "difficulty": "★☆☆☆☆",
+      "related_keywords": [
+        "공격 도구",
+        "살상 도구",
+        "무장"
+      ]
+    },
+    "torture": {
+      "term": "Torture",
+      "korean_full": "고문",
+      "english_full": "Torture",
+      "definition": "Torture is the act of inflicting severe pain or suffering on someone, often to extract information or as a punishment.",
+      "easy_meaning": "정보를 얻거나 벌을 주기 위해 사람에게 극심한 고통이나 괴로움을 주는 행위를 말해.",
+      "analogy": "경찰이 범인에게서 자백을 받아내기 위해 심한 고통을 주는 것을 생각하면 돼.",
+      "difficulty": "★★☆☆☆",
+      "related_keywords": [
+        "괴롭힘",
+        "고통",
+        "심문"
+      ]
+    },
+    "operation": {
+      "term": "Operation",
+      "korean_full": "작전",
+      "english_full": "Operation",
+      "definition": "An operation is a planned series of actions designed to achieve a particular objective, especially in military, police, or medical contexts.",
+      "easy_meaning": "특정한 목표를 달성하기 위해 계획된 일련의 행동이나 활동을 말해.",
+      "analogy": "군대에서 적을 무찌르기 위해 계획하는 공격이나, 병원에서 환자의 수술을 하나의 작전이라고 부를 수 있어.",
+      "difficulty": "★★☆☆☆",
+      "related_keywords": [
+        "계획",
+        "활동",
+        "전투"
+      ]
+    },
+    "objective": {
+      "term": "Objective",
+      "korean_full": "목표",
+      "english_full": "Objective",
+      "definition": "An objective is a goal or aim that is intended to be achieved.",
+      "easy_meaning": "달성하고자 하는 구체적인 목적이나 목표를 말해.",
+      "analogy": "운동선수가 경기에 이기기 위해 노력하는 것, 또는 학생이 시험에서 좋은 성적을 받으려고 공부하는 것이 목표야.",
+      "difficulty": "★☆☆☆☆",
+      "related_keywords": [
+        "목표물",
+        "달성점",
+        "기준"
+      ]
+    },
+    "villain": {
+      "term": "Villain",
+      "korean_full": "악역",
+      "english_full": "Villain",
+      "definition": "A villain is a character in a story whose evil actions or motives are important to the plot.",
+      "easy_meaning": "이야기에서 악한 행동이나 동기로 사건을 일으키는 등장인물을 말해.",
+      "analogy": "영화에서 주인공을 괴롭히거나 나쁜 짓을 하는 악당 캐릭터를 의미해.",
+      "difficulty": "★☆☆☆☆",
+      "related_keywords": [
+        "악당",
+        "적",
+        "조연"
+      ]
+    },
+    "counterattack": {
+      "term": "Counterattack",
+      "korean_full": "반격",
+      "english_full": "Counterattack",
+      "definition": "A counterattack is an attack made or carried out in return for a similar attack.",
+      "easy_meaning": "상대방의 공격에 맞서서 되받아치는 공격을 말해.",
+      "analogy": "축구 경기에서 상대팀이 골을 넣으려고 공격해 올 때, 우리 팀이 공을 빼앗아 다시 상대방 진영으로 공격하는 것을 반격이라고 해.",
+      "difficulty": "★★☆☆☆",
+      "related_keywords": [
+        "되받아치기",
+        "응수",
+        "반격"
+      ]
+    },
+    "rescue": {
+      "term": "Rescue",
+      "korean_full": "구출",
+      "english_full": "Rescue",
+      "definition": "Rescue is the act of saving or delivering someone from danger or distress.",
+      "easy_meaning": "위험에 빠진 사람을 구해내거나 안전한 곳으로 옮기는 행위를 말해.",
+      "analogy": "불이 난 건물에 갇힌 사람을 소방관이 안전하게 밖으로 데리고 나오는 것을 구출이라고 해.",
+      "difficulty": "★☆☆☆☆",
+      "related_keywords": [
+        "구조",
+        "해방",
+        "구제"
+      ]
+    },
+    "unit": {
+      "term": "Unit",
+      "korean_full": "부대",
+      "english_full": "Unit",
+      "definition": "A unit is a specially organized group of people, especially a military or police force.",
+      "easy_meaning": "특정 목적을 위해 특별히 조직된 사람들의 그룹, 특히 군대나 경찰 조직을 말해.",
+      "analogy": "군대에 있는 여러 소규모의 전투팀이나, 경찰서의 형사과 같이 특정 임무를 수행하기 위해 모인 사람들의 조직을 의미해.",
+      "difficulty": "★☆☆☆☆",
+      "related_keywords": [
+        "팀",
+        "그룹",
+        "조직"
+      ]
+    },
+    "fugitive": {
+      "term": "Fugitive",
+      "korean_full": "도주자",
+      "english_full": "Fugitive",
+      "definition": "A fugitive is a person who has escaped from captivity or is in hiding.",
+      "easy_meaning": "감옥에서 도망치거나, 범죄를 저지르고 숨어 다니는 사람을 말해.",
+      "analogy": "경찰에게 쫓기는 범죄자가 잡히지 않기 위해 계속 도망 다니는 것을 의미해.",
+      "difficulty": "★☆☆☆☆",
+      "related_keywords": [
+        "도망자",
+        "탈주범",
+        "수배자"
+      ]
+    },
+    "organization": {
+      "term": "Organization",
+      "korean_full": "조직",
+      "english_full": "Organization",
+      "definition": "An organization is a group of people who have come together for a common purpose.",
+      "easy_meaning": "공통의 목적을 위해 모인 사람들의 집단을 말해.",
+      "analogy": "회사를 다니는 사람들은 회사의 목표를 위해 함께 일하는 조직의 구성원이야.",
+      "difficulty": "★☆☆☆☆",
+      "related_keywords": [
+        "단체",
+        "기구",
+        "체제"
+      ]
+    },
+    "terror": {
+      "term": "Terror",
+      "korean_full": "테러",
+      "english_full": "Terror",
+      "definition": "Terror is the use of violence and intimidation, especially against civilians, in the pursuit of political aims.",
+      "easy_meaning": "정치적인 목표를 달성하기 위해 폭력과 협박을 사용하는 것을 말하며, 특히 민간인을 대상으로 할 때를 의미해.",
+      "analogy": "국가나 단체가 자신들의 주장을 관철시키기 위해 민간인들을 대상으로 폭력을 행사하여 공포심을 일으키는 행위야.",
+      "difficulty": "★★☆☆☆",
+      "related_keywords": [
+        "폭력",
+        "협박",
+        "공포"
+      ]
+    },
+    "trafficking": {
+      "term": "Trafficking",
+      "korean_full": "매매",
+      "english_full": "Trafficking",
+      "definition": "Trafficking refers to the illegal trade or dealing in goods or people.",
+      "easy_meaning": "물건이나 사람을 불법적으로 사고파는 것을 말해. 특히 인신매매와 같은 불법 행위를 포함해.",
+      "analogy": "사람을 사고파는 인신매매나, 마약을 몰래 사고파는 행위를 의미해.",
+      "difficulty": "★★☆☆☆",
+      "related_keywords": [
+        "거래",
+        "인신매매",
+        "밀매"
+      ]
+    },
+    "strategy": {
+      "term": "Strategy",
+      "korean_full": "전략",
+      "english_full": "Strategy",
+      "definition": "A strategy is a plan of action designed to achieve a particular aim.",
+      "easy_meaning": "어떤 목표를 이루기 위해 짜여진 구체적인 계획이나 행동 방침을 말해.",
+      "analogy": "경쟁에서 이기기 위해 어떤 방식으로 경쟁자를 이길지 미리 세우는 치밀한 계획을 전략이라고 해.",
+      "difficulty": "★★☆☆☆",
+      "related_keywords": [
+        "계획",
+        "방안",
+        "전술"
+      ]
+    },
+    "judgment": {
+      "term": "Judgment",
+      "korean_full": "판단",
+      "english_full": "Judgment",
+      "definition": "Judgment is the ability to make considered decisions or come to sensible conclusions.",
+      "easy_meaning": "상황을 제대로 파악해서 합리적이고 현명한 결정을 내릴 수 있는 능력을 말해.",
+      "analogy": "어떤 문제가 발생했을 때, 그 상황의 장단점을 잘 생각해서 가장 좋은 해결책을 고르는 것을 판단이라고 해.",
+      "difficulty": "★☆☆☆☆",
+      "related_keywords": [
+        "결정",
+        "판단력",
+        "숙고"
+      ]
+    },
+    "fusion": {
+      "term": "Fusion",
+      "korean_full": "융합",
+      "english_full": "Fusion",
+      "definition": "Fusion is the action or process of merging or joining together.",
+      "easy_meaning": "두 가지 이상의 것이 합쳐져 하나가 되는 과정을 말해.",
+      "analogy": "두 가지 맛이 합쳐져 새로운 맛을 내는 아이스크림처럼, 여러 요소가 합쳐져 하나를 이루는 것을 융합이라고 해.",
+      "difficulty": "★☆☆☆☆",
+      "related_keywords": [
+        "결합",
+        "통합",
+        "합병"
+      ]
+    },
+    "drama": {
+      "term": "Drama",
+      "korean_full": "드라마",
+      "english_full": "Drama",
+      "definition": "Drama is a genre of fiction intended for performance, characterized by dialogue and action.",
+      "easy_meaning": "이야기 속 인물들의 감정선이나 갈등을 중심으로 풀어가는 장르를 말해.",
+      "analogy": "영화나 TV에서 나오는 것처럼, 등장인물들의 복잡한 감정이나 사건 중심으로 이야기가 흘러가는 것을 드라마라고 해.",
+      "difficulty": "★☆☆☆☆",
+      "related_keywords": [
+        "연극",
+        "감정",
+        "갈등"
+      ]
+    },
+    "element": {
+      "term": "Element",
+      "korean_full": "요소",
+      "english_full": "Element",
+      "definition": "An element is a fundamental part or ingredient of something.",
+      "easy_meaning": "어떤 것을 이루는 기본적인 부분이나 성분을 말해.",
+      "analogy": "빵을 만드는 데 밀가루, 물, 효모가 꼭 필요한 요소인 것처럼, 어떤 것을 구성하는 기본적인 재료나 부분을 의미해.",
+      "difficulty": "★☆☆☆☆",
+      "related_keywords": [
+        "부분",
+        "성분",
+        "재료"
+      ]
+    },
+    "rivalry": {
+      "term": "Rivalry",
+      "korean_full": "경쟁",
+      "english_full": "Rivalry",
+      "definition": "Rivalry is a state of competition or opposition between two or more parties.",
+      "easy_meaning": "두 개 이상의 집단이나 개인이 서로 앞서기 위해 벌이는 경쟁 관계를 말해.",
+      "analogy": "스포츠 경기에서 두 팀이 우승을 놓고 서로 실력을 겨루는 것을 경쟁이라고 해.",
+      "difficulty": "★☆☆☆☆",
+      "related_keywords": [
+        "경쟁자",
+        "대립",
+        "경쟁"
+      ]
+    },
+    "climax": {
+      "term": "Climax",
+      "korean_full": "절정",
+      "english_full": "Climax",
+      "definition": "The climax is the most intense, exciting, or important point of something; a culmination or highest point.",
+      "easy_meaning": "어떤 일이나 이야기에서 가장 긴장되거나 중요한 최고조의 순간을 말해.",
+      "analogy": "영화에서 주인공이 마지막으로 악당과 싸우는 가장 긴장감 넘치는 장면을 절정이라고 해.",
+      "difficulty": "★★☆☆☆",
+      "related_keywords": [
+        "최고조",
+        "정점",
+        "결정적 순간"
+      ]
+    },
+    "connection": {
+      "term": "Connection",
+      "korean_full": "연결고리",
+      "english_full": "Connection",
+      "definition": "A connection is a relationship in which a person or thing is linked or associated with something else.",
+      "easy_meaning": "서로 관련이 있거나 이어져 있는 상태를 말해.",
+      "analogy": "이전 영화에서 나왔던 인물이 다음 영화에 다시 등장하며 이야기가 이어지는 것을 연결고리라고 해.",
+      "difficulty": "★☆☆☆☆",
+      "related_keywords": [
+        "관계",
+        "연관",
+        "결속"
+      ]
+    },
+    "intensity": {
+      "term": "Intensity",
+      "korean_full": "강렬함",
+      "english_full": "Intensity",
+      "definition": "Intensity is the quality of being strong or extreme.",
+      "easy_meaning": "힘이나 정도가 매우 강하고 거센 상태를 말해.",
+      "analogy": "폭발 장면이 매우 크고 위력적으로 보이는 것을 강렬하다고 표현해.",
+      "difficulty": "★★☆☆☆",
+      "related_keywords": [
+        "격렬함",
+        "세기",
+        "강함"
+      ]
+    },
+    "potential": {
+      "term": "Potential",
+      "korean_full": "가능성",
+      "english_full": "Potential",
+      "definition": "Potential is having or showing the capacity to develop into something in the future.",
+      "easy_meaning": "앞으로 발전하거나 성공할 수 있는 능력이 있음을 말해.",
+      "analogy": "아직 데뷔하지 않은 연습생 중에서도 미래에 훌륭한 가수가 될 수 있는 잠재력을 가진 사람을 '가능성 있는 선수'라고 해.",
+      "difficulty": "★☆☆☆☆",
+      "related_keywords": [
+        "잠재력",
+        "가능",
+        "전망"
+      ]
+    },
+    "emotion": {
+      "term": "Emotion",
+      "korean_full": "감정",
+      "english_full": "Emotion",
+      "definition": "Emotion is a strong feeling deriving from one's circumstances, mood, or relationships with others.",
+      "easy_meaning": "기쁨, 슬픔, 분노처럼 마음속에서 일어나는 강한 느낌을 말해.",
+      "analogy": "영화 주인공이 슬픈 장면을 보고 우는 것처럼, 마음속에서 일어나는 느낌들을 감정이라고 해.",
+      "difficulty": "★☆☆☆☆",
+      "related_keywords": [
+        "느낌",
+        "심리",
+        "정서"
+      ]
+    },
+    "backdrop": {
+      "term": "Backdrop",
+      "korean_full": "배경",
+      "english_full": "Backdrop",
+      "definition": "A backdrop is the setting or background against which something happens.",
+      "easy_meaning": "어떤 사건이나 이야기가 펼쳐지는 장소나 환경을 말해.",
+      "analogy": "영화에서 주인공이 활동하는 도시 풍경이나, 산, 바다 등 이야기의 배경이 되는 곳을 의미해.",
+      "difficulty": "★☆☆☆☆",
+      "related_keywords": [
+        "배경",
+        "무대",
+        "환경"
       ]
     }
   }
