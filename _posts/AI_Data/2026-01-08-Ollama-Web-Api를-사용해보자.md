@@ -2,7 +2,7 @@
 title: Ollama Web Api를 사용해보자
 description: Ollama에 Web이라는 날개를 달아주자
 author: taewony
-date: 2025-01-08 23:11:33 +0900
+date: 2026-01-08 23:11:33 +0900
 categories: [Development, AI/Data]
 tags: [ollama, web search, web fetch, local llm, api integration]
 pin: false
