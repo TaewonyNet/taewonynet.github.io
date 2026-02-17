@@ -36,10 +36,10 @@ Opencode의 능력을 끌어올리는 Oh-My-Opencode를 사용해보자
 - **분석 및 해결 프로세스 (Analysis Flow):**
     - **도구/기술:** Oh-My-Opencode CLI, TypeScript, 터미널
     - **주요 단계:**
-        1. [Oh-My-Opencode GitHub](https://github.com/code-yeongyu/oh-my-opencode)에서 프로젝트를 클론한다.
-        2. 의존성을 설치하고 빌드한다.
-        3. OpenCode에 플러그인으로 등록한다.
-        4. Sisyphus 에이전트를 활성화하여 테스트한다.
+      1. opencode를 실행 후 다음의 명령을 opencode에 입력한다.
+      2. `Install and configure oh-my-opencode by following the instructions here: https://raw.githubusercontent.com/code-yeongyu/oh-my-opencode/refs/heads/master/docs/guide/installation.md`
+      3. 하라는 데로 진행한다.
+      4. Sisyphus 에이전트를 활성화하여 테스트한다.
     - **결과 도출 및 검증:** 다중 에이전트 협업을 통한 실제 코딩 작업으로 기능 작동을 검증한다.
 
 ### 3. 결과 (Results)
