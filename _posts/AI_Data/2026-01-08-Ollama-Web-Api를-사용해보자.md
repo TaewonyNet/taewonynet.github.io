@@ -3,7 +3,7 @@ title: Ollama Web Api를 사용해보자
 description: Ollama에 Web이라는 날개를 달아주자
 author: taewony
 date: 2026-01-08 23:11:33 +0900
-categories: [Development, AI/Data]
+categories: [Quick, AI/Data]
 tags: [ollama, web search, web fetch, local llm, api integration]
 pin: false
 math: false
@@ -52,6 +52,6 @@ Ollama에 Web이라는 날개를 달아주자
 - **실행 방안 (Action Plan):**
     - [Ollama 계정](https://ollama.com)에서 API 키를 발급받고 web_search, web_fetch 기능을 구현하여 데이터를 활용한다.
 - **한 줄 결론 (Key Takeaway):**
-    - Ollama Web API를 활용하여 로컬 LLM에 실시간 웹 정보 접근 기능을 추가한다. [샘플 코드](https://github.com/TaewonyNet/taewonynet.github.io/blob/master/src/ollama_web.py)
+    - Ollama Web API를 활용하여 로컬 LLM에 실시간 웹 정보 접근 기능을 추가한다. [샘플 코드](https://github.com/TaewonyNet/taewonynet.github.io/blob/master/src/ollama_web.py){: target="_blank"}
 - **다음 스텝 (Next Step):**
     - 웹 데이터를 활용한 정교한 프롬프트를 작성 해 본다.

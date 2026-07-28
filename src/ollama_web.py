@@ -1,8 +1,7 @@
-import ollama
 import yaml
 import requests
 from pathlib import Path
-from src.chat import BaseChatAPI
+from src import ollama as ollama_local
 
 # 설정 로드
 with open(Path(__file__).parent.parent / ".config.yaml") as f:
@@ -12,7 +11,7 @@ with open(Path(__file__).parent.parent / ".config.yaml") as f:
 API_KEY = config["api"]["ollama"]["key"]
 BASE = config.get("api", {}).get("ollama", {}).get("base_url", "http://localhost:11434")
 
-class OllamaWeb(ollama.Ollama):
+class OllamaWeb(ollama_local.Ollama):
     def __init__(self, base_url=BASE, api_key=API_KEY):
         if not api_key:
             raise ValueError("Ollama API 키가 설정되지 않았습니다. .config.yaml에 설정하세요.")
