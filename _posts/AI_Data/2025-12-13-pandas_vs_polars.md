@@ -3,7 +3,7 @@ title: pandas vs polars
 description: pandas와 polars가 실제 얼마나 차이나는지 정량적으로 평가하기 위한 벤치마크 테스트한다.
 author: taewony
 date: 2025-12-13 22:28:00 +0900
-categories: [Development,AI/Data]
+categories: [Quick, AI/Data]
 tags: [pandas,polars,benchmark,dataframe,performance]
 pin: false
 math: false
@@ -28,9 +28,9 @@ pandas와 polars가 실제 얼마나 차이나는지 정량적으로 평가하�
     - pandas도 옛날에 비해서 성능이 많이 좋아졌으나 python이라는 구조적 한계로 확장이 어렵다고 확인되었다.
     - polars는 rust기반으로 lazy(지연실행) 모델을 사용, 10~100배가 더 빠르다는 소개를 확인하였으며 실제 성능의 정도를 확인하도록 한다.
 - **접근 방법 (Approach Methods):**
-    - **방법 1:** pandas와 polars의 동일 연산을 각각 독립된 프로세스에서 실행하여 시간과 메모리를 측정한다.
-    - **방법 2:** polars의 eager 모드와 lazy 모드를 분리하여 즉시 실행하는 방식과 지연실행하는 방식의 성능을 비교한다.
-    - **방법 3:** 순수한 성능 비교를 위해 각각의 thread개수를 1개만 사용하도록 한정하여 절대적으로 비교 가능하게 한다.
+    - **[방법 1]:** pandas와 polars의 동일 연산을 각각 독립된 프로세스에서 실행하여 시간과 메모리를 측정한다.
+    - **[방법 2]:** polars의 eager 모드와 lazy 모드를 분리하여 즉시 실행하는 방식과 지연실행하는 방식의 성능을 비교한다.
+    - **[방법 3]:** 순수한 성능 비교를 위해 각각의 thread개수를 1개만 사용하도록 한정하여 절대적으로 비교 가능하게 한다.
 - **분석 및 해결 프로세스 (Analysis Flow):**
     - **도구/기술:** Python, Pandas, Polars, Parquet, Multiprocessing
     - **주요 단계:** 데이터 생성 → 연산 실행 → 시간·메모리 측정 → 반복 실행 평균화
@@ -41,16 +41,9 @@ pandas와 polars가 실제 얼마나 차이나는지 정량적으로 평가하�
     - pandas와 polars eager 모드는 성능의 큰 차이를 보이지 않았다. 메모리 역시 큰 차이를 보이지 않았다.
     - polars lazy 모드는 메모리 사용량이 큰 차이를 보이지 않았으나 속도는 압도적인 압도적으로 빨랐다.
     - polars eager 에서 threads 제약을 풀면 조금 더 빨라지나 pandas와 큰 차이를 보이지 않았다.
-```
- === System Info ===
-                     0
-CPU             x86_64
-OS               Linux
-Python         3.10.12
-Python_pandas    1.5.2
-Python_polars   1.27.0
-```
-=== Comparative Benchmark Summary ===
+    - 테스트 환경: x86_64 / Linux / Python 3.10.12, pandas 1.5.2, polars 1.27.0.
+
+**Comparative Benchmark Summary**
 
 | Test                          |   Time(s) |   Memory(bytes) | Error   |
 |:------------------------------|----------:|----------------:|:--------|
