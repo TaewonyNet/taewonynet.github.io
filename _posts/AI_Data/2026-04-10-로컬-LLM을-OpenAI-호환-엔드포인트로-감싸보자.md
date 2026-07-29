@@ -4,7 +4,7 @@ description: Ollama와 CLI 기반 로컬 LLM을 게이트웨이 뒤에 붙여 �
 author: taewony
 date: 2026-04-10 22:09:31 +0900
 categories: [Quick, AI/Data]
-tags: [ollama, local-llm, subprocess, openai-sdk, self-hosting, llm-gateway]
+tags: [ollama, local llm, subprocess, openai-sdk, self-hosting, llm-gateway]
 pin: false
 math: false
 mermaid: false
