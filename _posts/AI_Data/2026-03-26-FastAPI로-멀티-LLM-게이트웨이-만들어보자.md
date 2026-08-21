@@ -4,7 +4,9 @@ description: Gemini·Groq·Cerebras를 OpenAI 호환 /v1/chat/completions 하나
 author: taewony
 date: 2026-03-26 22:48:15 +0900
 categories: [Quick, AI/Data]
-tags: [fastapi, llm-gateway, openai-compatible, clean-architecture, routing, python]
+domain: llm
+purpose: structure
+tags: [fastapi, llm-gateway, openai-compatible, clean-architecture, routing]
 pin: false
 math: false
 mermaid: false

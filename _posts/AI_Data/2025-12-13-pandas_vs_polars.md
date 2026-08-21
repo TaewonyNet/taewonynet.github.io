@@ -4,6 +4,8 @@ description: pandas와 polars가 실제 얼마나 차이나는지 정량적으�
 author: taewony
 date: 2025-12-13 22:28:00 +0900
 categories: [Quick, AI/Data]
+domain: data-pipeline
+purpose: verify
 tags: [pandas,polars,benchmark,dataframe,performance]
 pin: false
 math: false

@@ -4,7 +4,9 @@ description: curl_cffi부터 playwright까지 빠른 방법 순으로 시도하�
 author: taewony
 date: 2026-05-17 21:00:00 +0900
 categories: [Quick, Development]
-tags: [python, scrapling, curl-cffi, playwright, bot-bypass, method-cache]
+domain: scraping
+purpose: bypass
+tags: [scrapling, curl-cffi, playwright, bot-bypass, method-cache]
 pin: false
 math: false
 mermaid: false

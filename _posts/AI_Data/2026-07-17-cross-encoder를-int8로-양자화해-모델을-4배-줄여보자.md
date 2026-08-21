@@ -4,7 +4,9 @@ description: ONNX cross-encoder 리랭커를 int8 동적 양자화했더니 크�
 author: taewony
 date: 2026-07-17 23:14:07 +0900
 categories: [Quick, AI/Data]
-tags: [quantization, int8, cross-encoder, onnx, inference, rerank]
+domain: search
+purpose: perf
+tags: [quantization, int8, cross-encoder, onnx, inference, reranking]
 pin: false
 math: false
 mermaid: false

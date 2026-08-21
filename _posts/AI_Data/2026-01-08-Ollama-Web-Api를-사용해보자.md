@@ -4,7 +4,9 @@ description: Ollama에 Web이라는 날개를 달아주자
 author: taewony
 date: 2026-01-08 23:11:33 +0900
 categories: [Quick, AI/Data]
-tags: [ollama, web search, web fetch, local llm, api integration]
+domain: llm
+purpose: automate
+tags: [ollama, web-search, web-fetch, local-llm, api-integration]
 pin: false
 math: false
 mermaid: false

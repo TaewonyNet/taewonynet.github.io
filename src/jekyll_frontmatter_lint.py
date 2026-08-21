@@ -58,7 +58,10 @@ def fix_bare_numeric_tags(frontmatter_text: str) -> str:
         items = split_items(m.group("items"))
         quoted = [f"'{item}'" if BARE_NUMBER_RE.match(item) else item for item in items]
         fixed_lines.append(f"{m.group('key')}: [{', '.join(quoted)}]")
-    return "\n".join(fixed_lines)
+    # splitlines()가 끝 개행을 버리므로 되살린다. 호출부가 `---{fm}---{body}` 로
+    # 이어붙이기 때문에, 개행이 없으면 닫는 구분자가 마지막 줄에 달라붙어
+    # (`tags: [...]---`) frontmatter 블록 자체가 깨진다.
+    return "\n".join(fixed_lines) + "\n"
 
 
 def load_frontmatter(path: Path) -> tuple[str, str, str] | None:

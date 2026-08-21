@@ -4,7 +4,9 @@ description: solve_cloudflare=True 하나로 안 되던 이유와 WebRTC·Canvas
 author: taewony
 date: 2026-05-19 21:00:00 +0900
 categories: [Quick, Development]
-tags: [python, scrapling, cloudflare, stealth, browser-fingerprint]
+domain: scraping
+purpose: bypass
+tags: [scrapling, cloudflare, stealth, browser-fingerprint]
 pin: false
 math: false
 mermaid: false

@@ -4,7 +4,9 @@ description: requests와 playwright로 안 되는 사이트를 StealthyFetcher �
 author: taewony
 date: 2026-05-15 21:00:00 +0900
 categories: [Quick, Development]
-tags: [python, scrapling, web-scraping, stealthy-fetcher]
+domain: scraping
+purpose: bypass
+tags: [scrapling, web-scraping, stealthy-fetcher]
 pin: false
 math: false
 mermaid: false

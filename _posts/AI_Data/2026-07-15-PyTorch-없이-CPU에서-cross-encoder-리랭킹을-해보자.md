@@ -4,6 +4,8 @@ description: onnxruntime 기반 cross-encoder와 스레드 튜닝으로 CPU 리�
 author: taewony
 date: 2026-07-15 23:29:53 +0900
 categories: [Quick, AI/Data]
+domain: search
+purpose: verify
 tags: [reranking, cross-encoder, onnxruntime, cpu-inference, search, benchmark]
 pin: false
 math: false

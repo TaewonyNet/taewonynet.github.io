@@ -4,7 +4,9 @@ description: PyGithub로 크롤 결과를 커밋으로 남기고, Colab 세션�
 author: taewony
 date: 2026-03-24 21:00:00 +0900
 categories: [Quick, Development]
-tags: [python, google-colab, github, pygithub, web-crawling, automation]
+domain: scraping
+purpose: automate
+tags: [google-colab, github, pygithub, web-crawling, automation]
 pin: false
 math: false
 mermaid: false

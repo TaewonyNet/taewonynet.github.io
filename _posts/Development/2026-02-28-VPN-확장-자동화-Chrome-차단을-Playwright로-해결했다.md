@@ -4,7 +4,9 @@ description: --load-extension이 Chrome 업데이트로 막힌 뒤 Playwright Ch
 author: taewony
 date: 2026-02-28 23:11:07 +0900
 categories: [Quick, Development]
-tags: [python, playwright, chrome-extension, vpn, automation]
+domain: browser
+purpose: bypass
+tags: [playwright, chrome-extension, vpn, automation]
 pin: false
 math: false
 mermaid: false

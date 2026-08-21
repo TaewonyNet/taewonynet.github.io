@@ -4,7 +4,9 @@ description: LLMLingua-2 같은 압축 모델이 없는 환경에서도 문장 �
 author: taewony
 date: 2026-04-24 22:28:54 +0900
 categories: [Quick, AI/Data]
-tags: [llmlingua, prompt-compression, context-window, tokens, python]
+domain: llm
+purpose: cost
+tags: [llmlingua, prompt-compression, context-window, tokens]
 pin: false
 math: false
 mermaid: false
