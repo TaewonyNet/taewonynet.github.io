@@ -3,8 +3,10 @@ title: Athena JSON 파싱 및 정규식 처리 성능 비교
 description:
 author:
 date: 2025-07-29 00:00:00+00:00
-categories: ['Architecture']
-tags: ['Architecture', 'AWS', 'Athena']
+categories: [Quick, Architecture]
+domain: db
+purpose: survey
+tags: [architecture, aws, athena]
 pin: false
 math: false
 mermaid: false

@@ -3,8 +3,10 @@ title: playwright에 화면을 달아 웹사이트 정보를 획득해보자
 description: playwright를 좀 더 현실적으로 만들기 위해 화면을 달아보자
 author: taewony
 date: 2026-01-29 22:51:12 +0900
-categories: [Development, Tech/Architecture]
-tags: [python, playwright, pyvirtualdisplay, automation, web-scraping, browser-automation, virtual-display]
+categories: [Quick, Development]
+domain: scraping
+purpose: automate
+tags: [playwright, pyvirtualdisplay, automation, web-scraping, browser-automation, virtual-display]
 pin: false
 math: false
 mermaid: false

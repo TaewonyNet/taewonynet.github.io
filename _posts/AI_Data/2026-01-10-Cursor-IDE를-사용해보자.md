@@ -3,8 +3,10 @@ title: Cursor IDE를 사용해보자
 description: IDE 기반 에이전트인 Cursor를 써보자
 author: taewony
 date: 2026-01-10 22:10:16 +0900
-categories: [Development, AI/Data]
-tags: [cursor, ide, ai editor, code generation, ai assistant, privacy]
+categories: [Quick, AI/Data]
+domain: agent
+purpose: survey
+tags: [cursor, ide, ai-editor, code-generation, ai-assistant, privacy]
 pin: false
 math: false
 mermaid: false

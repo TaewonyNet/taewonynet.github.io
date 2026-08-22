@@ -3,8 +3,10 @@ title: Oh-My-Opencode를 사용해보자
 description: Opencode의 능력을 끌어올리는 Oh-My-Opencode를 사용해보자
 author: taewony
 date: 2026-01-14 14:20:00 +0900
-categories: [AI/Data, Development]
-tags: [opencode, advanced coding, code review, automation, oh-my-opencode]
+categories: [Quick, AI/Data]
+domain: agent
+purpose: automate
+tags: [opencode, advanced-coding, code-review, automation, oh-my-opencode]
 pin: false
 math: false
 mermaid: false

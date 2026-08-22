@@ -3,8 +3,10 @@ title: libtorrent를 사용해보자
 description: libtorrent를 사용하여 torrent 다운로드 해보자
 author: taewony
 date: 2026-01-18 15:30:00 +0900
-categories: [Development, Tech/Architecture]
-tags: [libtorrent, bittorrent, python, p2p, file-sharing, automation]
+categories: [Quick, Development]
+domain: infra
+purpose: automate
+tags: [libtorrent, bittorrent, p2p, file-sharing, automation]
 pin: false
 math: false
 mermaid: false

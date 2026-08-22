@@ -3,8 +3,10 @@ title: AWS Athena 가이드
 description:
 author:
 date: 2024-01-20 00:00:00+00:00
-categories: ['Architecture']
-tags: ['Architecture', 'AWS', 'Athena']
+categories: [Quick, Architecture]
+domain: db
+purpose: survey
+tags: [architecture, aws, athena]
 pin: false
 math: false
 mermaid: false

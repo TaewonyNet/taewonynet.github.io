@@ -49,5 +49,11 @@ jobs:
       - name: Build Assets
         run: npm i && npm run build
 
+      # 글 구조·태그 스키마 게이트. 손으로 기억해서 돌리면 언젠가 빠뜨린다.
+      - name: Validate Posts
+        run: |
+          python3 tools/validate_template.py --quiet _posts
+          python3 tools/validate_tags.py _posts
+
       - name: Test Site
         run: bash tools/test.sh

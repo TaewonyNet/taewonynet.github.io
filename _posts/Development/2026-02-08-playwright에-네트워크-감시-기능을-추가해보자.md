@@ -3,8 +3,10 @@ title: playwright에 네트워크 감시 기능을 추가해보자
 description: playwright에 har형식으로 네트워크를 감시하여 필요한 데이터를 획득해보자
 author: taewony
 date: 2026-02-08 22:15:30 +0900
-categories: [Development, Tech/Architecture]
-tags: [python, playwright, har, network-monitoring, web-scraping, automation, httpx]
+categories: [Quick, Development]
+domain: scraping
+purpose: automate
+tags: [playwright, har, network-monitoring, web-scraping, automation, httpx]
 pin: false
 math: false
 mermaid: false

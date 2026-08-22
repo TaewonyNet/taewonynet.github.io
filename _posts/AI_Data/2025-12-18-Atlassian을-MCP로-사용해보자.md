@@ -3,8 +3,10 @@ title: Atlassian을 MCP로 사용해 보자
 description: Atlassian을 MCP로 사용할 수 있는 방법과 실제 듀토리얼을 해보자
 author: taewony
 date: 2025-12-18 22:40:00 +0900
-categories: [Development, AI/Data]
-tags: [Atlassian, mcp, tutorial, docker, confluence, jira, llm]
+categories: [Quick, AI/Data]
+domain: agent
+purpose: automate
+tags: [atlassian, mcp, tutorial, docker, confluence, jira, llm]
 pin: false
 math: false
 mermaid: false

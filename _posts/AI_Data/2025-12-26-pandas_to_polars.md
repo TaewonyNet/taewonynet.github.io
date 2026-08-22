@@ -3,7 +3,9 @@ title: pandas to polars
 description: pandas를 polars로 변환하는 치트시트를 만들고 해당 내용 검증한다.
 author: taewony
 date: 2025-12-28 00:00:00 +0900
-categories: [Development,AI/Data]
+categories: [Quick, AI/Data]
+domain: data-pipeline
+purpose: survey
 tags: [pandas,polars,cheatsheet,dataframe,migration]
 pin: false
 math: false

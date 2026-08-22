@@ -3,8 +3,10 @@ title: playwright를 이용하여 웹사이트 정보를 획득해보자
 description: playwright로 실제 브라우져에 가깝게 접속하여 데이터를 획득해보자
 author: taewony
 date: 2026-01-27 21:28:44 +0900
-categories: [Development, Tech/Architecture]
-tags: [python, playwright, automation, web-scraping, dynamic-content, browser-automation]
+categories: [Quick, Development]
+domain: scraping
+purpose: automate
+tags: [playwright, automation, web-scraping, dynamic-content, browser-automation]
 pin: false
 math: false
 mermaid: false

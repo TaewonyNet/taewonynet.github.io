@@ -3,8 +3,10 @@ title: OpenRouter를 사용해 보자
 description: 여러 AI 모델을 하나의 API로 접근할 수 있는 OpenRouter를 사용해 보자
 author: taewony
 date: 2025-12-20 22:35:30 +0900
-categories: [Development, AI/Data]
-tags: [OpenRouter, unified ai api, free models, ai development, prompt engineering]
+categories: [Quick, AI/Data]
+domain: llm
+purpose: cost
+tags: [openrouter, unified-ai-api, free-models, ai-development, prompt-engineering]
 pin: false
 math: false
 mermaid: false

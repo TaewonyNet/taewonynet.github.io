@@ -3,8 +3,10 @@ title: playwright와 httpx로 효율적으로 웹사이트 정보를 획득해�
 description: playwright를 사용하되 데이터를 httpx를 사용하도록 하이브리드형 클라이언트를 만들자
 author: taewony
 date: 2026-02-06 21:09:47 +0900
-categories: [Development, Tech/Architecture]
-tags: [python, playwright, httpx, hybrid-client, web-scraping, automation, performance-optimization]
+categories: [Quick, Development]
+domain: scraping
+purpose: perf
+tags: [playwright, httpx, hybrid-client, web-scraping, automation, performance-optimization]
 pin: false
 math: false
 mermaid: false
