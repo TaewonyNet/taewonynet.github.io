@@ -22,6 +22,7 @@ from __future__ import annotations
 
 import argparse
 import logging
+import os
 import re
 import sys
 from pathlib import Path
@@ -112,10 +113,40 @@ TABLE_RE = re.compile(r"^\s*\|.+\|\s*$", re.M)
 # 전 글에 무차별로 경고하면 신호가 죽으므로 제목으로 대상을 좁힌다.
 COMPARATIVE_RE = re.compile(r"(비교|종류|vs\.?|선택|고르|사다리|정리해보자)", re.I)
 DIGIT_RE = re.compile(r"\d")
+# 법적 리스크: PUBLISHING.md §3-2 — 오탐이 거의 없는 것만 차단한다.
+# "우회"·"한도" 같은 단어는 정상 용법이 훨씬 많아(실측 28편 중 대부분) 넣지 않는다.
+# 판정이 필요한 서술 방향은 사람이 본다.
+LEGAL_RE = re.compile(
+    r"(magnet:\?xt=|야동|19금|성인물|불법 다운로드|크랙 버전|시리얼 키 생성)", re.I
+)
 # 기밀: CLAUDE.md §4 — 티켓번호·내부 식별자 직접 표기 금지
-SECRET_RE = re.compile(r"\b(TDT-\d+|PRIVIA|omakase|data310|tidesquare)\b", re.I)
+#
+# 패턴은 이 파일에 적지 않는다. denylist 자체가 실명 목록이 되어
+# 공개 저장소에서 읽히기 때문이다(2026-08-26 실측: 이 줄이 유출원이었다).
+# 우선순위: 환경변수 BLOG_SECRET_PATTERNS > .secret-patterns (비추적) > 기본 형태 규칙
+def _load_secret_re() -> re.Pattern:
+    raw = os.environ.get("BLOG_SECRET_PATTERNS", "").strip()
+    if not raw:
+        f = Path(__file__).resolve().parent.parent / ".secret-patterns"
+        if f.exists():
+            raw = "|".join(
+                ln.strip() for ln in f.read_text(encoding="utf-8").splitlines()
+                if ln.strip() and not ln.lstrip().startswith("#")
+            )
+    if not raw:
+        # 목록이 없어도 형태만으로 잡히는 것은 항상 막는다 (티켓번호 꼴)
+        raw = r"[A-Z]{2,5}-\d{3,}"
+    return re.compile(rf"\b({raw})\b", re.I)
+
+
+SECRET_RE = _load_secret_re()
 
 MAX_CODE_FENCES = 2  # §5 "본문에 코드를 다 넣지 않는다"
+
+# date 정의역 — §7 이 "22:00~01:59 랜덤"을 규정하나 24:xx 를 쓰면 Ruby 가 익일로 굴린다.
+# 실측(2026-08-26): 2편이 다음 달로 색인돼 있었다("2025년 회고" -> 2026-01-01).
+# 타입(파싱 성공)만 보고 정의역을 안 보면 조용히 통과한다.
+DATE_RE = re.compile(r"^date:\s*(\d{4})-(\d{2})-(\d{2})\s+(\d{2}):(\d{2}):(\d{2})", re.M)
 
 # §5 Quick "짝 소스 필수"의 확정 예외 — PoC 코드가 없는 도구 사용기 4편.
 # 본인 판단으로 현상태 유지 결정됨(2026-08).
@@ -189,8 +220,15 @@ def check(path: Path) -> tuple[list[str], list[str]]:
     for e in set(EMOJI_RE.findall(body)):
         errors.append(f"이모티콘 사용: {e!r} (§6 금지)")
     # 프론트매터도 검사한다 — title·description 은 SEO 메타로 공개된다.
+    m = DATE_RE.search(fm["_raw"])
+    if m:
+        hh, mm, ss = int(m.group(4)), int(m.group(5)), int(m.group(6))
+        if hh > 23 or mm > 59 or ss > 59:
+            errors.append(f"date 정의역 밖: {hh:02d}:{mm:02d}:{ss:02d} — Ruby 가 익일로 굴린다")
     for s in set(SECRET_RE.findall(fm["_raw"] + "\n" + body)):
         errors.append(f"내부 식별자 노출: {s!r} (CLAUDE.md §4)")
+    for s in set(LEGAL_RE.findall(fm["_raw"] + "\n" + body)):
+        errors.append(f"법적 리스크 표현: {s!r} (PUBLISHING.md §3-2)")
 
     # ── Deep 전용 (§5) ──
     if is_deep:

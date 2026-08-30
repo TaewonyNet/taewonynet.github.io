@@ -60,3 +60,8 @@ StealthyFetcher 하나만 써도 되긴 하는데, 모든 사이트에 최고 �
     - 빠른 헤더 조합부터 시도하고 차단 신호가 보일 때만 다음 조합으로 넘어가는 순서가 속도와 통과율을 동시에 잡는다. [샘플 코드](https://github.com/TaewonyNet/taewonynet.github.io/blob/master/src/scrapling_stealth_fetch.py){: target="_blank"}
 - **다음 스텝 (Next Step):**
     - 헤더 조합은 단순 UA·헤더 검사만 우회한다. 브라우저 환경 자체(자바스크립트 실행, 지문 검사)를 확인하는 차단에는 한계가 있고, 이 경우 정적 요청 방식 자체로는 통과가 안 된다는 한계가 남는다.
+
+---
+
+> **연구·학습 목적.** 이 글은 기법의 동작 원리를 정리한 것이다. 특정 서비스의 이용약관을 우회하거나 타인의 자원에 무단 접근하는 데 쓰지 않는다. 적용 전에 대상의 이용약관과 `robots.txt`를 확인한다.
+{: .prompt-warning }

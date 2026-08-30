@@ -63,3 +63,8 @@ libtorrent를 사용하여 torrent 다운로드 해보자
     - libtorrent로 효율적인 P2P 파일 공유 시스템을 구축할 수 있다. [샘플 코드](https://github.com/TaewonyNet/taewonynet.github.io/blob/master/src/torrent.py){: target="_blank"}
 - **다음 스텝 (Next Step):**
     - libtorrent를 웹 인터페이스와 연동하여 사용자 친화적인 torrent 관리 시스템을 만든다.
+
+---
+
+> **연구·학습 목적.** 이 글은 프로토콜과 API의 동작 원리를 정리한 것이다. 저작권이 있는 저작물의 무단 복제·배포에 쓰지 않는다. 공개 라이선스로 배포되는 파일에만 적용한다.
+{: .prompt-warning }

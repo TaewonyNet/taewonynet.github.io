@@ -62,3 +62,8 @@ playwright headless로도 안 되는 사이트가 Cloudflare였다. `solve_cloud
     - Cloudflare는 `block_webrtc + hide_canvas + headless=False + network_idle + solve_cloudflare`를 동시에 써야 통과 조건이 갖춰진다. [샘플 코드](https://github.com/TaewonyNet/taewonynet.github.io/blob/master/src/scrapling_cloudflare_bypass.py){: target="_blank"}
 - **다음 스텝 (Next Step):**
     - GUI 모드 요구와 브라우저 엔진 별도 설치라는 두 가지 의존성이 남아 있다. 이 의존성 없이도 통과 가능한 사이트와, 반드시 이 조합이 필요한 사이트를 구분하는 기준은 아직 없다.
+
+---
+
+> **연구·학습 목적.** 이 글은 기법의 동작 원리를 정리한 것이다. 특정 서비스의 이용약관을 우회하거나 타인의 자원에 무단 접근하는 데 쓰지 않는다. 적용 전에 대상의 이용약관과 `robots.txt`를 확인한다.
+{: .prompt-warning }
