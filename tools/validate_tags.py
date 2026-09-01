@@ -100,6 +100,43 @@ def is_hidden(path: Path) -> bool:
     return any(part.startswith(".") for part in path.parts)
 
 
+
+INDEX_CANDIDATES = ("_tabs/purpose.md", "../../taewonynet.github.io/_tabs/purpose.md")
+AXES_RE = re.compile(r'assign AXES = "([^"]+)"')
+
+
+def check_index_sync(vocab: dict) -> list[str]:
+    """목적축 인덱스 페이지의 축 목록이 어휘 파일과 같은지 확인한다.
+
+    두 곳에 손으로 맞춰야 하는 구조라, 어긋나도 빌드는 성공하고 해당 글만
+    인덱스에서 조용히 사라진다. 그 침묵을 여기서 깬다.
+    페이지를 못 찾으면 검사 대상이 아니므로 건너뛴다(초안 검증 시).
+    """
+    for cand in INDEX_CANDIDATES:
+        path = Path(cand)
+        if path.exists():
+            break
+    else:
+        return []
+
+    m = AXES_RE.search(path.read_text(encoding="utf-8"))
+    if not m:
+        return [f"{path}: AXES 목록을 찾을 수 없다 (형식이 바뀌었는가)"]
+
+    page = [pair.split(":", 1)[0] for pair in m.group(1).split(",")]
+    want = list(vocab["purpose"])
+    errs = []
+    missing = [a for a in want if a not in page]
+    extra = [a for a in page if a not in want]
+    if missing:
+        errs.append(f"{path}: 어휘에 있으나 인덱스에 없음 {missing} — 해당 글이 인덱스에서 사라진다")
+    if extra:
+        errs.append(f"{path}: 인덱스에만 있는 축 {extra} — 어휘에 없는 값이다")
+    if len(page) != len(set(page)):
+        errs.append(f"{path}: 인덱스 축 목록에 중복이 있다")
+    return errs
+
+
 def collect(targets: list[str]) -> list[Path]:
     files: list[Path] = []
     for t in targets:
@@ -161,6 +198,11 @@ def main() -> int:
     vocab = load_vocab()
     files = collect(args.targets)
     fails = 0
+
+    index_errs = check_index_sync(vocab)
+    for e in index_errs:
+        logger.info("FAIL  목적축 인덱스 동기화")
+        logger.info("        - %s", e)
     for path in files:
         errs = check(path, vocab)
         if errs:
@@ -171,7 +213,7 @@ def main() -> int:
     checked = len(files)
     logger.info("\n총 %d개 — FAIL %d / PASS %d", checked, fails, checked - fails)
 
-    rc = 1 if fails else 0
+    rc = 1 if (fails or index_errs) else 0
     if args.stats:
         rc = max(rc, report_stats(files, vocab))
     return rc

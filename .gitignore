@@ -26,3 +26,6 @@ node_modules
 
 # Misc
 .config.yaml
+
+# 기밀 패턴 목록 — 절대 커밋하지 않는다
+.secret-patterns
