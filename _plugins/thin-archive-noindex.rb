@@ -36,9 +36,15 @@ Jekyll::Hooks.register :site, :pre_render do |site|
   kept = 0
 
   site.pages.each do |page|
-    # jekyll-archives 가 만든 페이지만 대상. 일반 페이지(about, tabs 등)는
-    # `page.data['posts']` 가 없으므로 자연히 걸러진다.
-    posts = page.data['posts']
+    # jekyll-archives 의 `Archive` 는 `attr_accessor :posts, :type, :slug` 로
+    # **객체 속성**에 글 목록을 둔다. `data` 에는 `layout` 만 들어 있다.
+    #   https://github.com/jekyll/jekyll-archives/blob/master/lib/jekyll-archives/archive.rb
+    # 처음에 `page.data['posts']` 로 읽었다가 **0개를 찾았다**(2026-09-18 실측:
+    # 빌드 로그 "얇은 아카이브 0개"). 일반 페이지는 `posts` 에 응답하지 않으므로
+    # 이 검사만으로 아카이브가 걸러진다.
+    next unless page.respond_to?(:posts)
+
+    posts = page.posts
     next unless posts.is_a?(Array)
 
     if posts.size < ThinArchive::MIN_POSTS
@@ -50,7 +56,14 @@ Jekyll::Hooks.register :site, :pre_render do |site|
     end
   end
 
-  Jekyll.logger.info 'ThinArchive:',
-                     "얇은 아카이브 #{thin}개 noindex+사이트맵 제외, #{kept}개 유지 " \
-                     "(기준: 글 #{ThinArchive::MIN_POSTS}편 미만)"
+  # 0개가 나오면 탐지가 틀린 것이다 — 조용히 통과하지 않게 경고로 올린다.
+  if thin.zero? && kept.zero?
+    Jekyll.logger.warn 'ThinArchive:',
+                       "아카이브를 하나도 못 찾았다. site.pages #{site.pages.size}개를 훑었으나 " \
+                       '`posts` 에 응답하는 객체가 없다 — jekyll-archives 가 꺼져 있거나 API 가 바뀌었다.'
+  else
+    Jekyll.logger.info 'ThinArchive:',
+                       "얇은 아카이브 #{thin}개 noindex+사이트맵 제외, #{kept}개 유지 " \
+                       "(기준: 글 #{ThinArchive::MIN_POSTS}편 미만)"
+  end
 end
