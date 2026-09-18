@@ -205,6 +205,17 @@ compress_html:
     envs: [development]
 
 exclude:
+  # 2026-09-18: 영화 글 744편을 `_archive_movie/` 로 옮겼다(빌드 제외).
+  #
+  # **왜**: 이 블로그는 842편 중 744편(88%)이 자동 생성 영화 요약이었고,
+  # 애드센스가 2026-09-10 에 `가치가 별로 없는 콘텐츠`로 거절했다
+  # (starnopsis.com 도 같은 파이프라인·같은 사유로 거절). 남는 98편
+  # (AI_Data 46 · Development 39 · Diary 11 · Architecture 2)은 직접 쓴
+  # 1차 경험 기록인데, 744편에 파묻혀 보이지 않았다.
+  #
+  # 삭제가 아니라 이동이다 — 원문은 git 에 그대로 있고 되돌릴 수 있다.
+  # 되돌리려면 `git mv _archive_movie _posts/Movie` 하고 이 줄을 지운다.
+  - _archive_movie
   - "*.gem"
   - "*.gemspec"
   - docs
